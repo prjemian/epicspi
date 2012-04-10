@@ -1,0 +1,6 @@
+#!/bin/bash
+#
+# starts the prj EPICS IOC in a screen session
+
+cd $HOME/epics/ioc/prj/iocBoot/iocLinux
+./in-screen.sh

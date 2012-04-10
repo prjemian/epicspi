@@ -1,0 +1,15 @@
+file "$(STD)/stdApp/Db/softMotor.db"
+{
+pattern
+{P,	 N,  SM}
+{morel:, 1,  "sm$(N)"}
+{morel:, 2,  "sm$(N)"}
+{morel:, 3,  "sm$(N)"}
+{morel:, 4,  "sm$(N)"}
+{morel:, 5,  "sm$(N)"}
+{morel:, 6,  "sm$(N)"}
+{morel:, 7,  "sm$(N)"}
+{morel:, 8,  "sm$(N)"}
+{morel:, 9,  "sm$(N)"}
+{morel:, 10,  "sm$(N)"}
+}

@@ -1,0 +1,4 @@
+# FILE... desc_val_settings.req
+# USAGE... any record, DESC and VAL fields autosave'd.
+$(P).DESC
+$(P).VAL

@@ -1,0 +1,22 @@
+# This is a simple example using the sumDiff2D database.  This takes 2 real motors and makes 2 soft motors,
+# SUM which moves both motors together, and DIFF which moves them in opposite directions.
+# It can be used for slits, for K/B mirror benders, etc.
+
+file "$(MOTOR)/motorApp/Db/pseudoMotor.db"
+{
+pattern
+{P,       M,           DINP,                        OUT,                     RDBL,                          STOO,     DESC, EGU, DIR, VELO, VBAS, ACCL, BDST, BVEL,                    BACC, MRES,   RRES, PREC,  DHLM, DLLM}
+{prj:,  pm1, "prj:KBV:Done NPP NMS", "prj:pm1DVAL.VAL PP MS", "prj:KBV:Readback.G NPP NMS", "prj:KBV:Stop PP MS",    "Vert. curvature",          mm,  Pos,   1,    .1,   .1,    0,    1,   .1, .1,     1.0,  3,    10000, -10000}
+{prj:,  pm2, "prj:KBV:Done NPP NMS", "prj:pm2DVAL.VAL PP MS", "prj:KBV:Readback.H NPP NMS", "prj:KBV:Stop PP MS",    "Vert. Ellipticity",        mm,  Pos,   1,    .1,   .1,    0,    1,   .1, .1,     1.0,  3,    10000, -10000}
+{prj:,  pm3, "prj:KBH:Done NPP NMS", "prj:pm3DVAL.VAL PP MS", "prj:KBH:Readback.G NPP NMS", "prj:KBH:Stop PP MS",    "Hor. curvature",          mm,  Pos,   1,    .1,   .1,    0,    1,   .1, .1,     1.0,  3,    10000, -10000}
+{prj:,  pm4, "prj:KBH:Done NPP NMS", "prj:pm4DVAL.VAL PP MS", "prj:KBH:Readback.H NPP NMS", "prj:KBH:Stop PP MS",    "Hor. ellipticity",        mm,  Pos,   1,    .1,   .1,    0,    1,   .1, .1,     1.0,  3,    10000, -10000}
+}
+
+file "$(MOTOR)/motorApp/Db/sumDiff2D.db"
+{
+pattern
+{P,      T,   SUM, DIFF,     M1DRV,    M1RBV,   M2DRV,   M2RBV,   M1STOP,   M1DONE,   M2STOP,   M2DONE,  PREC}
+{prj:, KBV:,  pm1,  pm2,    m1.VAL,   m1.RBV,  m2.VAL,  m2.RBV,  m1.STOP,  m1.DMOV,  m2.STOP,  m2.DMOV,    1}
+{prj:, KBH:,  pm3,  pm4,    m3.VAL,   m3.RBV,  m4.VAL,  m4.RBV,  m3.STOP,  m3.DMOV,  m4.STOP,  m4.DMOV,    1}
+}
+

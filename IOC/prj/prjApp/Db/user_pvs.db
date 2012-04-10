@@ -1,0 +1,34 @@
+# user variables
+
+record(stringout,"$(P)string$(N)0")    { field(DESC, "string$(N)0") }
+record(stringout,"$(P)string$(N)1")    { field(DESC, "string$(N)1") }
+record(stringout,"$(P)string$(N)2")    { field(DESC, "string$(N)2") }
+record(stringout,"$(P)string$(N)3")    { field(DESC, "string$(N)3") }
+record(stringout,"$(P)string$(N)4")    { field(DESC, "string$(N)4") }
+record(stringout,"$(P)string$(N)5")    { field(DESC, "string$(N)5") }
+record(stringout,"$(P)string$(N)6")    { field(DESC, "string$(N)6") }
+record(stringout,"$(P)string$(N)7")    { field(DESC, "string$(N)7") }
+record(stringout,"$(P)string$(N)8")    { field(DESC, "string$(N)8") }
+record(stringout,"$(P)string$(N)9")    { field(DESC, "string$(N)9") }
+
+record(ao,"$(P)float$(N)0")	       { field(DESC, "float$(N)0") }
+record(ao,"$(P)float$(N)1")	       { field(DESC, "float$(N)1") }
+record(ao,"$(P)float$(N)2")	       { field(DESC, "float$(N)2") }
+record(ao,"$(P)float$(N)3")	       { field(DESC, "float$(N)3") }
+record(ao,"$(P)float$(N)4")	       { field(DESC, "float$(N)4") }
+record(ao,"$(P)float$(N)5")	       { field(DESC, "float$(N)5") }
+record(ao,"$(P)float$(N)6")	       { field(DESC, "float$(N)6") }
+record(ao,"$(P)float$(N)7")	       { field(DESC, "float$(N)7") }
+record(ao,"$(P)float$(N)8")	       { field(DESC, "float$(N)8") }
+record(ao,"$(P)float$(N)9")	       { field(DESC, "float$(N)9") }
+
+record(bo,"$(P)bit$(N)0")	       { field(DESC, "bit$(N)0") }
+record(bo,"$(P)bit$(N)1")	       { field(DESC, "bit$(N)1") }
+record(bo,"$(P)bit$(N)2")	       { field(DESC, "bit$(N)2") }
+record(bo,"$(P)bit$(N)3")	       { field(DESC, "bit$(N)3") }
+record(bo,"$(P)bit$(N)4")	       { field(DESC, "bit$(N)4") }
+record(bo,"$(P)bit$(N)5")	       { field(DESC, "bit$(N)5") }
+record(bo,"$(P)bit$(N)6")	       { field(DESC, "bit$(N)6") }
+record(bo,"$(P)bit$(N)7")	       { field(DESC, "bit$(N)7") }
+record(bo,"$(P)bit$(N)8")	       { field(DESC, "bit$(N)8") }
+record(bo,"$(P)bit$(N)9")	       { field(DESC, "bit$(N)9") }

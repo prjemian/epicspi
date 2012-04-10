@@ -1,0 +1,13 @@
+# EPICS ISO8601.compatible timestamp
+# yyyy-mm-ddThh:mm:ss
+
+#  dbLoadRecords("<TOP>/someApp/Db/timestamp.db", "P=ioc:,TS=timestamp")
+
+record(stringin, "$(P)$(TS)")
+{
+  field(DTYP,"Soft Timestamp")
+  field(DESC,"Current Time")
+  field(INP, "@%Y-%m-%dT%H:%M:%S")
+  field(SCAN,"9")
+}
+

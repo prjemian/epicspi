@@ -1,0 +1,34 @@
+# user variables
+
+file desc_val_settings.req P=$(P)string$(N)0
+file desc_val_settings.req P=$(P)string$(N)1
+file desc_val_settings.req P=$(P)string$(N)2
+file desc_val_settings.req P=$(P)string$(N)3
+file desc_val_settings.req P=$(P)string$(N)4
+file desc_val_settings.req P=$(P)string$(N)5
+file desc_val_settings.req P=$(P)string$(N)6
+file desc_val_settings.req P=$(P)string$(N)7
+file desc_val_settings.req P=$(P)string$(N)8
+file desc_val_settings.req P=$(P)string$(N)9
+
+file desc_val_settings.req P=$(P)float$(N)0
+file desc_val_settings.req P=$(P)float$(N)1
+file desc_val_settings.req P=$(P)float$(N)2
+file desc_val_settings.req P=$(P)float$(N)3
+file desc_val_settings.req P=$(P)float$(N)4
+file desc_val_settings.req P=$(P)float$(N)5
+file desc_val_settings.req P=$(P)float$(N)6
+file desc_val_settings.req P=$(P)float$(N)7
+file desc_val_settings.req P=$(P)float$(N)8
+file desc_val_settings.req P=$(P)float$(N)9
+
+file desc_val_settings.req P=$(P)bit$(N)0
+file desc_val_settings.req P=$(P)bit$(N)1
+file desc_val_settings.req P=$(P)bit$(N)2
+file desc_val_settings.req P=$(P)bit$(N)3
+file desc_val_settings.req P=$(P)bit$(N)4
+file desc_val_settings.req P=$(P)bit$(N)5
+file desc_val_settings.req P=$(P)bit$(N)6
+file desc_val_settings.req P=$(P)bit$(N)7
+file desc_val_settings.req P=$(P)bit$(N)8
+file desc_val_settings.req P=$(P)bit$(N)9
