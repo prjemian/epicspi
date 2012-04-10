@@ -1,0 +1,14 @@
+# CONFIG_SITE,v 1.2 2007/07/03 21:37:52 jba Exp
+
+# Make any extensions-specific changes to the EPICS build
+# configuration variables in this file.
+
+# Extensions should not normally be built for cross targets
+CROSS_COMPILER_TARGET_ARCHS =
+
+# If you don't want to install into $(TOP) then
+# define INSTALL_LOCATION here
+#INSTALL_LOCATION=<fullpathname>
+
+# To create a shared library set SHARED_LIBRARIES to YES in Makefile
+SHARED_LIBRARIES = NO

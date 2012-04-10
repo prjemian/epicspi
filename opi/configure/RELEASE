@@ -1,0 +1,12 @@
+# RELEASE,v 1.4 2004/09/07 19:01:28 jba Exp
+
+# If you don't want to install into $(TOP) dir then
+# define INSTALL_LOCATION_EXTENSIONS here
+#INSTALL_LOCATION_EXTENSIONS=<fullpathname>
+
+# Location of external products
+EPICS_BASE=$(TOP)/../base
+#EPICS_EXTENSIONS = /usr/local/epics/extensions
+EPICS_EXTENSIONS=$(TOP)
+
+OAG_APPS=$(TOP)/../../oag/apps
