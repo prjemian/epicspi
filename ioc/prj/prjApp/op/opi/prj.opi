@@ -1,0 +1,4051 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display typeId="org.csstudio.opibuilder.Display" version="1.0">
+  <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
+  <macros>
+    <include_parent_macros>true</include_parent_macros>
+  </macros>
+  <scripts />
+  <show_ruler>true</show_ruler>
+  <height>160</height>
+  <name>prj</name>
+  <snap_to_geometry>false</snap_to_geometry>
+  <show_grid>false</show_grid>
+  <background_color>
+    <color red="236" green="236" blue="236" />
+  </background_color>
+  <foreground_color>
+    <color red="26" green="115" blue="9" />
+  </foreground_color>
+  <widget_type>Display</widget_type>
+  <show_close_button>true</show_close_button>
+  <width>470</width>
+  <rules />
+  <show_edit_range>true</show_edit_range>
+  <grid_space>10</grid_space>
+  <actions hook="false" />
+  <y>117</y>
+  <x>521</x>
+  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0">
+    <enabled>true</enabled>
+    <widget_type>Grouping Container</widget_type>
+    <macros>
+      <include_parent_macros>true</include_parent_macros>
+    </macros>
+    <visible>true</visible>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>82</width>
+    <border_style>0</border_style>
+    <rules />
+    <lock_children>false</lock_children>
+    <scripts />
+    <height>27</height>
+    <border_width>1</border_width>
+    <name>Grouping Container</name>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <transparent>true</transparent>
+    <show_scrollbar>false</show_scrollbar>
+    <y>78</y>
+    <actions hook="false" />
+    <foreground_color>
+      <color red="26" green="115" blue="9" />
+    </foreground_color>
+    <background_color>
+      <color red="236" green="236" blue="236" />
+    </background_color>
+    <x>350</x>
+    <tooltip />
+    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
+      <visible>true</visible>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>false</auto_size>
+      <scripts />
+      <height>25</height>
+      <name>Label</name>
+      <transparent>true</transparent>
+      <show_scrollbar>false</show_scrollbar>
+      <background_color>
+        <color red="255" green="255" blue="255" />
+      </background_color>
+      <foreground_color>
+        <color red="10" green="0" blue="184" />
+      </foreground_color>
+      <widget_type>Label</widget_type>
+      <enabled>true</enabled>
+      <text>Moving</text>
+      <font>
+        <fontdata fontName="Segoe UI" height="18" style="0" />
+      </font>
+      <width>80</width>
+      <border_style>0</border_style>
+      <rules>
+        <rule name="Visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>true</value>
+          </exp>
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv trig="true">prj:alldone.VAL</pv>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <actions hook="false" />
+      <y>1</y>
+      <wrap_words>true</wrap_words>
+      <tooltip />
+      <x>1</x>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
+      <visible>true</visible>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>false</auto_size>
+      <scripts />
+      <height>25</height>
+      <name>Label</name>
+      <transparent>true</transparent>
+      <show_scrollbar>false</show_scrollbar>
+      <background_color>
+        <color red="255" green="255" blue="255" />
+      </background_color>
+      <foreground_color>
+        <color red="10" green="0" blue="184" />
+      </foreground_color>
+      <widget_type>Label</widget_type>
+      <enabled>true</enabled>
+      <text>Moving</text>
+      <font>
+        <fontdata fontName="Segoe UI" height="18" style="0" />
+      </font>
+      <width>80</width>
+      <border_style>0</border_style>
+      <rules>
+        <rule name="Visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0!=0">
+            <value>true</value>
+          </exp>
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv trig="true">prj:alldoneBlink.VAL</pv>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <actions hook="false" />
+      <y>2</y>
+      <wrap_words>true</wrap_words>
+      <tooltip />
+      <x>2</x>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
+      <visible>true</visible>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>false</auto_size>
+      <scripts />
+      <height>25</height>
+      <name>Label</name>
+      <transparent>true</transparent>
+      <show_scrollbar>false</show_scrollbar>
+      <background_color>
+        <color red="255" green="255" blue="255" />
+      </background_color>
+      <foreground_color>
+        <color red="153" green="255" blue="255" />
+      </foreground_color>
+      <widget_type>Label</widget_type>
+      <enabled>true</enabled>
+      <text>Moving</text>
+      <font>
+        <fontdata fontName="Segoe UI" height="18" style="0" />
+      </font>
+      <width>80</width>
+      <border_style>0</border_style>
+      <rules>
+        <rule name="Visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>true</value>
+          </exp>
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv trig="true">prj:alldone.VAL</pv>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <actions hook="false" />
+      <y>0</y>
+      <wrap_words>true</wrap_words>
+      <tooltip />
+      <x>0</x>
+    </widget>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>22</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="78" green="165" blue="249" />
+    </background_color>
+    <foreground_color>
+      <color red="10" green="0" blue="184" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>136</width>
+    <border_style>6</border_style>
+    <label />
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>525</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>trs.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <M1>m7</M1>
+          <M2>m8</M2>
+        </macros>
+        <replace>0</replace>
+        <description>TR_SLIT (S)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/motor/topMotors8.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <M1>m9</M1>
+          <M2>m10</M2>
+          <M3>m11</M3>
+          <M4>m12</M4>
+          <M5>m13</M5>
+          <M6>m14</M6>
+          <M7>m15</M7>
+          <M8>m16</M8>
+        </macros>
+        <replace>0</replace>
+        <description>9-16</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/motor/topMotors8.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <M1>m17</M1>
+          <M2>m18</M2>
+          <M3>m19</M3>
+          <M4>m20</M4>
+          <M5>m21</M5>
+          <M6>m22</M6>
+          <M7>m23</M7>
+          <M8>m24</M8>
+        </macros>
+        <replace>0</replace>
+        <description>17-24</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/motor/topMotors8.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <M1>m25</M1>
+          <M2>m26</M2>
+          <M3>m27</M3>
+          <M4>m28</M4>
+          <M5>m29</M5>
+          <M6>m30</M6>
+          <M7>m31</M7>
+          <M8>m32</M8>
+        </macros>
+        <replace>0</replace>
+        <description>25-32</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/motor/topMotors8.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <M1>m33</M1>
+          <M2>m34</M2>
+          <M3>m35</M3>
+          <M4>m36</M4>
+          <M5>m37</M5>
+          <M6>m38</M6>
+          <M7>m39</M7>
+          <M8>m40</M8>
+        </macros>
+        <replace>0</replace>
+        <description>33-40</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/motor/topMotors8.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <M1>m41</M1>
+          <M2>m42</M2>
+          <M3>m43</M3>
+          <M4>m44</M4>
+          <M5>m45</M5>
+          <M6>m46</M6>
+          <M7>m47</M7>
+          <M8>m48</M8>
+        </macros>
+        <replace>0</replace>
+        <description>41-48</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/motor/topMotors8.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <M1>m49</M1>
+          <M2>m50</M2>
+          <M3>m51</M3>
+          <M4>m52</M4>
+          <M5>m53</M5>
+          <M6>m54</M6>
+          <M7>m55</M7>
+          <M8>m56</M8>
+        </macros>
+        <replace>0</replace>
+        <description>49-56</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/motor/topMotors8.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <M1>m57</M1>
+          <M2>m58</M2>
+          <M3>m59</M3>
+          <M4>m60</M4>
+          <M5>m61</M5>
+          <M6>m62</M6>
+          <M7>m63</M7>
+          <M8>m64</M8>
+        </macros>
+        <replace>0</replace>
+        <description>57-64</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>-113</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>Tables</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>20</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/table.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q>Table1</Q>
+          <T>table1</T>
+          <M0X>m1</M0X>
+          <M0Y>m2</M0Y>
+          <M1Y>m3</M1Y>
+          <M2X>m4</M2X>
+          <M2Y>m5</M2Y>
+          <M2Z>m6</M2Z>
+        </macros>
+        <replace>0</replace>
+        <description>Table1 (S)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/table_full.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q>Table1</Q>
+          <T>table1</T>
+          <M0X>m1</M0X>
+          <M0Y>m2</M0Y>
+          <M1Y>m3</M1Y>
+          <M2X>m4</M2X>
+          <M2Y>m5</M2Y>
+          <M2Z>m6</M2Z>
+        </macros>
+        <replace>0</replace>
+        <description>Table1 (L)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/table.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q>Table2</Q>
+          <T>table2</T>
+          <M0X>m1</M0X>
+          <M0Y>m2</M0Y>
+          <M1Y>m3</M1Y>
+          <M2X>m4</M2X>
+          <M2Y>m5</M2Y>
+          <M2Z>junk</M2Z>
+        </macros>
+        <replace>0</replace>
+        <description>Table2 (S) (no Z)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/table_full.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q>Table2</Q>
+          <T>table2</T>
+          <M0X>m1</M0X>
+          <M0Y>m2</M0Y>
+          <M1Y>m3</M1Y>
+          <M2X>m4</M2X>
+          <M2Y>m5</M2Y>
+          <M2Z>junk</M2Z>
+        </macros>
+        <replace>0</replace>
+        <description>Table2 (L) (no Z)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/table.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q>Table3</Q>
+          <T>table3</T>
+          <M0X>junk</M0X>
+          <M0Y>m2</M0Y>
+          <M1Y>m3</M1Y>
+          <M2X>junk</M2X>
+          <M2Y>m5</M2Y>
+          <M2Z>m6</M2Z>
+        </macros>
+        <replace>0</replace>
+        <description>Table3 (S) (no X)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/table_full.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q>Table3</Q>
+          <T>table3</T>
+          <M0X>junk</M0X>
+          <M0Y>m2</M0Y>
+          <M1Y>m3</M1Y>
+          <M2X>junk</M2X>
+          <M2Y>m5</M2Y>
+          <M2Z>m6</M2Z>
+        </macros>
+        <replace>0</replace>
+        <description>Table3 (L) (no X)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/table.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q>Table4</Q>
+          <T>table4</T>
+          <M0X>junk</M0X>
+          <M0Y>m2</M0Y>
+          <M1Y>m3</M1Y>
+          <M2X>junk</M2X>
+          <M2Y>m5</M2Y>
+          <M2Z>junk</M2Z>
+        </macros>
+        <replace>0</replace>
+        <description>Table4 (S) (no X or Z)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/table_full.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q>Table4</Q>
+          <T>table4</T>
+          <M0X>junk</M0X>
+          <M0Y>m2</M0Y>
+          <M1Y>m3</M1Y>
+          <M2X>junk</M2X>
+          <M2Y>m5</M2Y>
+          <M2Z>junk</M2Z>
+        </macros>
+        <replace>0</replace>
+        <description>Table4 (L) (no X or Z)</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>0</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>Motors</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>0</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/motor/topMotors8.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <M1>m1</M1>
+          <M2>m2</M2>
+          <M3>m3</M3>
+          <M4>m4</M4>
+          <M5>m5</M5>
+          <M6>m6</M6>
+          <M7>m7</M7>
+          <M8>m8</M8>
+        </macros>
+        <replace>0</replace>
+        <description>1-8</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/motor/topMotors8.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <M1>m9</M1>
+          <M2>m10</M2>
+          <M3>m11</M3>
+          <M4>m12</M4>
+          <M5>m13</M5>
+          <M6>m14</M6>
+          <M7>m15</M7>
+          <M8>m16</M8>
+        </macros>
+        <replace>0</replace>
+        <description>9-16</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/motor/topMotors8.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <M1>m17</M1>
+          <M2>m18</M2>
+          <M3>m19</M3>
+          <M4>m20</M4>
+          <M5>m21</M5>
+          <M6>m22</M6>
+          <M7>m23</M7>
+          <M8>m24</M8>
+        </macros>
+        <replace>0</replace>
+        <description>17-24</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/motor/topMotors8.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <M1>m25</M1>
+          <M2>m26</M2>
+          <M3>m27</M3>
+          <M4>m28</M4>
+          <M5>m29</M5>
+          <M6>m30</M6>
+          <M7>m31</M7>
+          <M8>m32</M8>
+        </macros>
+        <replace>0</replace>
+        <description>25-32</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/motor/topMotors8.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <M1>m33</M1>
+          <M2>m34</M2>
+          <M3>m35</M3>
+          <M4>m36</M4>
+          <M5>m37</M5>
+          <M6>m38</M6>
+          <M7>m39</M7>
+          <M8>m40</M8>
+        </macros>
+        <replace>0</replace>
+        <description>33-40</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/motor/topMotors8.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <M1>m41</M1>
+          <M2>m42</M2>
+          <M3>m43</M3>
+          <M4>m44</M4>
+          <M5>m45</M5>
+          <M6>m46</M6>
+          <M7>m47</M7>
+          <M8>m48</M8>
+        </macros>
+        <replace>0</replace>
+        <description>41-48</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/motor/softMotors10.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <SM1>SM1</SM1>
+          <SM2>SM2</SM2>
+          <SM3>SM3</SM3>
+          <SM4>SM4</SM4>
+          <SM5>SM5</SM5>
+          <SM6>SM6</SM6>
+          <SM7>SM7</SM7>
+          <SM8>SM8</SM8>
+          <SM9>SM9</SM9>
+          <SM10>SM10</SM10>
+        </macros>
+        <replace>0</replace>
+        <description>soft motors 1-10</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/motor/topMotors4.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <M1>pm1</M1>
+          <M2>pm2</M2>
+          <M3>pm3</M3>
+          <M4>pm4</M4>
+        </macros>
+        <replace>0</replace>
+        <description>Pseudo-motors</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/motor/motorStatus16.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+        </macros>
+        <replace>0</replace>
+        <description>motor status 16</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>0</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>Monochrom</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>60</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/kohzuGraphic.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <mTH>m9</mTH>
+          <mY1>m10</mY1>
+          <mZ2>m11</mZ2>
+          <mCHI2>m12</mCHI2>
+          <mTH2>m13</mTH2>
+          <mX>m14</mX>
+          <mY>m15</mY>
+          <mX2>m16</mX2>
+          <QE>BraggE</QE>
+          <PVE>BraggEAO</PVE>
+          <QL>BraggLambda</QL>
+          <PVL>BraggLambdaAO</PVL>
+          <QTh>BraggTheta</QTh>
+          <PVTh>BraggThetaAO</PVTh>
+        </macros>
+        <replace>0</replace>
+        <description>Kohzu Graphic (GEOM 1)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/kohzu2Graphic.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <mTH>m9</mTH>
+          <mY2>m10</mY2>
+          <mZ2>m11</mZ2>
+          <mCHI2>m12</mCHI2>
+          <mTH2>m13</mTH2>
+          <mX>m14</mX>
+          <mY>m15</mY>
+          <mX2>m16</mX2>
+          <QE>BraggE</QE>
+          <PVE>BraggEAO</PVE>
+          <QL>BraggLambda</QL>
+          <PVL>BraggLambdaAO</PVL>
+          <QTh>BraggTheta</QTh>
+          <PVTh>BraggThetaAO</PVTh>
+        </macros>
+        <replace>0</replace>
+        <description>Kohzu Graphic (GEOM 2)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/kohzuSeqCtl_tiny.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+        </macros>
+        <replace>0</replace>
+        <description>KohzuSeq (tiny)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/kohzuSeqCtl.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+        </macros>
+        <replace>0</replace>
+        <description>KohzuSeq</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/kohzuSeqCtl_All.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+        </macros>
+        <replace>0</replace>
+        <description>KohzuSeq (All)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/sscan/scanParms.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q>BraggE</Q>
+          <PV>BraggEAO</PV>
+        </macros>
+        <replace>0</replace>
+        <description>Energy-scan parameters</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/sscan/scanParms.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q>BraggTheta</Q>
+          <PV>BraggThetaAO</PV>
+        </macros>
+        <replace>0</replace>
+        <description>Theta-scan parameters</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/sscan/scanParms.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q>BraggLambda</Q>
+          <PV>BraggLambdaAO</PV>
+        </macros>
+        <replace>0</replace>
+        <description>Wavelength-scan parameters</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>0</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>Scan</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>0</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/sscan/scan.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <N>1</N>
+          <S>scan1</S>
+        </macros>
+        <replace>0</replace>
+        <description>Scan1 (for all scans)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/sscan/scan.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <N>2</N>
+          <S>scan2</S>
+        </macros>
+        <replace>0</replace>
+        <description>Scan2 (for 2D &amp; higher scans)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/sscan/scan.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <N>3</N>
+          <S>scan3</S>
+        </macros>
+        <replace>0</replace>
+        <description>Scan3 (for 3D &amp; higher scans)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/sscan/scan.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <N>4</N>
+          <S>scan4</S>
+        </macros>
+        <replace>0</replace>
+        <description>Scan4 (for 4D scans)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/sscan/scan.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <N>H</N>
+          <S>scanH</S>
+        </macros>
+        <replace>0</replace>
+        <description>ScanH (for Hardware-assisted scans)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/sscan/scanParms2Pos.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q>m7_8</Q>
+          <SCAN>prj:scan1</SCAN>
+          <PV1>prj:m7</PV1>
+          <PV2>prj:m8</PV2>
+        </macros>
+        <replace>0</replace>
+        <description>test scanParms2Pos</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/sscan/scan_saveData.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+        </macros>
+        <replace>0</replace>
+        <description>saveData controls</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/sscan/scanAux.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <S>scantest</S>
+        </macros>
+        <replace>0</replace>
+        <description>aux scan</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>140</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>Scalers</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>100</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/std/scaler16m.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <S>scaler1</S>
+        </macros>
+        <replace>0</replace>
+        <description>Scaler 1</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/std/scaler.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <S>scaler2</S>
+        </macros>
+        <replace>0</replace>
+        <description>Scaler 2</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/std/scaler.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <S>scaler3</S>
+        </macros>
+        <replace>0</replace>
+        <description>Scaler 3</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/std/scaler16.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <S>scaler1</S>
+        </macros>
+        <replace>0</replace>
+        <description>Scaler1 (16 ch)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/std/scaler32.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <S>scaler1</S>
+        </macros>
+        <replace>0</replace>
+        <description>Scaler1 (32 ch)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/std/scaler64.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <S>scaler1</S>
+        </macros>
+        <replace>0</replace>
+        <description>Scaler1 (64 ch)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/std/scaler16m.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <S>scaler1</S>
+        </macros>
+        <replace>0</replace>
+        <description>Scaler 1 modCalc</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>70</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="40" green="147" blue="21" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>DMM</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>100</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/ip/Keithley2kDMM_mf.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Dmm>D1</Dmm>
+        </macros>
+        <replace>0</replace>
+        <description>Keithley 2000 DMM #1</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/ip/Keithley2kDMM_mf.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Dmm>D2</Dmm>
+        </macros>
+        <replace>0</replace>
+        <description>Keithley 2000 DMM #2</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>210</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>HP</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>120</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>HPLaserAxis.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q>HPLaser1</Q>
+        </macros>
+        <replace>0</replace>
+        <description>HP Laser Axis 1</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>HPLaserAxis.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q>HPLaser2</Q>
+        </macros>
+        <replace>0</replace>
+        <description>HP Laser Axis 2</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>140</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>SGM mono</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>100</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/SGM_tiny.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <N>1</N>
+          <M_x>m7</M_x>
+          <M_rIn>m6</M_rIn>
+          <M_rOut>m8</M_rOut>
+        </macros>
+        <replace>0</replace>
+        <description>Spherical Grating Monochromator (tiny)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/SGM.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <N>1</N>
+          <M_x>m7</M_x>
+          <M_rIn>m6</M_rIn>
+          <M_rOut>m8</M_rOut>
+        </macros>
+        <replace>0</replace>
+        <description>Spherical Grating Monochromator</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>0</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>Mirror</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>40</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/2postMirror.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q>M1</Q>
+          <mDn>m11</mDn>
+          <mUp>m12</mUp>
+        </macros>
+        <replace>0</replace>
+        <description>2-post Mirror</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>0</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>HR mono</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>80</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/hr_nested.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <N>1</N>
+        </macros>
+        <replace>0</replace>
+        <description>High resolution monochromator (nested)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/hr_symmetric.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <N>1</N>
+        </macros>
+        <replace>0</replace>
+        <description>High resolution monochromator (symmetric)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/hrSeqCtl_All.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <N>1</N>
+        </macros>
+        <replace>0</replace>
+        <description>High resolution monochromator control</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>0</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>Status</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>60</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/std/IOC_Status.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>xxx</P>
+        </macros>
+        <replace>0</replace>
+        <description>IOC_Status.adl</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/autosave/save_restoreStatus.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+        </macros>
+        <replace>0</replace>
+        <description>save_restore Status</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>280</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>GenericIO</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>40</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/vme/recVme.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q>vme1</Q>
+        </macros>
+        <replace>0</replace>
+        <description>generic VME</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/camac/CAMAC_IO.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <REC>prj:camac1</REC>
+        </macros>
+        <replace>0</replace>
+        <description>generic CAMAC</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/asyn/asynOctet.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <R>gpib1</R>
+        </macros>
+        <replace>0</replace>
+        <description>asyn GPIB</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/deviceCmdReply.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <N>1</N>
+        </macros>
+        <replace>0</replace>
+        <description>deviceCmdReply 1</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/deviceCmdReply.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <N>2</N>
+        </macros>
+        <replace>0</replace>
+        <description>deviceCmdReply 2</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/deviceCmdReply.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <N>3</N>
+        </macros>
+        <replace>0</replace>
+        <description>deviceCmdReply 3</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/deviceCmdReply.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <N>4</N>
+        </macros>
+        <replace>0</replace>
+        <description>deviceCmdReply 4</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/deviceCmdReply.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <N>5</N>
+        </macros>
+        <replace>0</replace>
+        <description>deviceCmdReply 5</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/deviceCmdReply.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <N>6</N>
+        </macros>
+        <replace>0</replace>
+        <description>deviceCmdReply 6</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/deviceCmdReply.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <N>7</N>
+        </macros>
+        <replace>0</replace>
+        <description>deviceCmdReply 7</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/deviceCmdReply.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <N>8</N>
+        </macros>
+        <replace>0</replace>
+        <description>deviceCmdReply 8</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>140</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>OPS</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>20</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>xx_BM_BPM.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <xx>01</xx>
+        </macros>
+        <replace>0</replace>
+        <description>1 BM BPM info</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>xx_ID_BPM.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <xx>01</xx>
+        </macros>
+        <replace>0</replace>
+        <description>1 ID BPM info</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>UndulatorCtl.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <xx>01</xx>
+        </macros>
+        <replace>0</replace>
+        <description>1 ID basic control</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>UndulatorSyncCtl.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <xx>01</xx>
+        </macros>
+        <replace>0</replace>
+        <description>1 ID sync-scan control</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>xxIDCtrl.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <xx>01</xx>
+        </macros>
+        <replace>0</replace>
+        <description>new ID control</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>xxIDCtrl.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <xx>01us</xx>
+        </macros>
+        <replace>0</replace>
+        <description>new ID control (us)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>beamHistory.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+        </macros>
+        <replace>0</replace>
+        <description>24 hr. Beam History</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>beamHistory_full.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+        </macros>
+        <replace>0</replace>
+        <description>24 hr. beam history, etc.</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>280</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label />
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>0</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/2filter.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q1>fltr1:</Q1>
+          <Q2>fltr2:</Q2>
+          <LOCK1>fltr_1_2:</LOCK1>
+          <LOCK2>fltr_1_2:</LOCK2>
+        </macros>
+        <replace>0</replace>
+        <description>User Filter</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/2filter_setup.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q1>fltr1:</Q1>
+          <Q2>fltr2:</Q2>
+          <LOCK1>fltr_1_2:</LOCK1>
+          <LOCK2>fltr_1_2:</LOCK2>
+        </macros>
+        <replace>0</replace>
+        <description>User Filter Setup</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>70</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>BunchClk</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>40</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>BunchClkGen.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <UNIT>prj:BnchClkGen</UNIT>
+        </macros>
+        <replace>0</replace>
+        <description>Bunch Clock Generator</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>BunchClkGenA.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <UNIT>prj:BnchClkGen</UNIT>
+        </macros>
+        <replace>0</replace>
+        <description>Bunch Clock display A</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>BunchClkGenTop.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+        </macros>
+        <replace>0</replace>
+        <description>Bunch Clock 3id Top screen</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>280</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>Piezo</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>40</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/ip/pzt_3id.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+        </macros>
+        <replace>0</replace>
+        <description>Queensgate piezo (3id)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/ip/pzt.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+        </macros>
+        <replace>0</replace>
+        <description>Queensgate piezo (std)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/std/Nano2k.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <S>nano</S>
+          <p>1</p>
+        </macros>
+        <replace>0</replace>
+        <description>Nano2k (ch 1)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/std/Nano2k.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <S>nano</S>
+          <p>2</p>
+        </macros>
+        <replace>0</replace>
+        <description>Nano2k (ch 2)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/ip/HuberDMC4.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q>DMC1:</Q>
+          <M1>1</M1>
+          <M2>2</M2>
+          <M3>3</M3>
+          <M4>4</M4>
+        </macros>
+        <replace>0</replace>
+        <description>Huber DMC9200 servo controller</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>70</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>userCalc</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>20</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/calc/userCalcs10.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+        </macros>
+        <replace>0</replace>
+        <description>user calcs 1-10</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/calc/userStringCalcs10.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+        </macros>
+        <replace>0</replace>
+        <description>user stringCalcs 1-10</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/calc/userTransforms10.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+        </macros>
+        <replace>0</replace>
+        <description>user transforms 1-10</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/std/userStringSeqs10.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+        </macros>
+        <replace>0</replace>
+        <description>user string seqs 1-10</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/calc/userArrayCalcs10.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+        </macros>
+        <replace>0</replace>
+        <description>user arrayCalcs 1-10</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/calc/userAve10.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+        </macros>
+        <replace>0</replace>
+        <description>user average 1-10</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/calc/userCalcOuts10.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+        </macros>
+        <replace>0</replace>
+        <description>user calcOuts</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/std/timer.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <N>1</N>
+        </macros>
+        <replace>0</replace>
+        <description>timer</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/busy/xxBusyRecord.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <R>mybusy</R>
+        </macros>
+        <replace>0</replace>
+        <description>busyRecord</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/calc/Transforms10.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <N>1</N>
+        </macros>
+        <replace>0</replace>
+        <description>IDisableTransforms</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>140</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>Encoders</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>60</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/ip/HeidEncoder.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <A>6</A>
+        </macros>
+        <replace>0</replace>
+        <description>Heidenhain AWE1024</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/ip/HeidEncoder.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <A>7</A>
+        </macros>
+        <replace>0</replace>
+        <description>Heidenhain AWE1024</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/ip/HeidND261.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+        </macros>
+        <replace>0</replace>
+        <description>Heidenhain ND261</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/ip/HeidIK320_group.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <card>card0</card>
+          <group>5</group>
+        </macros>
+        <replace>0</replace>
+        <description>Heidenhain IK320</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>210</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>Autocoll</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>100</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/ip/Elcomat.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+        </macros>
+        <replace>0</replace>
+        <description>Autocollimator</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>140</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>4 Circle</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>0</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/orient.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <O>_0</O>
+          <PM>prj:</PM>
+          <mTTH>SM1</mTTH>
+          <mTH>SM2</mTH>
+          <mCHI>SM3</mCHI>
+          <mPHI>SM4</mPHI>
+        </macros>
+        <replace>0</replace>
+        <description>orientation matrix</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/optics/orient9.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <PM>prj:</PM>
+          <mTTH>SM1</mTTH>
+          <mTH>SM2</mTH>
+          <mCHI>SM3</mCHI>
+          <mPHI>SM4</mPHI>
+        </macros>
+        <replace>0</replace>
+        <description>orient9</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>280</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>MCA</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>0</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/mca/mca_small.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <M>aim_adc1</M>
+        </macros>
+        <replace>0</replace>
+        <description>Canberra AIM Multichannel Analyzer</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/mca/mca.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <M>aim_adc1</M>
+        </macros>
+        <replace>0</replace>
+        <description>MCA with ROI's</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/mca/xxIcbAdc.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <ADC>adc1</ADC>
+        </macros>
+        <replace>0</replace>
+        <description>ADC 1</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/mca/xxIcbTCA.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <TCA>tca1</TCA>
+        </macros>
+        <replace>0</replace>
+        <description>TCA 1</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/mca/xxIcbHVPS.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <HVPS>hvps1</HVPS>
+        </macros>
+        <replace>0</replace>
+        <description>HVPS 1</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/mca/xxIcbAmp.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <AMP>amp1</AMP>
+        </macros>
+        <replace>0</replace>
+        <description>AMP 1</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/mca/dsp9660Gain.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <DSP>dsp1</DSP>
+        </macros>
+        <replace>0</replace>
+        <description>DSP 1</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>210</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>4-step</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>80</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/std/4step.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+        </macros>
+        <replace>0</replace>
+        <description>4-step measurement</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>140</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <scripts />
+    <height>29</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Action Button</name>
+    <pv_name>prj:allstop.VAL</pv_name>
+    <background_color>
+      <color red="253" green="0" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="251" green="243" blue="74" />
+    </foreground_color>
+    <widget_type>Action Button</widget_type>
+    <enabled>true</enabled>
+    <text>All Stop</text>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>100</width>
+    <push_action_index>0</push_action_index>
+    <border_style>0</border_style>
+    <image />
+    <rules />
+    <toggle_button>false</toggle_button>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>108</y>
+    <actions hook="false">
+      <action type="WRITE_PV">
+        <pv_name>prj:allstop.VAL</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <description />
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>350</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>Array</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>60</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/calc/interp.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+        </macros>
+        <replace>0</replace>
+        <description>interp</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/calc/arrayTest.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+        </macros>
+        <replace>0</replace>
+        <description>arrayTest</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/std/pvHistory.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <N>1</N>
+        </macros>
+        <replace>0</replace>
+        <description>pvHistory 1</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>140</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>DAC</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>60</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/std/VME_DAC8.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <D>1</D>
+        </macros>
+        <replace>0</replace>
+        <description>vme DAC 1 Chans 1-8</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/std/VME_DAC8.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <D>2</D>
+        </macros>
+        <replace>0</replace>
+        <description>vme DAC 2 Chans 1-8</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/dac128V/topDAC8.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <D>3</D>
+        </macros>
+        <replace>0</replace>
+        <description>dac128V 1 Chans 1-8</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/dac128V/topDAC8.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <D>1</D>
+        </macros>
+        <replace>0</replace>
+        <description>vme DAC 1 Chans 1-8</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>70</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>multiMCA</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>20</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/mca/3element.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:med:</P>
+        </macros>
+        <replace>0</replace>
+        <description>3 element detector</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/mca/mca_small.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:med:</P>
+          <M>mca0</M>
+        </macros>
+        <replace>0</replace>
+        <description>summed spectrum (mca0)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/mca/mcaSum3.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:med:</P>
+        </macros>
+        <replace>0</replace>
+        <description>sum control</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>/synApps/mca/xxIcbHVPS.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:med:</P>
+          <HVPS>hvps1</HVPS>
+        </macros>
+        <replace>0</replace>
+        <description>HV power supply</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>210</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>Struck</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>40</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>Struck8.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:mcs:</P>
+        </macros>
+        <replace>0</replace>
+        <description>8-Channel MCS Control</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>Struck32.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:mcs:</P>
+        </macros>
+        <replace>0</replace>
+        <description>32-Channel MCS Control</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>210</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="40" green="147" blue="21" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>Digital</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>120</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>IpUnidig_top.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <R>Unidig1</R>
+        </macros>
+        <replace>0</replace>
+        <description>IpUnidig I/O</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>Acromag_8in.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <A>1</A>
+          <CH0>0</CH0>
+          <CH1>1</CH1>
+          <CH2>2</CH2>
+          <CH3>3</CH3>
+          <CH4>4</CH4>
+          <CH5>5</CH5>
+          <CH6>6</CH6>
+          <CH7>7</CH7>
+        </macros>
+        <replace>0</replace>
+        <description>Acromag 8 in</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>Acromag_8out.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <A>1</A>
+          <CH0>0</CH0>
+          <CH1>1</CH1>
+          <CH2>2</CH2>
+          <CH3>3</CH3>
+          <CH4>4</CH4>
+          <CH5>5</CH5>
+          <CH6>6</CH6>
+          <CH7>7</CH7>
+        </macros>
+        <replace>0</replace>
+        <description>Acromag 8 out</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>Acromag_16out.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <A>1</A>
+        </macros>
+        <replace>0</replace>
+        <description>Acromag 16 out</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>Acromag_16in.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <A>1</A>
+        </macros>
+        <replace>0</replace>
+        <description>Acromag 16 in</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>210</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="40" green="147" blue="21" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>quadEM</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>100</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>quadEM.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <EM>EM1</EM>
+        </macros>
+        <replace>0</replace>
+        <description>Quad Electrometer Ch.1</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>quadEM.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <EM>EM2</EM>
+        </macros>
+        <replace>0</replace>
+        <description>Quad Electrometer Ch.2</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>quadEM.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <EM>EM3</EM>
+        </macros>
+        <replace>0</replace>
+        <description>Quad Electrometer Ch.3</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>quadEM.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <EM>EM4</EM>
+        </macros>
+        <replace>0</replace>
+        <description>Quad Electrometer Ch.4</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>quadEM_med.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:quadEM:</P>
+          <P_FFT>prj:quadEM_FFT:</P_FFT>
+        </macros>
+        <replace>0</replace>
+        <description>Quad Electrometer MCAs</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>pid_control.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <PID>quadEMVertical</PID>
+          <TITLE>Vertical_Feedback</TITLE>
+        </macros>
+        <replace>0</replace>
+        <description>Vertical feedback</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>pid_control.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <PID>quadEMHorizontal</PID>
+          <TITLE>Horizontal_Feedback</TITLE>
+        </macros>
+        <replace>0</replace>
+        <description>Horizontal feedback</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>280</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>serial</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>120</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>asynOctet.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <R>asyn_1</R>
+        </macros>
+        <replace>0</replace>
+        <description>asyn record serial1</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>asynOctet.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <R>asyn_2</R>
+        </macros>
+        <replace>0</replace>
+        <description>asyn record serial2</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>asynOctet.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <R>asyn_3</R>
+        </macros>
+        <replace>0</replace>
+        <description>asyn record serial3</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>asynOctet.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <R>asyn_4</R>
+        </macros>
+        <replace>0</replace>
+        <description>asyn record serial4</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>asynOctet.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <R>asyn_5</R>
+        </macros>
+        <replace>0</replace>
+        <description>asyn record serial5</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>asynOctet.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <R>asyn_6</R>
+        </macros>
+        <replace>0</replace>
+        <description>asyn record serial6</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>asynOctet.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <R>asyn_7</R>
+        </macros>
+        <replace>0</replace>
+        <description>asyn record serial7</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>asynOctet.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <R>asyn_8</R>
+        </macros>
+        <replace>0</replace>
+        <description>asyn record serial8</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>280</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>beamFind</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>140</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>beamFinder.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:bf1:</P>
+          <PM>prj:</PM>
+          <m_sX>SM1</m_sX>
+          <m_sY>SM2</m_sY>
+          <m_zpX>SM3</m_zpX>
+          <m_zpY>SM4</m_zpY>
+          <m_zpZ>SM5</m_zpZ>
+        </macros>
+        <replace>0</replace>
+        <description>beamFinder</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>210</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>CF</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>120</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>CoarseFineMotor.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:cf1:</P>
+          <M>MOT</M>
+          <PM>prj:</PM>
+          <CM>SM1</CM>
+          <FM>SM2</FM>
+        </macros>
+        <replace>0</replace>
+        <description>CoarseFine</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>0</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>XIA shutter</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>140</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>XIA_shutter.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <S>shutter1</S>
+        </macros>
+        <replace>0</replace>
+        <description>XIA shutter 1</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>XIA_shutterTry.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <S>shutter2</S>
+        </macros>
+        <replace>0</replace>
+        <description>XIA shutter 2</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>70</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>Io</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>140</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>Io.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:Io:</P>
+          <S>prj:scaler1</S>
+          <MONO>prj:BraggEAO</MONO>
+        </macros>
+        <replace>0</replace>
+        <description>Io</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>0</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>Slits</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>20</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>2slit.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <SLIT>Slit1H</SLIT>
+          <mXp>m5</mXp>
+          <mXn>m6</mXn>
+        </macros>
+        <replace>0</replace>
+        <description>Slit 1 (H)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>2slit.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <SLIT>Slit1V</SLIT>
+          <mXp>m3</mXp>
+          <mXn>m4</mXn>
+        </macros>
+        <replace>0</replace>
+        <description>Slit 1 (V)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>4slitGraphic.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <SLIT>Slit_1</SLIT>
+          <H>Slit1H</H>
+          <mXp>m3</mXp>
+          <mXn>m4</mXn>
+          <V>Slit1V</V>
+          <mYp>m5</mYp>
+          <mYn>m6</mYn>
+        </macros>
+        <replace>0</replace>
+        <description>Slit 1 Graphic</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>motor4x.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <M1>m3</M1>
+          <M2>m4</M2>
+          <M3>m5</M3>
+          <M4>m6</M4>
+        </macros>
+        <replace>0</replace>
+        <description>Slit Motors</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>2slit_soft.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <SLIT>Slit2H</SLIT>
+          <mXp>m15</mXp>
+          <mXn>m16</mXn>
+        </macros>
+        <replace>0</replace>
+        <description>Slit 2 (H) (soft)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>2slit_soft.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <SLIT>Slit2V</SLIT>
+          <mXp>m13</mXp>
+          <mXn>m14</mXn>
+        </macros>
+        <replace>0</replace>
+        <description>Slit 2 (V) (soft)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>4slitGraphic_soft.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <SLIT>Slit_2</SLIT>
+          <H>Slit2H</H>
+          <mXp>m15</mXp>
+          <mXn>m16</mXn>
+          <V>Slit2V</V>
+          <mYp>m13</mYp>
+          <mYn>m14</mYn>
+        </macros>
+        <replace>0</replace>
+        <description>Slit 2 Graphic (soft)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>xia_slit.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <HSC>hsc1:</HSC>
+        </macros>
+        <replace>0</replace>
+        <description>XIA slit 1 (H)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>xia_slit.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <HSC>hsc2:</HSC>
+        </macros>
+        <replace>0</replace>
+        <description>XIA slit 1 (V)</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>70</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>Love</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>80</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>LoveList4.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q1>Love1</Q1>
+          <Q2>Love2</Q2>
+          <Q3>Love3</Q3>
+          <Q4>Love4</Q4>
+        </macros>
+        <replace>0</replace>
+        <description>Love controllers</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>280</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>ASRPmt</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>140</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>ASRPmirrorTable.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <TBL>mt1</TBL>
+          <VERT>prj:m7</VERT>
+          <PITCH>prj:m8</PITCH>
+        </macros>
+        <replace>0</replace>
+        <description>ASRP mirror table</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>280</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>ramp_tweak</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>140</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>ramp_tweak.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q>LaserDelay</Q>
+        </macros>
+        <replace>0</replace>
+        <description>ramp/tweak LaserDelay</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>ramp_tweak.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q>rt1</Q>
+        </macros>
+        <replace>0</replace>
+        <description>ramp/tweak rt1</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>140</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>Preamps</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>120</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>SR570_tiny.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <A>A1</A>
+        </macros>
+        <replace>0</replace>
+        <description>SRS 570 Current Preamplifier #A1</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>SR570_tiny.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <A>A2</A>
+        </macros>
+        <replace>0</replace>
+        <description>SRS 570 Current Preamplifier #A2</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>SR570_tiny.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <A>A3</A>
+        </macros>
+        <replace>0</replace>
+        <description>SRS 570 Current Preamplifier #A3</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>SR570_tiny.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <A>A4</A>
+        </macros>
+        <replace>0</replace>
+        <description>SRS 570 Current Preamplifier #A4</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>SR570_tiny.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <A>A5</A>
+        </macros>
+        <replace>0</replace>
+        <description>SRS 570 Current Preamplifier #A5</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>femto.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <H>fem01:</H>
+          <F>seq01:</F>
+          <AC>prj:Unidig1Bo9</AC>
+        </macros>
+        <replace>0</replace>
+        <description>Femto Current Preamplifier</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>70</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>TempCtrl</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>80</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>LakeShore.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q>TC1</Q>
+        </macros>
+        <replace>0</replace>
+        <description>LakeShore Temp. Controller</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>KeithleyDMM.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+        </macros>
+        <replace>0</replace>
+        <description>Keithley DMM (thermistors)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>Eurotherm.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+        </macros>
+        <replace>0</replace>
+        <description>Eurotherm</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>Eurotherm2k.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <TC>1</TC>
+        </macros>
+        <replace>0</replace>
+        <description>Eurotherm 2k</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>210</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>ML Mono</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>20</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>ml_monoGraphic.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <mY1>m1</mY1>
+          <mZ1>m2</mZ1>
+          <mY2>m9</mY2>
+          <mZ2>m8</mZ2>
+          <mT1>m7</mT1>
+          <mT2>m10</mT2>
+          <mB>m11</mB>
+        </macros>
+        <replace>0</replace>
+        <description>ml_monoGraphic</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>ml_monoSeqCtl_tiny.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+        </macros>
+        <replace>0</replace>
+        <description>ml_monoSeq (tiny)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>ml_monoSeqCtl.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+        </macros>
+        <replace>0</replace>
+        <description>ml_monoSeq</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>ml_monoSeqCtl_All.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+        </macros>
+        <replace>0</replace>
+        <description>ml_monoSeq (All)</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>scanParms.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q>ml_monoE</Q>
+          <PV>ml_monoE</PV>
+        </macros>
+        <replace>0</replace>
+        <description>Energy-scan parameters</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>scanParms.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q>ml_monoTheta</Q>
+          <PV>ml_monoTheta</PV>
+        </macros>
+        <replace>0</replace>
+        <description>Theta-scan parameters</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>scanParms.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q>ml_monoLambda</Q>
+          <PV>ml_monoLambda</PV>
+        </macros>
+        <replace>0</replace>
+        <description>Wavelength-scan parameters</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>350</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>fb_epid</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>0</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>fb_epid.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:epid1</P>
+        </macros>
+        <replace>0</replace>
+        <description>fb_epid</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>fb_epid_sim.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:epid1</P>
+          <C>sim</C>
+        </macros>
+        <replace>0</replace>
+        <description>simulator</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>350</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>FuncGen</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>40</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>FuncGen.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <Q>fgen</Q>
+        </macros>
+        <replace>0</replace>
+        <description>funcGen</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>350</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>false</actions_from_pv>
+    <scripts />
+    <height>20</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Menu Button</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="51" green="153" blue="0" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>70</width>
+    <border_style>6</border_style>
+    <label>ADC</label>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>80</y>
+    <actions hook="false">
+      <action type="OPEN_DISPLAY">
+        <path>Ip330Scan.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <R>IP330_</R>
+        </macros>
+        <replace>0</replace>
+        <description>ADC 1</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>mca_small.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <M>mip330_1</M>
+        </macros>
+        <replace>0</replace>
+        <description>ADC 1 sweep</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>mca_small.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <M>mip330_2</M>
+        </macros>
+        <replace>0</replace>
+        <description>ADC 2 sweep</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>mca_small.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <M>mip330_3</M>
+        </macros>
+        <replace>0</replace>
+        <description>ADC 3 sweep</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>mca_small.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <M>mip330_4</M>
+        </macros>
+        <replace>0</replace>
+        <description>ADC 4 sweep</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>pid_control.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <PID>pid_slow</PID>
+          <TITLE>Slow_Feedback</TITLE>
+        </macros>
+        <replace>0</replace>
+        <description>Slow feedback</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>pid_control.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <PID>ip330PIDFast</PID>
+          <TITLE>Fast_Feedback</TITLE>
+        </macros>
+        <replace>0</replace>
+        <description>Fast feedback</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>async_pid_control.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>prj:</P>
+          <PID>async_pid_slow</PID>
+          <TITLE>Slow_Feedback</TITLE>
+        </macros>
+        <replace>0</replace>
+        <description>Async Slow feedback</description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>70</x>
+  </widget>
+</display>
