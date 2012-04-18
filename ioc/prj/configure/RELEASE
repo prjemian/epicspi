@@ -19,7 +19,7 @@
 ##############################################################################
 
 # Define the path to the synApps support directory and uncomment.
-SUPPORT=/usr/local/epics/ioc/synApps_5_5/support
+SUPPORT=/usr/local/epics/synAppsSVN/support
 
 # Specify the standard synApps configuration.
 include $(SUPPORT)/configure/RELEASE

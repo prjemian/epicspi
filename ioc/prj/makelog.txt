@@ -79,3 +79,148 @@ perl /usr/local/epics/base-3.14.12.1/bin/linux-x86/convertRelease.pl -a linux-x8
 make[2]: Leaving directory `/home/prjemian/epics/ioc/prj/iocBoot/iocLinux'
 make[1]: Leaving directory `/home/prjemian/epics/ioc/prj/iocBoot'
 Sun Sep  4 08:38:47 CDT 2011
+#-----------------------------------------
+Wed Apr 11 16:56:23 CDT 2012
+#begin CMD: make rebuild
+make -C ./configure clean 
+make[1]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/configure'
+rm -rf O.linux-x86_64 O.Common
+make[1]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/configure'
+make -C ./prjApp clean 
+make[1]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/prjApp'
+make -C ./src clean 
+make[2]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/prjApp/src'
+rm -rf O.linux-x86_64 O.Common
+make[2]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/prjApp/src'
+make -C ./Db clean 
+make[2]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/prjApp/Db'
+rm -rf O.linux-x86_64 O.Common
+make[2]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/prjApp/Db'
+make[1]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/prjApp'
+make -C ./iocBoot clean 
+make[1]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/iocBoot'
+make -C ./iocCygwin clean 
+make[2]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/iocBoot/iocCygwin'
+make[2]: Nothing to be done for `clean'.
+make[2]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/iocBoot/iocCygwin'
+make -C ./iocLinux clean 
+make[2]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/iocBoot/iocLinux'
+rm -f cdCommands envPaths dllPath.bat
+make[2]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/iocBoot/iocLinux'
+make[1]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/iocBoot'
+make -C ./configure install 
+make[1]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/configure'
+perl /usr/local/epics/base-3.14.12.2/bin/linux-x86_64/makeMakefile.pl O.linux-x86_64 ../..
+mkdir O.Common
+make -C O.linux-x86_64 -f ../Makefile TOP=../.. T_A=linux-x86_64 install
+make[2]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/configure/O.linux-x86_64'
+perl /usr/local/epics/base-3.14.12.2/bin/linux-x86_64/convertRelease.pl checkRelease
+make[2]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/configure/O.linux-x86_64'
+make[1]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/configure'
+make -C ./prjApp install 
+make[1]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/prjApp'
+make -C ./src install 
+make[2]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/prjApp/src'
+perl /usr/local/epics/base-3.14.12.2/bin/linux-x86_64/makeMakefile.pl O.linux-x86_64 ../../..
+mkdir O.Common
+make -C O.linux-x86_64 -f ../Makefile TOP=../../.. T_A=linux-x86_64 install
+make[3]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/prjApp/src/O.linux-x86_64'
+perl /usr/local/epics/base-3.14.12.2/bin/linux-x86_64/makeIncludeDbd.pl prjCommonInclude.dbd iocprjLinuxInclude.dbd
+echo "../O.Common/iocprjLinuxInclude.dbd : ../Makefile" >> iocprjLinux.dbd.d
+Expanding dbd
+Can't open include file "pluginSupport.dbd"
+Error at or before ""pluginSupport.dbd"" in path ".."  file "prjCommonInclude.dbd" line 73
+ in file "../O.Common/iocprjLinuxInclude.dbd" line 1
+dbExpand: Input errors, no output generated
+make[3]: *** [../O.Common/iocprjLinux.dbd] Error 1
+make[3]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/prjApp/src/O.linux-x86_64'
+make[2]: *** [install.linux-x86_64] Error 2
+make[2]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/prjApp/src'
+make[1]: *** [src.install] Error 2
+make[1]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/prjApp'
+make: *** [prjApp.install] Error 2
+#done CMD: make rebuild
+Wed Apr 11 16:56:25 CDT 2012
+#-----------------------------------------
+Wed Apr 11 17:03:20 CDT 2012
+#begin CMD: make rebuild
+make -C ./configure clean 
+make[1]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/configure'
+rm -rf O.linux-x86_64 O.Common
+make[1]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/configure'
+make -C ./prjApp clean 
+make[1]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/prjApp'
+make -C ./src clean 
+make[2]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/prjApp/src'
+rm -rf O.linux-x86_64 O.Common
+make[2]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/prjApp/src'
+make -C ./Db clean 
+make[2]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/prjApp/Db'
+rm -rf O.linux-x86_64 O.Common
+make[2]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/prjApp/Db'
+make[1]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/prjApp'
+make -C ./iocBoot clean 
+make[1]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/iocBoot'
+make -C ./iocCygwin clean 
+make[2]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/iocBoot/iocCygwin'
+make[2]: Nothing to be done for `clean'.
+make[2]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/iocBoot/iocCygwin'
+make -C ./iocLinux clean 
+make[2]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/iocBoot/iocLinux'
+rm -f cdCommands envPaths dllPath.bat
+make[2]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/iocBoot/iocLinux'
+make[1]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/iocBoot'
+make -C ./configure install 
+make[1]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/configure'
+perl /usr/local/epics/base-3.14.12.2/bin/linux-x86_64/makeMakefile.pl O.linux-x86_64 ../..
+mkdir O.Common
+make -C O.linux-x86_64 -f ../Makefile TOP=../.. T_A=linux-x86_64 install
+make[2]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/configure/O.linux-x86_64'
+perl /usr/local/epics/base-3.14.12.2/bin/linux-x86_64/convertRelease.pl checkRelease
+make[2]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/configure/O.linux-x86_64'
+make[1]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/configure'
+make -C ./prjApp install 
+make[1]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/prjApp'
+make -C ./src install 
+make[2]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/prjApp/src'
+perl /usr/local/epics/base-3.14.12.2/bin/linux-x86_64/makeMakefile.pl O.linux-x86_64 ../../..
+mkdir O.Common
+make -C O.linux-x86_64 -f ../Makefile TOP=../../.. T_A=linux-x86_64 install
+make[3]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/prjApp/src/O.linux-x86_64'
+perl /usr/local/epics/base-3.14.12.2/bin/linux-x86_64/makeIncludeDbd.pl prjCommonInclude.dbd iocprjLinuxInclude.dbd
+echo "../O.Common/iocprjLinuxInclude.dbd : ../Makefile" >> iocprjLinux.dbd.d
+Expanding dbd
+Installing created dbd file ../../../dbd/iocprjLinux.dbd
+perl /usr/local/epics/base-3.14.12.2/bin/linux-x86_64/registerRecordDeviceDriver.pl ../O.Common/iocprjLinux.dbd iocprjLinux_registerRecordDeviceDriver /home/prjemian/Apps/epics/ioc/prj > iocprjLinux.tmp
+mv iocprjLinux.tmp iocprjLinux_registerRecordDeviceDriver.cpp
+
+/usr/bin/g++ -c  -D_POSIX_C_SOURCE=199506L -D_POSIX_THREADS -D_XOPEN_SOURCE=500           -D_X86_64_  -DUNIX  -D_BSD_SOURCE -Dlinux  -D_REENTRANT   -O3   -Wall      -m64      -MMD -I. -I../O.Common -I. -I.. -I../../../include/os/Linux -I../../../include   -I/usr/local/epics/base-3.14.12.2/include/os/Linux -I/usr/local/epics/base-3.14.12.2/include -I/usr/local/epics/synAppsSVN/support/areaDetector/include/os/Linux -I/usr/local/epics/synAppsSVN/support/areaDetector/include  -I/usr/local/epics/synAppsSVN/support/asyn/include -I/usr/local/epics/synAppsSVN/support/autosave/include/os/Linux -I/usr/local/epics/synAppsSVN/support/autosave/include  -I/usr/local/epics/synAppsSVN/support/busy/include  -I/usr/local/epics/synAppsSVN/support/calc/include  -I/usr/local/epics/synAppsSVN/support/camac/include -I/usr/local/epics/synAppsSVN/support/iocStats/include/os/Linux -I/usr/local/epics/synAppsSVN/support/iocStats/include     -I/usr/local/epics/synAppsSVN/support/mca/include/os/Linux -I/usr/local/epics/synAppsSVN/support/mca/include  -I/usr/local/epics/synAppsSVN/support/modbus/include  -I/usr/local/epics/synAppsSVN/support/motor/include  -I/usr/local/epics/synAppsSVN/support/optics/include  -I/usr/local/epics/synAppsSVN/support/seq-snapshot-2012-04-10/include  -I/usr/local/epics/synAppsSVN/support/sscan/include  -I/usr/local/epics/synAppsSVN/support/std/include  -I/usr/local/epics/synAppsSVN/support/stream/include  -I/usr/local/epics/synAppsSVN/support/vac/include         iocprjLinux_registerRecordDeviceDriver.cpp 
+
+/usr/bin/gcc -c  -D_POSIX_C_SOURCE=199506L -D_POSIX_THREADS -D_XOPEN_SOURCE=500           -D_X86_64_  -DUNIX  -D_BSD_SOURCE -Dlinux  -D_REENTRANT   -O3 -g   -Wall      -m64      -MMD -I. -I../O.Common -I. -I.. -I../../../include/os/Linux -I../../../include   -I/usr/local/epics/base-3.14.12.2/include/os/Linux -I/usr/local/epics/base-3.14.12.2/include -I/usr/local/epics/synAppsSVN/support/areaDetector/include/os/Linux -I/usr/local/epics/synAppsSVN/support/areaDetector/include  -I/usr/local/epics/synAppsSVN/support/asyn/include -I/usr/local/epics/synAppsSVN/support/autosave/include/os/Linux -I/usr/local/epics/synAppsSVN/support/autosave/include  -I/usr/local/epics/synAppsSVN/support/busy/include  -I/usr/local/epics/synAppsSVN/support/calc/include  -I/usr/local/epics/synAppsSVN/support/camac/include -I/usr/local/epics/synAppsSVN/support/iocStats/include/os/Linux -I/usr/local/epics/synAppsSVN/support/iocStats/include     -I/usr/local/epics/synAppsSVN/support/mca/include/os/Linux -I/usr/local/epics/synAppsSVN/support/mca/include  -I/usr/local/epics/synAppsSVN/support/modbus/include  -I/usr/local/epics/synAppsSVN/support/motor/include  -I/usr/local/epics/synAppsSVN/support/optics/include  -I/usr/local/epics/synAppsSVN/support/seq-snapshot-2012-04-10/include  -I/usr/local/epics/synAppsSVN/support/sscan/include  -I/usr/local/epics/synAppsSVN/support/std/include  -I/usr/local/epics/synAppsSVN/support/stream/include  -I/usr/local/epics/synAppsSVN/support/vac/include         ../prjMain.c 
+/usr/bin/g++ -o prj -Wl,-Bstatic -L/usr/local/epics/base-3.14.12.2/lib/linux-x86_64 -L/usr/local/epics/synAppsSVN/support/areaDetector/lib/linux-x86_64 -L/usr/local/epics/synAppsSVN/support/asyn/lib/linux-x86_64 -L/usr/local/epics/synAppsSVN/support/autosave/lib/linux-x86_64 -L/usr/local/epics/synAppsSVN/support/busy/lib/linux-x86_64 -L/usr/local/epics/synAppsSVN/support/calc/lib/linux-x86_64 -L/usr/local/epics/synAppsSVN/support/ip/lib/linux-x86_64 -L/usr/local/epics/synAppsSVN/support/mca/lib/linux-x86_64 -L/usr/local/epics/synAppsSVN/support/motor/lib/linux-x86_64 -L/usr/local/epics/synAppsSVN/support/optics/lib/linux-x86_64 -L/usr/local/epics/synAppsSVN/support/seq-snapshot-2012-04-10/lib/linux-x86_64 -L/usr/local/epics/synAppsSVN/support/sscan/lib/linux-x86_64 -L/usr/local/epics/synAppsSVN/support/std/lib/linux-x86_64 -L/usr/local/epics/synAppsSVN/support/stream/lib/linux-x86_64 -Wl,-rpath,/usr/local/epics/base-3.14.12.2/lib/linux-x86_64 -Wl,-rpath,/usr/local/epics/synAppsSVN/support/areaDetector/lib/linux-x86_64 -Wl,-rpath,/usr/local/epics/synAppsSVN/support/asyn/lib/linux-x86_64 -Wl,-rpath,/usr/local/epics/synAppsSVN/support/autosave/lib/linux-x86_64 -Wl,-rpath,/usr/local/epics/synAppsSVN/support/busy/lib/linux-x86_64 -Wl,-rpath,/usr/local/epics/synAppsSVN/support/calc/lib/linux-x86_64 -Wl,-rpath,/usr/local/epics/synAppsSVN/support/ip/lib/linux-x86_64 -Wl,-rpath,/usr/local/epics/synAppsSVN/support/mca/lib/linux-x86_64 -Wl,-rpath,/usr/local/epics/synAppsSVN/support/motor/lib/linux-x86_64 -Wl,-rpath,/usr/local/epics/synAppsSVN/support/optics/lib/linux-x86_64 -Wl,-rpath,/usr/local/epics/synAppsSVN/support/seq-snapshot-2012-04-10/lib/linux-x86_64 -Wl,-rpath,/usr/local/epics/synAppsSVN/support/sscan/lib/linux-x86_64 -Wl,-rpath,/usr/local/epics/synAppsSVN/support/std/lib/linux-x86_64 -Wl,-rpath,/usr/local/epics/synAppsSVN/support/stream/lib/linux-x86_64       -m64               iocprjLinux_registerRecordDeviceDriver.o prjMain.o    -lmca -lcalc -lbusy -lsscan -lautosave -loptics -lstd -lip -lAcs -lacsTech80 -lAerotech -lAttocube -lFaulhaber -lIms -lKohzuMotor -lMclennan -lMicos -lMicroMo -lNewFocus -lNewport -lOriel -lPI -lPIJena -lParker -lSmartMotor -lThorLabs -lsoftMotor -lmotorSimSupport -lmotor -lsimDetector -lNDPlugin -lnetCDF -lADBase -lasyn -lstream -lstreamSynApps -lseqDev -lseq -lpv -lrecIoc -lsoftDevIoc -lmiscIoc -lrsrvIoc -ldbtoolsIoc -lasIoc -ldbIoc -lregistryIoc -ldbStaticIoc -lca -lCom -Wl,-Bdynamic  -lpthread   -lreadline -lm -lrt -ldl -lgcc
+Installing created file ../../../bin/linux-x86_64/prj
+make[3]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/prjApp/src/O.linux-x86_64'
+make[2]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/prjApp/src'
+make -C ./Db install 
+make[2]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/prjApp/Db'
+perl /usr/local/epics/base-3.14.12.2/bin/linux-x86_64/makeMakefile.pl O.linux-x86_64 ../../..
+mkdir O.Common
+make -C O.linux-x86_64 -f ../Makefile TOP=../../.. T_A=linux-x86_64 install
+make[3]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/prjApp/Db/O.linux-x86_64'
+make[3]: Nothing to be done for `install'.
+make[3]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/prjApp/Db/O.linux-x86_64'
+make[2]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/prjApp/Db'
+make[1]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/prjApp'
+make -C ./iocBoot install 
+make[1]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/iocBoot'
+make -C ./iocCygwin install 
+make[2]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/iocBoot/iocCygwin'
+make[2]: Nothing to be done for `install'.
+make[2]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/iocBoot/iocCygwin'
+make -C ./iocLinux install 
+make[2]: Entering directory `/home/prjemian/Apps/epics/ioc/prj/iocBoot/iocLinux'
+perl /usr/local/epics/base-3.14.12.2/bin/linux-x86_64/convertRelease.pl -a linux-x86_64 envPaths
+make[2]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/iocBoot/iocLinux'
+make[1]: Leaving directory `/home/prjemian/Apps/epics/ioc/prj/iocBoot'
+#done CMD: make rebuild
+Wed Apr 11 17:03:23 CDT 2012

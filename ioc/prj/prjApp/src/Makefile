@@ -179,37 +179,10 @@ prj_LIBS_WIN32    += $(prj_Common_LIBS)
 # For USB support on Saturn uncomment the following line
 #prj_SYS_LIBS_Linux += usb
 
-# This is needed (and provided) by areaDetector on Linux and WIN32
-prj_LIBS_WIN32        += PvAPI ImageLib
-prj_LIBS_Linux        += PvAPI ImageLib
-
-# This is needed by dxp on cygwin and WIN32
-prj_SYS_LIBS_cygwin32 += DLPORTIO PlxApi setupapi
-prj_LIBS_WIN32        += DLPORTIO PlxApi
-prj_SYS_LIBS_WIN32    += setupapi
 
 # This is needed by saveData and asyn VXI-11 on cygwin
 prj_SYS_LIBS_cygwin32 += rpc
 
-# areaDetector needs these
-prj_SYS_LIBS_solaris   += tiff
-prj_LIBS_solaris   += jpeg sz z
-prj_LIBS_solaris += NeXus hdf5_cpp hdf5
-
-# areaDetector needs (and provides) these
-prj_LIBS_WIN32    += libtiff jpeg libNeXus.dll
-prj_LIBS_cygwin32 += libtiff jpeg libNeXus.dll
-
-
-# To use versions of these libraries supplied with areaDetector use this line
-prj_LIBS_Linux        += NeXus mfhdf df hdf5 mxml
-# To use system versions of these libraries use this line
-#prj_SYS_LIBS_Linux    += NeXus mfhdf df hdf5 mxml
-
-# To use versions of these libraries supplied with areaDetector use this line
-prj_LIBS_Linux        += tiff jpeg z
-# To use system versions of these libraries use this line
-#prj_SYS_LIBS_Linux    += tiff jpeg z
 
 #===========================
 
