@@ -224,7 +224,7 @@
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>525</y>
+    <y>171</y>
     <actions hook="false">
       <action type="OPEN_DISPLAY">
         <path>trs.opi</path>
@@ -359,7 +359,7 @@
     </actions>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <x>-113</x>
+    <x>3</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
     <border_alarm_sensitive>false</border_alarm_sensitive>
