@@ -669,7 +669,7 @@ $(pv_value)</tooltip>
         <description>41-48</description>
       </action>
       <action type="OPEN_DISPLAY">
-        <path>/synApps/motor/softMotors10.opi</path>
+        <path>/synApps/std/softMotors10.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <P>prj:</P>
