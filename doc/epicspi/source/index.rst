@@ -7,13 +7,11 @@
 Installing EPICS on the Raspberry Pi
 ========================================
 
-Here is how I installed the Experimental Physics and Industrial Control System
-software (EPICS) [#]_ on the Raspberry Pi [#]_.
-
 .. sidebar:: What is EPICS?
 
    For those who haven't heard, the EPICS software is an open-source 
-   control system used worldwide for the routine of many particle accelerators 
+   control system used worldwide for the routine operation and control
+   of many particle accelerators 
    such as FermiLab and SLAC, for the oepration of scientific telescopes such 
    as the Gemini and Keck telescopes, X-ray synchrotrons such as the 
    Advanced Photon Source and the Diamond Light Source, neutron diffraction
@@ -21,8 +19,42 @@ software (EPICS) [#]_ on the Raspberry Pi [#]_.
    stuff.  The system is scalable and runs on lots of different hardware,
    now including the **Raspberry Pi!**
 
+.. rubric:: Contents
+
+* :ref:`Raspberry Pi Distribution`
+* :ref:`Preparing for EPICS`
+* :ref:`EPICS Base`
+* :ref:`synApps`
+* :ref:`PyEpics`
+* :ref:`Files`
+
+Here is how I installed the Experimental Physics and Industrial Control System
+software (EPICS) [#]_ on the Raspberry Pi [#]_.
+
+The EPICS software is a client/server system.  
+To keep things simple, we will run both the server and a client
+on the Raspberry Pi.  (Clients on other computers on our
+LAN might be able to interact with our EPICS server as well but
+we will not discuss that now.)
+
+The EPICS **server** we will use is built in several parts:
+
+* *EPICS Base* provides all the development libraries and a 
+  few applications and utilities.
+* *synApps* provides additional capabilities that will be useful 
+  in real projects.  We only use a little of it here, though.
+
+
+There are many, many possible EPICS **clients**.
+Since the RPi already has Python, we'll work with that:
+
+* *PyEpics* is an EPICS binding to the Python language, allowing
+  us to build a simple client and interact with our server.
+
 .. [#] EPICS: http://www.aps.anl.gov/epics
 .. [#] RPi: http://www.raspberrypi.org/
+
+.. _Raspberry Pi Distribution:
 
 Raspberry Pi Distribution
 ========================================
@@ -45,6 +77,8 @@ tmpfs            88M   68K   88M   1% /run/shm
 =============== ====  ==== ===== ==== =======================
 
 .. [#] wheezy-raspbian: http://downloads.raspberrypi.org/images/raspbian/2012-12-16-wheezy-raspbian/2012-12-16-wheezy-raspbian.zip
+
+.. _Preparing for EPICS:
 
 Preparing for EPICS
 ========================================
@@ -70,8 +104,15 @@ By making the *epics* directory in *pi* account,
 we will be able to modify any of our EPICS resources
 without needing to gain higher privileges.
 
+.. _EPICS Base:
+
 EPICS Base
 ========================================
+
+EPICS Base is very easy to build.  The wheezy-raspbian distribution
+already has all the tools necessary to build EPICS Base.
+All that is necessary is to define the host architecture 
+and then build it.
 
 Downloading
 ----------------------------------------
@@ -202,6 +243,8 @@ After EPICS base has been built, we see that it has taken
 
 
 
+.. _synApps:
+
 synApps
 ========================================
 
@@ -289,12 +332,16 @@ Edit ``Makefile`` and remove support for these modules:
 xxx: remove certain configuration
 ------------------------------------------------
 
+The **xxx** module is an example and template EPICS IOC, 
+demonstrating configuration of many synApps modules.
+APS beam line IOCs are built using *xxx* as a template.
+
 In ``xxx-5-6/configure/RELEASE``, place a comment on line 19
 to remove build support for *areaDetector* in *xxx*::
 
     #AREA_DETECTOR=$(SUPPORT)/areaDetector-1-8beta1
 
-Then, in ``xxx-5-6/xxxApps/src/Makefile``, comment out all
+Then, in ``xxx-5-6/xxxApp/src/Makefile``, comment out all
 lines that refer to *areaDetector* components, such as
 *ADsupport*, "NDPlugin*, *simDetector*, and *netCDF*,
 as well as *dxp* support. 
@@ -379,10 +426,13 @@ The ``make rebuild`` step took about 70 minutes.
    started at  Sun Jan 20 22:55:54 CST 2013
    finished at Mon Jan 21 00:07:22 CST 2013
 
-Using PyEpics
+
+.. _PyEpics:
+
+PyEpics
 ==================
 
-It is possible to run the PyEpics support from Matt Newville
+It is possible to run the *PyEpics* support from Matt Newville
 (http://cars.uchicago.edu/software/python/pyepics3/)
 on the Raspberry Pi!
 
@@ -423,7 +473,7 @@ With the *setuptools* installed, it becomes simple to install PyEpics (still as 
 The installation will complain about missing EPICS support libraries (*libca* and *libCom*).
 Now, we can address that (still as root)::
 
-    cd /usr/local/lib/python2.7/dist-packages/epics
+    cd /usr/local/lib/python2.7/dist-packages/pyepics-3.2.1-py2.7.egg
     cp /home/pi/Apps/epics/base-3.14.12.3/lib/linux-arm/libca.so.3.14 ./
     cp /home/pi/Apps/epics/base-3.14.12.3/lib/linux-arm/libCom.so.3.14 ./
     ln -s libca.so.3.14  libca.so
@@ -443,12 +493,12 @@ you wish, we'll use */home/pi*):
 .. code-block:: python
    :linenos:
 
-    #!/usr/bin/env python
-    
-    import epics
-    
-    print epics.__version__
-    print epics.__file__
+   #!/usr/bin/env python
+   
+   import epics
+   
+   print epics.__version__
+   print epics.__file__
 
 Also, remember to make the file executable::
 
@@ -491,6 +541,12 @@ with a simple EPICS database.  Save this into a file called *simple.db*:
    	   field(VAL,  "RPi default message")
    }
 
+.. note:: The file *simple.db* defines two EPICS records: *rpi:trigger* and *rpi:message*.
+   The first record can take the value of 0 or 1, which also have the 
+   string values of "off" and "on", respectively.  The second record
+   is a string.
+
+
 Now, run the EPICS soft IOC support with this database:
 
 .. code-block:: guess
@@ -529,28 +585,28 @@ Put this code in file *test.py*:
 .. code-block:: python
    :linenos:
 
-    #!/usr/bin/env python
-    
-    import epics
-    
-    print epics.caget('rpi:trigger.DESC')
-    print epics.caget('rpi:trigger')
-    print epics.caget('rpi:message.DESC')
-    print epics.caget('rpi:message')
+   #!/usr/bin/env python
+   
+   import epics
+   
+   print epics.caget('rpi:trigger.DESC')
+   print epics.caget('rpi:trigger')
+   print epics.caget('rpi:message.DESC')
+   print epics.caget('rpi:message')
 
-    epics.caput('rpi:message', 'setting trigger')
-    epics.caput('rpi:trigger', 1)
-    print epics.caget('rpi:trigger.DESC')
-    print epics.caget('rpi:trigger')
-    print epics.caget('rpi:message.DESC')
-    print epics.caget('rpi:message')
+   epics.caput('rpi:message', 'setting trigger')
+   epics.caput('rpi:trigger', 1)
+   print epics.caget('rpi:trigger.DESC')
+   print epics.caget('rpi:trigger')
+   print epics.caget('rpi:message.DESC')
+   print epics.caget('rpi:message')
 
-    epics.caput('rpi:message', 'clearing trigger')
-    epics.caput('rpi:trigger', 0)
-    print epics.caget('rpi:trigger.DESC')
-    print epics.caget('rpi:trigger')
-    print epics.caget('rpi:message.DESC')
-    print epics.caget('rpi:message')
+   epics.caput('rpi:message', 'clearing trigger')
+   epics.caput('rpi:trigger', 0)
+   print epics.caget('rpi:trigger.DESC')
+   print epics.caget('rpi:trigger')
+   print epics.caget('rpi:message.DESC')
+   print epics.caget('rpi:message')
 
 Make the file executable and then run it::
 
@@ -577,6 +633,22 @@ Note that new messages have also printed on the terminal running *camonitor*::
    rpi:trigger     2013-01-21 08:20:28.664845 on
    rpi:message     2013-01-21 08:20:28.697210 clearing trigger
    rpi:trigger     2013-01-21 08:20:28.702967 off
+
+
+.. _Files:
+
+Files
+======
+
+These files, described above, are available for direct download:
+
+======================  ========================================================================
+file                    description
+======================  ========================================================================
+:download:`verify.py`   test that PyEpics is installed
+:download:`simple.db`   simple EPICS database to test PyEpics communications with EPICS
+:download:`test.py`     Python code to test PyEpics communications with EPICS
+======================  ========================================================================
 
 
 ..
