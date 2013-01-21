@@ -329,17 +329,23 @@ Edit ``Makefile`` and remove support for these modules:
     * AREA_DETECTOR
     * DXP
 
-xxx: remove certain configuration
+*xxx* module: reconfigure
 ------------------------------------------------
 
 The **xxx** module is an example and template EPICS IOC, 
 demonstrating configuration of many synApps modules.
 APS beam line IOCs are built using *xxx* as a template.
 
-In ``xxx-5-6/configure/RELEASE``, place a comment on line 19
+In ``xxx-5-6/configure/RELEASE``, place a comment on lines 19 and 32
 to remove build support for *areaDetector* in *xxx*::
 
     #AREA_DETECTOR=$(SUPPORT)/areaDetector-1-8beta1
+    
+    #IP=$(SUPPORT)/ip-2-13
+
+In ``xxx-5-6/xxxApp/src/xxxCommonInclude.dbd``, place a comment on line 34::
+
+    #include "ipSupport.dbd"
 
 Then, in ``xxx-5-6/xxxApp/src/Makefile``, comment out all
 lines that refer to *areaDetector* components, such as
@@ -355,10 +361,13 @@ Here are the lines I found::
 	#xxx_LIBS_cygwin32 += ADBase NDPlugin netCDF
         #iocxxxLinux_DBD += ADSupport.dbd  NDFileNetCDF.dbd
         #xxx_LIBS_Linux += ADBase NDPlugin netCDF
+
 	#iocxxxCygwin_DBD += simDetectorSupport.dbd commonDriverSupport.dbd
 	#xxx_LIBS_cygwin32 += simDetector
         #iocxxxLinux_DBD += simDetectorSupport.dbd commonDriverSupport.dbd
         #xxx_LIBS_Linux += simDetector
+
+        #xxx_Common_LIBS += ip
 
 
 
