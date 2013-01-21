@@ -1,7 +1,4 @@
-.. Epics_On_RPi documentation master file, created by
-   sphinx-quickstart on Sat Jan 19 11:54:35 2013.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. $Id$
 
 ========================================
 Installing EPICS on the Raspberry Pi
@@ -59,7 +56,10 @@ Since the RPi already has Python, we'll work with that:
 Raspberry Pi Distribution
 ========================================
 
-Started with 2012-12-16 wheezy-raspbian distribution [#]_ on a 16 GB SD card.
+:hardware: Raspberry Pi, model B, RASPBRRY-MODB-512M [#]_
+:software: 2012-12-16 wheezy-raspbian distribution [#]_
+
+Installed wheezy-raspbian distribution on a 16 GB SD card.
 (It is helpful, but not necessary, to expand the 
 partition to use the full memory of the SD card 
 using ``raspi-config`` before starting X11):
@@ -76,6 +76,7 @@ tmpfs            88M   68K   88M   1% /run/shm
 /dev/mmcblk0p1   56M   17M   40M  30% /boot
 =============== ====  ==== ===== ==== =======================
 
+.. [#] vendor: http://www.newark.com/jsp/search/productdetail.jsp?SKU=43W5302
 .. [#] wheezy-raspbian: http://downloads.raspberrypi.org/images/raspbian/2012-12-16-wheezy-raspbian/2012-12-16-wheezy-raspbian.zip
 
 .. _Preparing for EPICS:
