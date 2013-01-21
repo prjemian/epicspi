@@ -450,10 +450,10 @@ Now, run this and hope for the best::
 
 This shows that PyEpics was installed but it does not test that EPICS is working.
 
-Testing PyEpics
------------------
+Testing PyEpics with an IOC
+----------------------------------
 
-.. note::  We'll need to several things at the same time.
+.. note::  We'll need to use several tools at the same time.
    It is easiest to create several terminal windows.
 
 To test that EPICS communications are working, we need to do some preparations.
@@ -484,7 +484,7 @@ Now, run the EPICS soft IOC support with this database:
 .. code-block:: guess
    :linenos:
    
-   $ softIoc -d simple.db
+   pi@raspberrypi:~$ softIoc -d simple.db
    Starting iocInit
    ############################################################################
    ## EPICS R3.14.12.3 $Date: Mon 2012-12-17 14:11:47 -0600$
@@ -567,20 +567,18 @@ Note that new messages have also printed on the terminal running *camonitor*::
    rpi:trigger     2013-01-21 08:20:28.702967 off
 
 
+..
+	-----------------------
+	
+	Contents:
+	
+	.. toctree::
+	   :maxdepth: 2
 
------------------------
-
-Contents:
-
-.. toctree::
-   :maxdepth: 2
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+	Indices and tables
+	==================
+	
+	* :ref:`genindex`
+	* :ref:`modindex`
+	* :ref:`search`
 
