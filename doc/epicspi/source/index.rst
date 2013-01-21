@@ -245,9 +245,8 @@ These are the changes I made to run on the Raspberry Pi.
 file                    changes
 ======================  =================================================
 configure/CONFIG_SITE   no changes
-configure/RELEASE       ``EPICS_ROOT=/usr/local/epics``
-                        ``SUPPORT=$(EPICS_ROOT)/synApps_5_6/support``
-                        ``EPICS_BASE=$(EPICS_ROOT)/base``
+configure/RELEASE       ``SUPPORT=/usr/local/epics/synApps_5_6/support``
+                        ``EPICS_BASE=/usr/local/epics/base``
 ======================  =================================================
 
 After modifying ``configure/RELEASE``, propagate changes to all 
@@ -273,6 +272,35 @@ Edit ``Makefile`` and remove support for these modules:
     * AREA_DETECTOR
     * DXP
 
+xxx: remove certain configuration
+------------------------------------------------
+
+In ``xxx-5-6/configure/RELEASE``, place a comment on line 19
+to remove build support for *areaDetector* in *xxx*::
+
+    #AREA_DETECTOR=$(SUPPORT)/areaDetector-1-8beta1
+
+Then, in ``xxx-5-6/xxxApps/src/Makefile``, comment out all
+lines that refer to *areaDetector* components, such as
+*ADsupport*, "NDPlugin*, *simDetector*, and *netCDF*,
+as well as *dxp* support. 
+Here are the lines I found::
+
+	#iocxxxWin32_DBD += ADSupport.dbd  NDFileNetCDF.dbd
+	#xxx_LIBS_WIN32 += ADBase NDPlugin netCDF
+	#iocxxxCygwin_DBD += ADSupport.dbd  NDFileNetCDF.dbd
+	#xxx_LIBS_cygwin32 += ADBase NDPlugin netCDF
+	#iocxxxCygwin_DBD += ADSupport.dbd NDFileNetCDF.dbd
+	#xxx_LIBS_cygwin32 += ADBase NDPlugin netCDF
+        #iocxxxLinux_DBD += ADSupport.dbd  NDFileNetCDF.dbd
+        #xxx_LIBS_Linux += ADBase NDPlugin netCDF
+	#iocxxxCygwin_DBD += simDetectorSupport.dbd commonDriverSupport.dbd
+	#xxx_LIBS_cygwin32 += simDetector
+        #iocxxxLinux_DBD += simDetectorSupport.dbd commonDriverSupport.dbd
+        #xxx_LIBS_Linux += simDetector
+
+
+
 Install necessary EPICS Extensions
 ------------------------------------------
 
@@ -285,7 +313,7 @@ synApps requires the *msi* EPICS extension.  First, setup the extensions subdire
     wget http://www.aps.anl.gov/epics/download/extensions/extensionsTop_20120904.tar.gz
     tar xzf extensionsTop_20120904.tar.gz
 
-Now, download *msi*, build, and install it:
+Now, download *msi*, unpack, build, and install it:
 
 .. code-block:: guess
    :linenos:
@@ -329,9 +357,218 @@ Now, build the components of synApps selected in the *Makefile*:
 
    cd ~/Apps/epics/synApps_5_6/support
    make release
-   make
+   make rebuild
 
-(This process will take a while if there are no errors.)
+The ``make rebuild`` step took about 70 minutes.
+
+.. build
+   started at  Sun Jan 20 22:55:54 CST 2013
+   finished at Mon Jan 21 00:07:22 CST 2013
+
+Using PyEpics
+==================
+
+It is possible to run the PyEpics support from Matt Newville
+(http://cars.uchicago.edu/software/python/pyepics3/)
+on the Raspberry Pi!
+
+Preparing Python
+----------------
+
+To simplify installation, we'll use *easy_install* (from *setuptools*).
+
+.. note::  The additions to the Python installation will be done as root.
+    Here's how to become root on the default wheezy-raspbian distribution.
+
+    ::
+    
+        sudo su
+
+First, install the setuptools package from the wheezy repository::
+
+    sudo apt-get install setuptools
+
+Next, we want to know which version of Python will be run::
+
+    # which python
+    /usr/bin/python
+    ls -lAFg /usr/bin/python
+    lrwxrwxrwx 1 root 9 Jun  5  2012 /usr/bin/python -> python2.7*
+
+Python 2.7 will be run.
+
+Also, as long as we're here, the *ipython* shell is helpful.  Let's load it::
+
+    sudo apt-get install ipython
+
+Install PyEpics
+----------------
+
+With the *setuptools* installed, it becomes simple to install PyEpics (still as root)::
+
+    easy_install -U PyEpics
+
+The installation will complain about missing EPICS support libraries (*libca* and *libCom*).
+Now, we can address that (still as root)::
+
+    cd /usr/local/lib/python2.7/site-packages/epics
+    cp /home/pi/Apps/epics/base-3.14.12.3/lib/linux-arm/libca.so.3.14 ./
+    cp /home/pi/Apps/epics/base-3.14.12.3/lib/linux-arm/libCom.so.3.14 ./
+    ln -s libca.so.3.14  libca.so
+    ln -s libCom.so.3.14  libCom.so
+
+Now, exit from *root* back to the *pi* account session::
+
+    exit
+
+Testing PyEpics
+-----------------
+
+First, you might be eager to see that PyEpics will load.  
+Save this code in the file *verify.py* (in whatever folder 
+you wish, we'll use */home/pi*):
+
+.. code-block:: python
+   :linenos:
+
+    #!/usr/bin/env python
+    
+    import epics
+    
+    print epics.__version__
+    print epics.__file__
+
+Also, remember to make the file executable::
+
+    chmod +x verify.py
+
+Now, run this and hope for the best::
+
+    pi@raspberrypi:~$ ./verify.py
+    3.2.1
+    /usr/local/lib/python2.7/dist-packages/epics/__init__.pyc
+
+This shows that PyEpics was installed but it does not test that EPICS is working.
+
+Testing PyEpics
+-----------------
+
+.. note::  We'll need to several things at the same time.
+   It is easiest to create several terminal windows.
+
+To test that EPICS communications are working, we need to do some preparations.
+
+softIoc
+++++++++++
+
+The simplest way to do this is to use the *softIoc* support from EPICS base
+with a simple EPICS database.  Save this into a file called *simple.db*:
+
+.. code-block:: guess
+   :linenos:
+   
+   record(bo, "rpi:trigger")
+   {
+   	   field(DESC, "trigger PV")
+   	   field(ZNAM, "off")
+   	   field(ONAM, "on")
+   }
+   record(stringout, "rpi:message")
+   {
+   	   field(DESC, "message on the RPi")
+   	   field(VAL,  "RPi default message")
+   }
+
+Now, run the EPICS soft IOC support with this database:
+
+.. code-block:: guess
+   :linenos:
+   
+   $ softIoc -d simple.db
+   Starting iocInit
+   ############################################################################
+   ## EPICS R3.14.12.3 $Date: Mon 2012-12-17 14:11:47 -0600$
+   ## EPICS Base built Jan 19 2013
+   ############################################################################
+   iocRun: All initialization complete
+   epics> dbl
+   rpi:trigger
+   rpi:message
+   epics>
+
+camonitor
+++++++++++++++++
+
+In a separate terminal window, watch the soft IOC for any changes
+to EPICS PVs we created above::
+
+    pi@raspberrypi:~$ camonitor rpi:trigger rpi:trigger.DESC rpi:message rpi:message.DESC
+    rpi:trigger 		   <undefined> off UDF INVALID
+    rpi:trigger.DESC		   <undefined> trigger PV UDF INVALID
+    rpi:message 		   <undefined> RPi default message UDF INVALID
+    rpi:message.DESC		   <undefined> message on the RPi UDF INVALID
+
+Python code
+++++++++++++++++
+
+Now, let's communicate with the PVs of the softIoc.
+Put this code in file *test.py*:
+
+.. code-block:: python
+   :linenos:
+
+    #!/usr/bin/env python
+    
+    import epics
+    
+    print epics.caget('rpi:trigger.DESC')
+    print epics.caget('rpi:trigger')
+    print epics.caget('rpi:message.DESC')
+    print epics.caget('rpi:message')
+
+    epics.caput('rpi:message', 'setting trigger')
+    epics.caput('rpi:trigger', 1)
+    print epics.caget('rpi:trigger.DESC')
+    print epics.caget('rpi:trigger')
+    print epics.caget('rpi:message.DESC')
+    print epics.caget('rpi:message')
+
+    epics.caput('rpi:message', 'clearing trigger')
+    epics.caput('rpi:trigger', 0)
+    print epics.caget('rpi:trigger.DESC')
+    print epics.caget('rpi:trigger')
+    print epics.caget('rpi:message.DESC')
+    print epics.caget('rpi:message')
+
+Make the file executable and then run it::
+
+    pi@raspberrypi:~$ chmod +x test.py
+    pi@raspberrypi:~$ ./test.py
+    trigger PV
+    0
+    message on the RPi
+    RPi default message
+    trigger PV
+    1
+    message on the RPi
+    setting trigger
+    trigger PV
+    0
+    message on the RPi
+    clearing trigger
+    pi@raspberrypi:~$
+
+
+Note that new messages have also printed on the terminal running *camonitor*::
+
+   rpi:message     2013-01-21 08:20:28.658746 setting trigger
+   rpi:trigger     2013-01-21 08:20:28.664845 on
+   rpi:message     2013-01-21 08:20:28.697210 clearing trigger
+   rpi:trigger     2013-01-21 08:20:28.702967 off
+
+
+
+-----------------------
 
 Contents:
 
