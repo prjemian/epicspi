@@ -8,14 +8,26 @@ Installing EPICS on the Raspberry Pi
 ========================================
 
 Here is how I installed the Experimental Physics and Industrial Control System
-software (EPICS) [#]_ on the RaspberryPi.
+software (EPICS) [#]_ on the Raspberry Pi [#]_.
+
+.. sidebar:: What is EPICS?
+
+   For those who haven't heard, the EPICS software is an open-source 
+   control system used worldwide for the routine of many particle accelerators 
+   such as FermiLab and SLAC, for the oepration of scientific telescopes such 
+   as the Gemini and Keck telescopes, X-ray synchrotrons such as the 
+   Advanced Photon Source and the Diamond Light Source, neutron diffraction
+   instruments such as the Spallation Neutron Source, and lots of other neat 
+   stuff.  The system is scalable and runs on lots of different hardware,
+   now including the **Raspberry Pi!**
 
 .. [#] EPICS: http://www.aps.anl.gov/epics
+.. [#] RPi: http://www.raspberrypi.org/
 
 Raspberry Pi Distribution
 ========================================
 
-Started with 2012-12-16 wheezy-raspbian distribution on a 16 GB SD card.
+Started with 2012-12-16 wheezy-raspbian distribution [#]_ on a 16 GB SD card.
 (It is helpful, but not necessary, to expand the 
 partition to use the full memory of the SD card 
 using ``raspi-config`` before starting X11):
@@ -31,6 +43,8 @@ tmpfs           5.0M     0  5.0M   0% /run/lock
 tmpfs            88M   68K   88M   1% /run/shm
 /dev/mmcblk0p1   56M   17M   40M  30% /boot
 =============== ====  ==== ===== ==== =======================
+
+.. [#] wheezy-raspbian: http://downloads.raspberrypi.org/images/raspbian/2012-12-16-wheezy-raspbian/2012-12-16-wheezy-raspbian.zip
 
 Preparing for EPICS
 ========================================
@@ -216,15 +230,15 @@ The file should be 149 MB:
 
 ..
 
-   .. note::  This download *should* be 156159012 bytes (149 MB).
-      If, for some reason, your download is much smaller,
-      try these alternatives:
- 
-      * http://www.aps.anl.gov/bcda/synApps/tar/synApps_5.6.tar
-      * http://shony.de/epics/synApps_5.6.tar.gz
- 
-      The synApps documentation also describes a way to check out
-      the latest work from the version control repository trunk.
+..   .. note::  This download *should* be 156159012 bytes (149 MB).
+..     If, for some reason, your download is much smaller,
+..      try these alternatives:
+.. 
+..      * http://www.aps.anl.gov/bcda/synApps/tar/synApps_5.6.tar
+..      * http://shony.de/epics/synApps_5.6.tar.gz
+.. 
+..      The synApps documentation also describes a way to check out
+..      the latest work from the version control repository trunk.
 
 Uncompressed and unconfigured, the synApps_5_6 source folder is ~541 MB.
 
@@ -384,9 +398,11 @@ To simplify installation, we'll use *easy_install* (from *setuptools*).
     
         sudo su
 
-First, install the setuptools package from the wheezy repository::
+First, install the setuptools package from the wheezy repository.
+(Also, as long as we're here, the *ipython* shell is very helpful.)
+Let's load them both::
 
-    sudo apt-get install setuptools
+    sudo apt-get install python-setuptools ipython
 
 Next, we want to know which version of Python will be run::
 
@@ -396,10 +412,6 @@ Next, we want to know which version of Python will be run::
     lrwxrwxrwx 1 root 9 Jun  5  2012 /usr/bin/python -> python2.7*
 
 Python 2.7 will be run.
-
-Also, as long as we're here, the *ipython* shell is helpful.  Let's load it::
-
-    sudo apt-get install ipython
 
 Install PyEpics
 ----------------
@@ -411,7 +423,7 @@ With the *setuptools* installed, it becomes simple to install PyEpics (still as 
 The installation will complain about missing EPICS support libraries (*libca* and *libCom*).
 Now, we can address that (still as root)::
 
-    cd /usr/local/lib/python2.7/site-packages/epics
+    cd /usr/local/lib/python2.7/dist-packages/epics
     cp /home/pi/Apps/epics/base-3.14.12.3/lib/linux-arm/libca.so.3.14 ./
     cp /home/pi/Apps/epics/base-3.14.12.3/lib/linux-arm/libCom.so.3.14 ./
     ln -s libca.so.3.14  libca.so
