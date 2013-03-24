@@ -5,8 +5,8 @@
 #modbus_registerRecordDeviceDriver(pdbbase)
 
             # ---
-#sprintf(KoyoName, "%s", "Koyo_67")
-#sprintf(KoyoHostInfo, "%s", "192.168.0.136:502")
+epicsEnvSet("KoyoName",      "Koyo_67")
+epicsEnvSet("KoyoHostInfo",  "192.168.0.136:502")
 
 # Use the following commands for TCP/IP
 #drvAsynIPPortConfigure(const char *portName, 
