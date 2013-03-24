@@ -67,3 +67,7 @@ include "devSequencer.dbd"
 # stream
 #include "stream.dbd"
 #include "streamSynApps.dbd"
+
+# modbus, including Koyo PLCs
+include "modbus.dbd"
+include "modbusSupport.dbd"

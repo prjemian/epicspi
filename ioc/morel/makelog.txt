@@ -1,5 +1,5 @@
 #-----------
-Sun Mar 24 12:09:03 CDT 2013
+Sun Mar 24 12:18:10 CDT 2013
 #CMD: make rebuild
 make -C ./configure clean 
 make[1]: Entering directory `/home/prjemian/epics/ioc/morel/configure'
@@ -70,4 +70,4 @@ make[2]: Entering directory `/home/prjemian/epics/ioc/morel/iocBoot/iocLinux'
 perl /usr/local/epics/base-3.14.12.1/bin/linux-x86/convertRelease.pl -a linux-x86 envPaths
 make[2]: Leaving directory `/home/prjemian/epics/ioc/morel/iocBoot/iocLinux'
 make[1]: Leaving directory `/home/prjemian/epics/ioc/morel/iocBoot'
-Sun Mar 24 12:09:07 CDT 2013
+Sun Mar 24 12:18:14 CDT 2013

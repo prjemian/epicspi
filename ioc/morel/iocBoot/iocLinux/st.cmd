@@ -45,7 +45,7 @@ dbLoadRecords("$(MOTOR)/db/motorUtil.db", "P=morel:")
 
 
      # talk with a (Koyo) Automation Direct DL06 PLC, address 67
-#< koyo_67.cmd
+< koyo_67.cmd
 
 
 ###############################################################################
@@ -78,3 +78,5 @@ dbcar(0,1)
 
      # motorUtil (allstop & alldone)
 motorUtilInit("morel:")
+
+date
