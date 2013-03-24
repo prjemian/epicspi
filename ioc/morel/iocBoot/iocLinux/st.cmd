@@ -37,13 +37,15 @@ dbLoadTemplate("motor.substitutions")
 dbLoadRecords("$(MOTOR)/db/motorUtil.db", "P=morel:")
 
 
-
-
 ### Scan-support software
 < scanSupport.cmd
 
 ### Stuff for user programming ###
 < userProgramming.cmd
+
+
+     # talk with a (Koyo) Automation Direct DL06 PLC, address 67
+#< koyo_67.cmd
 
 
 ###############################################################################
@@ -54,6 +56,8 @@ iocInit
 ###############################################################################
 ###############################################################################
 
+     # report all known PVs into a file
+dbl > dbl-all.txt
 casr
 
 ### Start up the autosave task and tell it what to do.
@@ -74,6 +78,3 @@ dbcar(0,1)
 
      # motorUtil (allstop & alldone)
 motorUtilInit("morel:")
-
-     # report all known PVs into a file
-dbl > "dbl.txt"
