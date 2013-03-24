@@ -5,7 +5,8 @@
 #modbus_registerRecordDeviceDriver(pdbbase)
 
             # ---
-
+set KoyoName     = "Koyo_67"
+set KoyoHostInfo = "192.168.0.136:502"
 #sprintf(KoyoName, "%s", "Koyo_67")
 #sprintf(KoyoHostInfo, "%s", "192.168.0.136:502")
 

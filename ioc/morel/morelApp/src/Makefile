@@ -33,47 +33,50 @@ PROD_IOC_solaris = morel
 
 # <name>.dbd will be created from <name>Include.dbd
 ifeq ($(OS_CLASS), WIN32)
-DBD  += iocmorelWin32.dbd
+  DBD  += iocmorelWin32.dbd
 else
-ifeq ($(EPICS_HOST_ARCH), cygwin-x86)
-DBD  += iocmorelCygwin.dbd
-else
-ifeq ($(OS_CLASS), vxWorks)
-DBD  += iocmorelVX.dbd
-else
-ifeq ($(OS_CLASS), Linux)
-DBD  += iocmorelLinux.dbd
-else
-ifeq ($(OS_CLASS), solaris)
-DBD  += iocmorel_solaris.dbd
-else
-DBD  += iocmorel.dbd
-endif
-endif
-endif
-endif
+  ifeq ($(EPICS_HOST_ARCH), cygwin-x86)
+    DBD  += iocmorelCygwin.dbd
+  else
+    ifeq ($(OS_CLASS), vxWorks)
+      DBD  += iocmorelVX.dbd
+    else
+      ifeq ($(OS_CLASS), Linux)
+  	DBD  += iocmorelLinux.dbd
+      else
+  	ifeq ($(OS_CLASS), solaris)
+  	  DBD  += iocmorel_solaris.dbd
+  	else
+  	  DBD  += iocmorel.dbd
+  	endif
+      endif
+    endif
+  endif
 endif
 
 # If your host supports libpcap and libnet and you want to build Canberra network
 # support, set LINUX_NET_INSTALLED to YES in <synApps>/configure/CONFIG_SITE.
 iocmorelLinux_DBD += morelCommonInclude.dbd
 ifneq ($(OS_CLASS), Linux)
-iocmorelLinux_DBD += mcaCanberraSupport.dbd
+  iocmorelLinux_DBD += mcaCanberraSupport.dbd
 else
-ifeq ($(LINUX_NET_INSTALLED), YES)
-iocmorelLinux_DBD += mcaCanberraSupport.dbd
-endif
+  ifeq ($(LINUX_NET_INSTALLED), YES)
+  iocmorelLinux_DBD += mcaCanberraSupport.dbd
+  endif
 endif
 # If your host supports parallel port or USB interfaces to Saturn DXP, set
 # LINUX_USB_INSTALLED to YES in <synApps>/configure/CONFIG_SITE.
 ifneq ($(OS_CLASS), Linux)
-iocmorelLinux_DBD += dxpSupport.dbd
+  iocmorelLinux_DBD += dxpSupport.dbd
 else
-ifeq ($(OS_CLASS), Linux)
-ifeq ($(LINUX_USB_INSTALLED), YES)
-iocmorelLinux_DBD += dxpSupport.dbd
-endif
-endif
+  ifeq ($(OS_CLASS), Linux)
+    ifeq ($(LINUX_USB_INSTALLED), YES)
+      iocmorelLinux_DBD += dxpSupport.dbd
+    endif
+    iocmorelLinux_DBD += modbus.dbd
+    iocmorelLinux_DBD += modbusSupport.dbd
+    morel_Linux_LIBS  += modbus
+  endif
 endif
 
 
