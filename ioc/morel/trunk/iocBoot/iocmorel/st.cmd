@@ -166,6 +166,9 @@ dbLoadRecords("$(DEVIOCSTATS)/db/iocAdminSoft.db","IOC=morel")
 #dbLoadRecords("$(OPTICS)/opticsApp/Db/pf4bank.db","P=morel:,H=pf4:,B=A")
 #dbLoadRecords("$(OPTICS)/opticsApp/Db/pf4bank.db","P=morel:,H=pf4:,B=B")
 
+< Koyo1.cmd
+
+
 ###############################################################################
 iocInit
 ###############################################################################

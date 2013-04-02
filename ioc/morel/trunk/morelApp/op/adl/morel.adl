@@ -1682,7 +1682,7 @@ composite {
 	display[0] {
 		label="DL06 Koyo"
 		name="koyo.adl"
-		args="P=morel:Koyo_67:"
+		args="P=morel:Koyo1:"
 	}
 	clr=0
 	bclr=17
