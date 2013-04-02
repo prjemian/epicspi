@@ -1,0 +1,3329 @@
+# save/restore V5.5	Automatically generated - DO NOT MODIFY - 100719-162239
+morel:scan1.ATIME 0
+morel:scan1.COPYTO 0
+morel:scan1.AAWAIT 1
+morel:scan1.FLNK 0
+morel:scan1.NPTS 10
+morel:scan1.ACQT 0
+morel:scan1.ACQM 0
+morel:scan1.PASM 0
+morel:scan1.BSPV 
+morel:scan1.BSCD 1
+morel:scan1.BSWAIT 0
+morel:scan1.ASPV 
+morel:scan1.ASCD 1
+morel:scan1.ASWAIT 0
+morel:scan1.T1PV 
+morel:scan1.T1CD 1
+morel:scan1.T2PV 
+morel:scan1.T2CD 1
+morel:scan1.T3PV 
+morel:scan1.T3CD 1
+morel:scan1.T4PV 
+morel:scan1.T4CD 1
+morel:scan1.P1PV 
+morel:scan1.R1PV 
+morel:scan1.P1SM 0
+morel:scan1.P1SP 0
+morel:scan1.P1EP 0
+morel:scan1.P1AR 0
+morel:scan1.P2PV 
+morel:scan1.R2PV 
+morel:scan1.P2SM 0
+morel:scan1.P2SP 0
+morel:scan1.P2EP 0
+morel:scan1.P2AR 0
+morel:scan1.P3PV 
+morel:scan1.R3PV 
+morel:scan1.P3SM 0
+morel:scan1.P3SP 0
+morel:scan1.P3EP 0
+morel:scan1.P3AR 0
+morel:scan1.P4PV 
+morel:scan1.R4PV 
+morel:scan1.P4SM 0
+morel:scan1.P4SP 0
+morel:scan1.P4EP 0
+morel:scan1.P4AR 0
+morel:scan1.PDLY 0
+morel:scan1.DDLY 0
+morel:scan1.REFD 1
+morel:scan1.AWCT 0
+morel:scan1.A1PV 
+morel:scan1.A1CD 1
+morel:scan1.D01PV 
+morel:scan1.D02PV 
+morel:scan1.D03PV 
+morel:scan1.D04PV 
+morel:scan1.D05PV 
+morel:scan1.D06PV 
+morel:scan1.D07PV 
+morel:scan1.D08PV 
+morel:scan1.D09PV 
+morel:scan1.D10PV 
+morel:scan1.D11PV 
+morel:scan1.D12PV 
+morel:scan1.D13PV 
+morel:scan1.D14PV 
+morel:scan1.D15PV 
+morel:scan1.D16PV 
+morel:scan1.D17PV 
+morel:scan1.D18PV 
+morel:scan1.D19PV 
+morel:scan1.D20PV 
+morel:scan1.D21PV 
+morel:scan1.D22PV 
+morel:scan1.D23PV 
+morel:scan1.D24PV 
+morel:scan1.D25PV 
+morel:scan1.D26PV 
+morel:scan1.D27PV 
+morel:scan1.D28PV 
+morel:scan1.D29PV 
+morel:scan1.D30PV 
+morel:scan1.D31PV 
+morel:scan1.D32PV 
+morel:scan1.D33PV 
+morel:scan1.D34PV 
+morel:scan1.D35PV 
+morel:scan1.D36PV 
+morel:scan1.D37PV 
+morel:scan1.D38PV 
+morel:scan1.D39PV 
+morel:scan1.D40PV 
+morel:scan1.D41PV 
+morel:scan1.D42PV 
+morel:scan1.D43PV 
+morel:scan1.D44PV 
+morel:scan1.D45PV 
+morel:scan1.D46PV 
+morel:scan1.D47PV 
+morel:scan1.D48PV 
+morel:scan1.D49PV 
+morel:scan1.D50PV 
+morel:scan1.D51PV 
+morel:scan1.D52PV 
+morel:scan1.D53PV 
+morel:scan1.D54PV 
+morel:scan1.D55PV 
+morel:scan1.D56PV 
+morel:scan1.D57PV 
+morel:scan1.D58PV 
+morel:scan1.D59PV 
+morel:scan1.D60PV 
+morel:scan1.D61PV 
+morel:scan1.D62PV 
+morel:scan1.D63PV 
+morel:scan1.D64PV 
+morel:scan1.D65PV 
+morel:scan1.D66PV 
+morel:scan1.D67PV 
+morel:scan1.D68PV 
+morel:scan1.D69PV 
+morel:scan1.D70PV 
+morel:scan2.ATIME 0
+morel:scan2.COPYTO 0
+morel:scan2.AAWAIT 1
+morel:scan2.FLNK 0
+morel:scan2.NPTS 10
+morel:scan2.ACQT 0
+morel:scan2.ACQM 0
+morel:scan2.PASM 0
+morel:scan2.BSPV 
+morel:scan2.BSCD 1
+morel:scan2.BSWAIT 0
+morel:scan2.ASPV 
+morel:scan2.ASCD 1
+morel:scan2.ASWAIT 0
+morel:scan2.T1PV morel:scan1.EXSC
+morel:scan2.T1CD 1
+morel:scan2.T2PV 
+morel:scan2.T2CD 1
+morel:scan2.T3PV 
+morel:scan2.T3CD 1
+morel:scan2.T4PV 
+morel:scan2.T4CD 1
+morel:scan2.P1PV 
+morel:scan2.R1PV 
+morel:scan2.P1SM 0
+morel:scan2.P1SP 0
+morel:scan2.P1EP 0
+morel:scan2.P1AR 0
+morel:scan2.P2PV 
+morel:scan2.R2PV 
+morel:scan2.P2SM 0
+morel:scan2.P2SP 0
+morel:scan2.P2EP 0
+morel:scan2.P2AR 0
+morel:scan2.P3PV 
+morel:scan2.R3PV 
+morel:scan2.P3SM 0
+morel:scan2.P3SP 0
+morel:scan2.P3EP 0
+morel:scan2.P3AR 0
+morel:scan2.P4PV 
+morel:scan2.R4PV 
+morel:scan2.P4SM 0
+morel:scan2.P4SP 0
+morel:scan2.P4EP 0
+morel:scan2.P4AR 0
+morel:scan2.PDLY 0
+morel:scan2.DDLY 0
+morel:scan2.REFD 1
+morel:scan2.AWCT 0
+morel:scan2.A1PV 
+morel:scan2.A1CD 1
+morel:scan2.D01PV 
+morel:scan2.D02PV 
+morel:scan2.D03PV 
+morel:scan2.D04PV 
+morel:scan2.D05PV 
+morel:scan2.D06PV 
+morel:scan2.D07PV 
+morel:scan2.D08PV 
+morel:scan2.D09PV 
+morel:scan2.D10PV 
+morel:scan2.D11PV 
+morel:scan2.D12PV 
+morel:scan2.D13PV 
+morel:scan2.D14PV 
+morel:scan2.D15PV 
+morel:scan2.D16PV 
+morel:scan2.D17PV 
+morel:scan2.D18PV 
+morel:scan2.D19PV 
+morel:scan2.D20PV 
+morel:scan2.D21PV 
+morel:scan2.D22PV 
+morel:scan2.D23PV 
+morel:scan2.D24PV 
+morel:scan2.D25PV 
+morel:scan2.D26PV 
+morel:scan2.D27PV 
+morel:scan2.D28PV 
+morel:scan2.D29PV 
+morel:scan2.D30PV 
+morel:scan2.D31PV 
+morel:scan2.D32PV 
+morel:scan2.D33PV 
+morel:scan2.D34PV 
+morel:scan2.D35PV 
+morel:scan2.D36PV 
+morel:scan2.D37PV 
+morel:scan2.D38PV 
+morel:scan2.D39PV 
+morel:scan2.D40PV 
+morel:scan2.D41PV 
+morel:scan2.D42PV 
+morel:scan2.D43PV 
+morel:scan2.D44PV 
+morel:scan2.D45PV 
+morel:scan2.D46PV 
+morel:scan2.D47PV 
+morel:scan2.D48PV 
+morel:scan2.D49PV 
+morel:scan2.D50PV 
+morel:scan2.D51PV 
+morel:scan2.D52PV 
+morel:scan2.D53PV 
+morel:scan2.D54PV 
+morel:scan2.D55PV 
+morel:scan2.D56PV 
+morel:scan2.D57PV 
+morel:scan2.D58PV 
+morel:scan2.D59PV 
+morel:scan2.D60PV 
+morel:scan2.D61PV 
+morel:scan2.D62PV 
+morel:scan2.D63PV 
+morel:scan2.D64PV 
+morel:scan2.D65PV 
+morel:scan2.D66PV 
+morel:scan2.D67PV 
+morel:scan2.D68PV 
+morel:scan2.D69PV 
+morel:scan2.D70PV 
+morel:scan3.ATIME 0
+morel:scan3.COPYTO 0
+morel:scan3.AAWAIT 1
+morel:scan3.FLNK 0
+morel:scan3.NPTS 10
+morel:scan3.ACQT 0
+morel:scan3.ACQM 0
+morel:scan3.PASM 0
+morel:scan3.BSPV 
+morel:scan3.BSCD 1
+morel:scan3.BSWAIT 0
+morel:scan3.ASPV 
+morel:scan3.ASCD 1
+morel:scan3.ASWAIT 0
+morel:scan3.T1PV morel:scan2.EXSC
+morel:scan3.T1CD 1
+morel:scan3.T2PV 
+morel:scan3.T2CD 1
+morel:scan3.T3PV 
+morel:scan3.T3CD 1
+morel:scan3.T4PV 
+morel:scan3.T4CD 1
+morel:scan3.P1PV 
+morel:scan3.R1PV 
+morel:scan3.P1SM 0
+morel:scan3.P1SP 0
+morel:scan3.P1EP 0
+morel:scan3.P1AR 0
+morel:scan3.P2PV 
+morel:scan3.R2PV 
+morel:scan3.P2SM 0
+morel:scan3.P2SP 0
+morel:scan3.P2EP 0
+morel:scan3.P2AR 0
+morel:scan3.P3PV 
+morel:scan3.R3PV 
+morel:scan3.P3SM 0
+morel:scan3.P3SP 0
+morel:scan3.P3EP 0
+morel:scan3.P3AR 0
+morel:scan3.P4PV 
+morel:scan3.R4PV 
+morel:scan3.P4SM 0
+morel:scan3.P4SP 0
+morel:scan3.P4EP 0
+morel:scan3.P4AR 0
+morel:scan3.PDLY 0
+morel:scan3.DDLY 0
+morel:scan3.REFD 1
+morel:scan3.AWCT 0
+morel:scan3.A1PV 
+morel:scan3.A1CD 1
+morel:scan3.D01PV 
+morel:scan3.D02PV 
+morel:scan3.D03PV 
+morel:scan3.D04PV 
+morel:scan3.D05PV 
+morel:scan3.D06PV 
+morel:scan3.D07PV 
+morel:scan3.D08PV 
+morel:scan3.D09PV 
+morel:scan3.D10PV 
+morel:scan3.D11PV 
+morel:scan3.D12PV 
+morel:scan3.D13PV 
+morel:scan3.D14PV 
+morel:scan3.D15PV 
+morel:scan3.D16PV 
+morel:scan3.D17PV 
+morel:scan3.D18PV 
+morel:scan3.D19PV 
+morel:scan3.D20PV 
+morel:scan3.D21PV 
+morel:scan3.D22PV 
+morel:scan3.D23PV 
+morel:scan3.D24PV 
+morel:scan3.D25PV 
+morel:scan3.D26PV 
+morel:scan3.D27PV 
+morel:scan3.D28PV 
+morel:scan3.D29PV 
+morel:scan3.D30PV 
+morel:scan3.D31PV 
+morel:scan3.D32PV 
+morel:scan3.D33PV 
+morel:scan3.D34PV 
+morel:scan3.D35PV 
+morel:scan3.D36PV 
+morel:scan3.D37PV 
+morel:scan3.D38PV 
+morel:scan3.D39PV 
+morel:scan3.D40PV 
+morel:scan3.D41PV 
+morel:scan3.D42PV 
+morel:scan3.D43PV 
+morel:scan3.D44PV 
+morel:scan3.D45PV 
+morel:scan3.D46PV 
+morel:scan3.D47PV 
+morel:scan3.D48PV 
+morel:scan3.D49PV 
+morel:scan3.D50PV 
+morel:scan3.D51PV 
+morel:scan3.D52PV 
+morel:scan3.D53PV 
+morel:scan3.D54PV 
+morel:scan3.D55PV 
+morel:scan3.D56PV 
+morel:scan3.D57PV 
+morel:scan3.D58PV 
+morel:scan3.D59PV 
+morel:scan3.D60PV 
+morel:scan3.D61PV 
+morel:scan3.D62PV 
+morel:scan3.D63PV 
+morel:scan3.D64PV 
+morel:scan3.D65PV 
+morel:scan3.D66PV 
+morel:scan3.D67PV 
+morel:scan3.D68PV 
+morel:scan3.D69PV 
+morel:scan3.D70PV 
+morel:scan4.ATIME 0
+morel:scan4.COPYTO 0
+morel:scan4.AAWAIT 1
+morel:scan4.FLNK 0
+morel:scan4.NPTS 10
+morel:scan4.ACQT 0
+morel:scan4.ACQM 0
+morel:scan4.PASM 0
+morel:scan4.BSPV 
+morel:scan4.BSCD 1
+morel:scan4.BSWAIT 0
+morel:scan4.ASPV 
+morel:scan4.ASCD 1
+morel:scan4.ASWAIT 0
+morel:scan4.T1PV morel:scan3.EXSC
+morel:scan4.T1CD 1
+morel:scan4.T2PV 
+morel:scan4.T2CD 1
+morel:scan4.T3PV 
+morel:scan4.T3CD 1
+morel:scan4.T4PV 
+morel:scan4.T4CD 1
+morel:scan4.P1PV 
+morel:scan4.R1PV 
+morel:scan4.P1SM 0
+morel:scan4.P1SP 0
+morel:scan4.P1EP 0
+morel:scan4.P1AR 0
+morel:scan4.P2PV 
+morel:scan4.R2PV 
+morel:scan4.P2SM 0
+morel:scan4.P2SP 0
+morel:scan4.P2EP 0
+morel:scan4.P2AR 0
+morel:scan4.P3PV 
+morel:scan4.R3PV 
+morel:scan4.P3SM 0
+morel:scan4.P3SP 0
+morel:scan4.P3EP 0
+morel:scan4.P3AR 0
+morel:scan4.P4PV 
+morel:scan4.R4PV 
+morel:scan4.P4SM 0
+morel:scan4.P4SP 0
+morel:scan4.P4EP 0
+morel:scan4.P4AR 0
+morel:scan4.PDLY 0
+morel:scan4.DDLY 0
+morel:scan4.REFD 1
+morel:scan4.AWCT 0
+morel:scan4.A1PV 
+morel:scan4.A1CD 1
+morel:scan4.D01PV 
+morel:scan4.D02PV 
+morel:scan4.D03PV 
+morel:scan4.D04PV 
+morel:scan4.D05PV 
+morel:scan4.D06PV 
+morel:scan4.D07PV 
+morel:scan4.D08PV 
+morel:scan4.D09PV 
+morel:scan4.D10PV 
+morel:scan4.D11PV 
+morel:scan4.D12PV 
+morel:scan4.D13PV 
+morel:scan4.D14PV 
+morel:scan4.D15PV 
+morel:scan4.D16PV 
+morel:scan4.D17PV 
+morel:scan4.D18PV 
+morel:scan4.D19PV 
+morel:scan4.D20PV 
+morel:scan4.D21PV 
+morel:scan4.D22PV 
+morel:scan4.D23PV 
+morel:scan4.D24PV 
+morel:scan4.D25PV 
+morel:scan4.D26PV 
+morel:scan4.D27PV 
+morel:scan4.D28PV 
+morel:scan4.D29PV 
+morel:scan4.D30PV 
+morel:scan4.D31PV 
+morel:scan4.D32PV 
+morel:scan4.D33PV 
+morel:scan4.D34PV 
+morel:scan4.D35PV 
+morel:scan4.D36PV 
+morel:scan4.D37PV 
+morel:scan4.D38PV 
+morel:scan4.D39PV 
+morel:scan4.D40PV 
+morel:scan4.D41PV 
+morel:scan4.D42PV 
+morel:scan4.D43PV 
+morel:scan4.D44PV 
+morel:scan4.D45PV 
+morel:scan4.D46PV 
+morel:scan4.D47PV 
+morel:scan4.D48PV 
+morel:scan4.D49PV 
+morel:scan4.D50PV 
+morel:scan4.D51PV 
+morel:scan4.D52PV 
+morel:scan4.D53PV 
+morel:scan4.D54PV 
+morel:scan4.D55PV 
+morel:scan4.D56PV 
+morel:scan4.D57PV 
+morel:scan4.D58PV 
+morel:scan4.D59PV 
+morel:scan4.D60PV 
+morel:scan4.D61PV 
+morel:scan4.D62PV 
+morel:scan4.D63PV 
+morel:scan4.D64PV 
+morel:scan4.D65PV 
+morel:scan4.D66PV 
+morel:scan4.D67PV 
+morel:scan4.D68PV 
+morel:scan4.D69PV 
+morel:scan4.D70PV 
+morel:scanH.ATIME 0
+morel:scanH.COPYTO 0
+morel:scanH.AAWAIT 1
+morel:scanH.FLNK 0
+morel:scanH.NPTS 10
+morel:scanH.ACQT 1
+morel:scanH.ACQM 0
+morel:scanH.PASM 0
+morel:scanH.BSPV 
+morel:scanH.BSCD 1
+morel:scanH.BSWAIT 0
+morel:scanH.ASPV 
+morel:scanH.ASCD 1
+morel:scanH.ASWAIT 0
+morel:scanH.T1PV 
+morel:scanH.T1CD 1
+morel:scanH.T2PV 
+morel:scanH.T2CD 1
+morel:scanH.T3PV 
+morel:scanH.T3CD 1
+morel:scanH.T4PV 
+morel:scanH.T4CD 1
+morel:scanH.P1PV 
+morel:scanH.R1PV 
+morel:scanH.P1SM 0
+morel:scanH.P1SP 0
+morel:scanH.P1EP 0
+morel:scanH.P1AR 0
+morel:scanH.P2PV 
+morel:scanH.R2PV 
+morel:scanH.P2SM 0
+morel:scanH.P2SP 0
+morel:scanH.P2EP 0
+morel:scanH.P2AR 0
+morel:scanH.P3PV 
+morel:scanH.R3PV 
+morel:scanH.P3SM 0
+morel:scanH.P3SP 0
+morel:scanH.P3EP 0
+morel:scanH.P3AR 0
+morel:scanH.P4PV 
+morel:scanH.R4PV 
+morel:scanH.P4SM 0
+morel:scanH.P4SP 0
+morel:scanH.P4EP 0
+morel:scanH.P4AR 0
+morel:scanH.PDLY 0
+morel:scanH.DDLY 0
+morel:scanH.REFD 1
+morel:scanH.AWCT 0
+morel:scanH.A1PV 
+morel:scanH.A1CD 1
+morel:scanH.D01PV 
+morel:scanH.D02PV 
+morel:scanH.D03PV 
+morel:scanH.D04PV 
+morel:scanH.D05PV 
+morel:scanH.D06PV 
+morel:scanH.D07PV 
+morel:scanH.D08PV 
+morel:scanH.D09PV 
+morel:scanH.D10PV 
+morel:scanH.D11PV 
+morel:scanH.D12PV 
+morel:scanH.D13PV 
+morel:scanH.D14PV 
+morel:scanH.D15PV 
+morel:scanH.D16PV 
+morel:scanH.D17PV 
+morel:scanH.D18PV 
+morel:scanH.D19PV 
+morel:scanH.D20PV 
+morel:scanH.D21PV 
+morel:scanH.D22PV 
+morel:scanH.D23PV 
+morel:scanH.D24PV 
+morel:scanH.D25PV 
+morel:scanH.D26PV 
+morel:scanH.D27PV 
+morel:scanH.D28PV 
+morel:scanH.D29PV 
+morel:scanH.D30PV 
+morel:scanH.D31PV 
+morel:scanH.D32PV 
+morel:scanH.D33PV 
+morel:scanH.D34PV 
+morel:scanH.D35PV 
+morel:scanH.D36PV 
+morel:scanH.D37PV 
+morel:scanH.D38PV 
+morel:scanH.D39PV 
+morel:scanH.D40PV 
+morel:scanH.D41PV 
+morel:scanH.D42PV 
+morel:scanH.D43PV 
+morel:scanH.D44PV 
+morel:scanH.D45PV 
+morel:scanH.D46PV 
+morel:scanH.D47PV 
+morel:scanH.D48PV 
+morel:scanH.D49PV 
+morel:scanH.D50PV 
+morel:scanH.D51PV 
+morel:scanH.D52PV 
+morel:scanH.D53PV 
+morel:scanH.D54PV 
+morel:scanH.D55PV 
+morel:scanH.D56PV 
+morel:scanH.D57PV 
+morel:scanH.D58PV 
+morel:scanH.D59PV 
+morel:scanH.D60PV 
+morel:scanH.D61PV 
+morel:scanH.D62PV 
+morel:scanH.D63PV 
+morel:scanH.D64PV 
+morel:scanH.D65PV 
+morel:scanH.D66PV 
+morel:scanH.D67PV 
+morel:scanH.D68PV 
+morel:scanH.D69PV 
+morel:scanH.D70PV 
+morel:saveData_fileSystem 
+morel:saveData_subDir 
+morel:saveData_baseName 
+morel:saveData_scanNumber 0
+morel:saveData_realTime1D 0
+morel:saveData_maxAllowedRetries 10
+morel:saveData_retryWaitInSecs 15
+morel:userCalc1.DESC userCalc 1
+morel:userCalc1.A 0
+morel:userCalc1.B 0
+morel:userCalc1.C 0
+morel:userCalc1.D 0
+morel:userCalc1.E 0
+morel:userCalc1.F 0
+morel:userCalc1.G 0
+morel:userCalc1.H 0
+morel:userCalc1.I 0
+morel:userCalc1.J 0
+morel:userCalc1.K 0
+morel:userCalc1.L 0
+morel:userCalc1.INAN 
+morel:userCalc1.INBN 
+morel:userCalc1.INCN 
+morel:userCalc1.INDN 
+morel:userCalc1.INEN 
+morel:userCalc1.INFN 
+morel:userCalc1.INGN 
+morel:userCalc1.INHN 
+morel:userCalc1.ININ 
+morel:userCalc1.INJN 
+morel:userCalc1.INKN 
+morel:userCalc1.INLN 
+morel:userCalc1.INAP 1
+morel:userCalc1.INBP 1
+morel:userCalc1.INCP 1
+morel:userCalc1.INDP 1
+morel:userCalc1.INEP 1
+morel:userCalc1.INFP 1
+morel:userCalc1.INGP 1
+morel:userCalc1.INHP 1
+morel:userCalc1.INIP 1
+morel:userCalc1.INJP 1
+morel:userCalc1.INKP 1
+morel:userCalc1.INLP 1
+morel:userCalc1.CALC 0
+morel:userCalc1.OUTN 
+morel:userCalc1.OOPT 0
+morel:userCalc1.DOPT 0
+morel:userCalc1.DOLN 
+morel:userCalc1.SCAN 0
+morel:userCalc1.ODLY 0
+morel:userCalc1.PREC 5
+morel:userCalc1.OEVT 0
+morel:userCalc1.FLNK 0
+morel:userCalc2.DESC userCalc 2
+morel:userCalc2.A 0
+morel:userCalc2.B 0
+morel:userCalc2.C 0
+morel:userCalc2.D 0
+morel:userCalc2.E 0
+morel:userCalc2.F 0
+morel:userCalc2.G 0
+morel:userCalc2.H 0
+morel:userCalc2.I 0
+morel:userCalc2.J 0
+morel:userCalc2.K 0
+morel:userCalc2.L 0
+morel:userCalc2.INAN 
+morel:userCalc2.INBN 
+morel:userCalc2.INCN 
+morel:userCalc2.INDN 
+morel:userCalc2.INEN 
+morel:userCalc2.INFN 
+morel:userCalc2.INGN 
+morel:userCalc2.INHN 
+morel:userCalc2.ININ 
+morel:userCalc2.INJN 
+morel:userCalc2.INKN 
+morel:userCalc2.INLN 
+morel:userCalc2.INAP 1
+morel:userCalc2.INBP 1
+morel:userCalc2.INCP 1
+morel:userCalc2.INDP 1
+morel:userCalc2.INEP 1
+morel:userCalc2.INFP 1
+morel:userCalc2.INGP 1
+morel:userCalc2.INHP 1
+morel:userCalc2.INIP 1
+morel:userCalc2.INJP 1
+morel:userCalc2.INKP 1
+morel:userCalc2.INLP 1
+morel:userCalc2.CALC 0
+morel:userCalc2.OUTN 
+morel:userCalc2.OOPT 0
+morel:userCalc2.DOPT 0
+morel:userCalc2.DOLN 
+morel:userCalc2.SCAN 0
+morel:userCalc2.ODLY 0
+morel:userCalc2.PREC 5
+morel:userCalc2.OEVT 0
+morel:userCalc2.FLNK 0
+morel:userCalc3.DESC userCalc 3
+morel:userCalc3.A 0
+morel:userCalc3.B 0
+morel:userCalc3.C 0
+morel:userCalc3.D 0
+morel:userCalc3.E 0
+morel:userCalc3.F 0
+morel:userCalc3.G 0
+morel:userCalc3.H 0
+morel:userCalc3.I 0
+morel:userCalc3.J 0
+morel:userCalc3.K 0
+morel:userCalc3.L 0
+morel:userCalc3.INAN 
+morel:userCalc3.INBN 
+morel:userCalc3.INCN 
+morel:userCalc3.INDN 
+morel:userCalc3.INEN 
+morel:userCalc3.INFN 
+morel:userCalc3.INGN 
+morel:userCalc3.INHN 
+morel:userCalc3.ININ 
+morel:userCalc3.INJN 
+morel:userCalc3.INKN 
+morel:userCalc3.INLN 
+morel:userCalc3.INAP 1
+morel:userCalc3.INBP 1
+morel:userCalc3.INCP 1
+morel:userCalc3.INDP 1
+morel:userCalc3.INEP 1
+morel:userCalc3.INFP 1
+morel:userCalc3.INGP 1
+morel:userCalc3.INHP 1
+morel:userCalc3.INIP 1
+morel:userCalc3.INJP 1
+morel:userCalc3.INKP 1
+morel:userCalc3.INLP 1
+morel:userCalc3.CALC 0
+morel:userCalc3.OUTN 
+morel:userCalc3.OOPT 0
+morel:userCalc3.DOPT 0
+morel:userCalc3.DOLN 
+morel:userCalc3.SCAN 0
+morel:userCalc3.ODLY 0
+morel:userCalc3.PREC 5
+morel:userCalc3.OEVT 0
+morel:userCalc3.FLNK 0
+morel:userCalc4.DESC userCalc 4
+morel:userCalc4.A 0
+morel:userCalc4.B 0
+morel:userCalc4.C 0
+morel:userCalc4.D 0
+morel:userCalc4.E 0
+morel:userCalc4.F 0
+morel:userCalc4.G 0
+morel:userCalc4.H 0
+morel:userCalc4.I 0
+morel:userCalc4.J 0
+morel:userCalc4.K 0
+morel:userCalc4.L 0
+morel:userCalc4.INAN 
+morel:userCalc4.INBN 
+morel:userCalc4.INCN 
+morel:userCalc4.INDN 
+morel:userCalc4.INEN 
+morel:userCalc4.INFN 
+morel:userCalc4.INGN 
+morel:userCalc4.INHN 
+morel:userCalc4.ININ 
+morel:userCalc4.INJN 
+morel:userCalc4.INKN 
+morel:userCalc4.INLN 
+morel:userCalc4.INAP 1
+morel:userCalc4.INBP 1
+morel:userCalc4.INCP 1
+morel:userCalc4.INDP 1
+morel:userCalc4.INEP 1
+morel:userCalc4.INFP 1
+morel:userCalc4.INGP 1
+morel:userCalc4.INHP 1
+morel:userCalc4.INIP 1
+morel:userCalc4.INJP 1
+morel:userCalc4.INKP 1
+morel:userCalc4.INLP 1
+morel:userCalc4.CALC 0
+morel:userCalc4.OUTN 
+morel:userCalc4.OOPT 0
+morel:userCalc4.DOPT 0
+morel:userCalc4.DOLN 
+morel:userCalc4.SCAN 0
+morel:userCalc4.ODLY 0
+morel:userCalc4.PREC 5
+morel:userCalc4.OEVT 0
+morel:userCalc4.FLNK 0
+morel:userCalc5.DESC userCalc 5
+morel:userCalc5.A 0
+morel:userCalc5.B 0
+morel:userCalc5.C 0
+morel:userCalc5.D 0
+morel:userCalc5.E 0
+morel:userCalc5.F 0
+morel:userCalc5.G 0
+morel:userCalc5.H 0
+morel:userCalc5.I 0
+morel:userCalc5.J 0
+morel:userCalc5.K 0
+morel:userCalc5.L 0
+morel:userCalc5.INAN 
+morel:userCalc5.INBN 
+morel:userCalc5.INCN 
+morel:userCalc5.INDN 
+morel:userCalc5.INEN 
+morel:userCalc5.INFN 
+morel:userCalc5.INGN 
+morel:userCalc5.INHN 
+morel:userCalc5.ININ 
+morel:userCalc5.INJN 
+morel:userCalc5.INKN 
+morel:userCalc5.INLN 
+morel:userCalc5.INAP 1
+morel:userCalc5.INBP 1
+morel:userCalc5.INCP 1
+morel:userCalc5.INDP 1
+morel:userCalc5.INEP 1
+morel:userCalc5.INFP 1
+morel:userCalc5.INGP 1
+morel:userCalc5.INHP 1
+morel:userCalc5.INIP 1
+morel:userCalc5.INJP 1
+morel:userCalc5.INKP 1
+morel:userCalc5.INLP 1
+morel:userCalc5.CALC 0
+morel:userCalc5.OUTN 
+morel:userCalc5.OOPT 0
+morel:userCalc5.DOPT 0
+morel:userCalc5.DOLN 
+morel:userCalc5.SCAN 0
+morel:userCalc5.ODLY 0
+morel:userCalc5.PREC 5
+morel:userCalc5.OEVT 0
+morel:userCalc5.FLNK 0
+morel:userCalc6.DESC userCalc 6
+morel:userCalc6.A 0
+morel:userCalc6.B 0
+morel:userCalc6.C 0
+morel:userCalc6.D 0
+morel:userCalc6.E 0
+morel:userCalc6.F 0
+morel:userCalc6.G 0
+morel:userCalc6.H 0
+morel:userCalc6.I 0
+morel:userCalc6.J 0
+morel:userCalc6.K 0
+morel:userCalc6.L 0
+morel:userCalc6.INAN 
+morel:userCalc6.INBN 
+morel:userCalc6.INCN 
+morel:userCalc6.INDN 
+morel:userCalc6.INEN 
+morel:userCalc6.INFN 
+morel:userCalc6.INGN 
+morel:userCalc6.INHN 
+morel:userCalc6.ININ 
+morel:userCalc6.INJN 
+morel:userCalc6.INKN 
+morel:userCalc6.INLN 
+morel:userCalc6.INAP 1
+morel:userCalc6.INBP 1
+morel:userCalc6.INCP 1
+morel:userCalc6.INDP 1
+morel:userCalc6.INEP 1
+morel:userCalc6.INFP 1
+morel:userCalc6.INGP 1
+morel:userCalc6.INHP 1
+morel:userCalc6.INIP 1
+morel:userCalc6.INJP 1
+morel:userCalc6.INKP 1
+morel:userCalc6.INLP 1
+morel:userCalc6.CALC 0
+morel:userCalc6.OUTN 
+morel:userCalc6.OOPT 0
+morel:userCalc6.DOPT 0
+morel:userCalc6.DOLN 
+morel:userCalc6.SCAN 0
+morel:userCalc6.ODLY 0
+morel:userCalc6.PREC 5
+morel:userCalc6.OEVT 0
+morel:userCalc6.FLNK 0
+morel:userCalc7.DESC userCalc 7
+morel:userCalc7.A 0
+morel:userCalc7.B 0
+morel:userCalc7.C 0
+morel:userCalc7.D 0
+morel:userCalc7.E 0
+morel:userCalc7.F 0
+morel:userCalc7.G 0
+morel:userCalc7.H 0
+morel:userCalc7.I 0
+morel:userCalc7.J 0
+morel:userCalc7.K 0
+morel:userCalc7.L 0
+morel:userCalc7.INAN 
+morel:userCalc7.INBN 
+morel:userCalc7.INCN 
+morel:userCalc7.INDN 
+morel:userCalc7.INEN 
+morel:userCalc7.INFN 
+morel:userCalc7.INGN 
+morel:userCalc7.INHN 
+morel:userCalc7.ININ 
+morel:userCalc7.INJN 
+morel:userCalc7.INKN 
+morel:userCalc7.INLN 
+morel:userCalc7.INAP 1
+morel:userCalc7.INBP 1
+morel:userCalc7.INCP 1
+morel:userCalc7.INDP 1
+morel:userCalc7.INEP 1
+morel:userCalc7.INFP 1
+morel:userCalc7.INGP 1
+morel:userCalc7.INHP 1
+morel:userCalc7.INIP 1
+morel:userCalc7.INJP 1
+morel:userCalc7.INKP 1
+morel:userCalc7.INLP 1
+morel:userCalc7.CALC 0
+morel:userCalc7.OUTN 
+morel:userCalc7.OOPT 0
+morel:userCalc7.DOPT 0
+morel:userCalc7.DOLN 
+morel:userCalc7.SCAN 0
+morel:userCalc7.ODLY 0
+morel:userCalc7.PREC 5
+morel:userCalc7.OEVT 0
+morel:userCalc7.FLNK 0
+morel:userCalc8.DESC userCalc 8
+morel:userCalc8.A 0
+morel:userCalc8.B 0
+morel:userCalc8.C 0
+morel:userCalc8.D 0
+morel:userCalc8.E 0
+morel:userCalc8.F 0
+morel:userCalc8.G 0
+morel:userCalc8.H 0
+morel:userCalc8.I 0
+morel:userCalc8.J 0
+morel:userCalc8.K 0
+morel:userCalc8.L 0
+morel:userCalc8.INAN 
+morel:userCalc8.INBN 
+morel:userCalc8.INCN 
+morel:userCalc8.INDN 
+morel:userCalc8.INEN 
+morel:userCalc8.INFN 
+morel:userCalc8.INGN 
+morel:userCalc8.INHN 
+morel:userCalc8.ININ 
+morel:userCalc8.INJN 
+morel:userCalc8.INKN 
+morel:userCalc8.INLN 
+morel:userCalc8.INAP 1
+morel:userCalc8.INBP 1
+morel:userCalc8.INCP 1
+morel:userCalc8.INDP 1
+morel:userCalc8.INEP 1
+morel:userCalc8.INFP 1
+morel:userCalc8.INGP 1
+morel:userCalc8.INHP 1
+morel:userCalc8.INIP 1
+morel:userCalc8.INJP 1
+morel:userCalc8.INKP 1
+morel:userCalc8.INLP 1
+morel:userCalc8.CALC 0
+morel:userCalc8.OUTN 
+morel:userCalc8.OOPT 0
+morel:userCalc8.DOPT 0
+morel:userCalc8.DOLN 
+morel:userCalc8.SCAN 0
+morel:userCalc8.ODLY 0
+morel:userCalc8.PREC 5
+morel:userCalc8.OEVT 0
+morel:userCalc8.FLNK 0
+morel:userCalc9.DESC userCalc 9
+morel:userCalc9.A 0
+morel:userCalc9.B 0
+morel:userCalc9.C 0
+morel:userCalc9.D 0
+morel:userCalc9.E 0
+morel:userCalc9.F 0
+morel:userCalc9.G 0
+morel:userCalc9.H 0
+morel:userCalc9.I 0
+morel:userCalc9.J 0
+morel:userCalc9.K 0
+morel:userCalc9.L 0
+morel:userCalc9.INAN 
+morel:userCalc9.INBN 
+morel:userCalc9.INCN 
+morel:userCalc9.INDN 
+morel:userCalc9.INEN 
+morel:userCalc9.INFN 
+morel:userCalc9.INGN 
+morel:userCalc9.INHN 
+morel:userCalc9.ININ 
+morel:userCalc9.INJN 
+morel:userCalc9.INKN 
+morel:userCalc9.INLN 
+morel:userCalc9.INAP 1
+morel:userCalc9.INBP 1
+morel:userCalc9.INCP 1
+morel:userCalc9.INDP 1
+morel:userCalc9.INEP 1
+morel:userCalc9.INFP 1
+morel:userCalc9.INGP 1
+morel:userCalc9.INHP 1
+morel:userCalc9.INIP 1
+morel:userCalc9.INJP 1
+morel:userCalc9.INKP 1
+morel:userCalc9.INLP 1
+morel:userCalc9.CALC 0
+morel:userCalc9.OUTN 
+morel:userCalc9.OOPT 0
+morel:userCalc9.DOPT 0
+morel:userCalc9.DOLN 
+morel:userCalc9.SCAN 0
+morel:userCalc9.ODLY 0
+morel:userCalc9.PREC 5
+morel:userCalc9.OEVT 0
+morel:userCalc9.FLNK 0
+morel:userCalc10.DESC userCalc 10
+morel:userCalc10.A 0
+morel:userCalc10.B 0
+morel:userCalc10.C 0
+morel:userCalc10.D 0
+morel:userCalc10.E 0
+morel:userCalc10.F 0
+morel:userCalc10.G 0
+morel:userCalc10.H 0
+morel:userCalc10.I 0
+morel:userCalc10.J 0
+morel:userCalc10.K 0
+morel:userCalc10.L 0
+morel:userCalc10.INAN 
+morel:userCalc10.INBN 
+morel:userCalc10.INCN 
+morel:userCalc10.INDN 
+morel:userCalc10.INEN 
+morel:userCalc10.INFN 
+morel:userCalc10.INGN 
+morel:userCalc10.INHN 
+morel:userCalc10.ININ 
+morel:userCalc10.INJN 
+morel:userCalc10.INKN 
+morel:userCalc10.INLN 
+morel:userCalc10.INAP 1
+morel:userCalc10.INBP 1
+morel:userCalc10.INCP 1
+morel:userCalc10.INDP 1
+morel:userCalc10.INEP 1
+morel:userCalc10.INFP 1
+morel:userCalc10.INGP 1
+morel:userCalc10.INHP 1
+morel:userCalc10.INIP 1
+morel:userCalc10.INJP 1
+morel:userCalc10.INKP 1
+morel:userCalc10.INLP 1
+morel:userCalc10.CALC 0
+morel:userCalc10.OUTN 
+morel:userCalc10.OOPT 0
+morel:userCalc10.DOPT 0
+morel:userCalc10.DOLN 
+morel:userCalc10.SCAN 0
+morel:userCalc10.ODLY 0
+morel:userCalc10.PREC 5
+morel:userCalc10.OEVT 0
+morel:userCalc10.FLNK 0
+morel:userCalcI_Detector.DESC userCalc I_Detector
+morel:userCalcI_Detector.A 0
+morel:userCalcI_Detector.B 0
+morel:userCalcI_Detector.C 0
+morel:userCalcI_Detector.D 0
+morel:userCalcI_Detector.E 0
+morel:userCalcI_Detector.F 0
+morel:userCalcI_Detector.G 0
+morel:userCalcI_Detector.H 0
+morel:userCalcI_Detector.I 0
+morel:userCalcI_Detector.J 0
+morel:userCalcI_Detector.K 0
+morel:userCalcI_Detector.L 0
+morel:userCalcI_Detector.INAN 
+morel:userCalcI_Detector.INBN 
+morel:userCalcI_Detector.INCN 
+morel:userCalcI_Detector.INDN 
+morel:userCalcI_Detector.INEN 
+morel:userCalcI_Detector.INFN 
+morel:userCalcI_Detector.INGN 
+morel:userCalcI_Detector.INHN 
+morel:userCalcI_Detector.ININ 
+morel:userCalcI_Detector.INJN 
+morel:userCalcI_Detector.INKN 
+morel:userCalcI_Detector.INLN 
+morel:userCalcI_Detector.INAP 1
+morel:userCalcI_Detector.INBP 1
+morel:userCalcI_Detector.INCP 1
+morel:userCalcI_Detector.INDP 1
+morel:userCalcI_Detector.INEP 1
+morel:userCalcI_Detector.INFP 1
+morel:userCalcI_Detector.INGP 1
+morel:userCalcI_Detector.INHP 1
+morel:userCalcI_Detector.INIP 1
+morel:userCalcI_Detector.INJP 1
+morel:userCalcI_Detector.INKP 1
+morel:userCalcI_Detector.INLP 1
+morel:userCalcI_Detector.CALC 0
+morel:userCalcI_Detector.OUTN 
+morel:userCalcI_Detector.OOPT 0
+morel:userCalcI_Detector.DOPT 0
+morel:userCalcI_Detector.DOLN 
+morel:userCalcI_Detector.SCAN 0
+morel:userCalcI_Detector.ODLY 0
+morel:userCalcI_Detector.PREC 5
+morel:userCalcI_Detector.OEVT 0
+morel:userCalcI_Detector.FLNK 0
+morel:userTran1.DESC user Transform 1
+morel:userTran1.SCAN 0
+morel:userTran1.PREC 3
+morel:userTran1.COPT 0
+morel:userTran1.A 0
+morel:userTran1.B 0
+morel:userTran1.C 0
+morel:userTran1.D 0
+morel:userTran1.E 0
+morel:userTran1.F 0
+morel:userTran1.G 0
+morel:userTran1.H 0
+morel:userTran1.I 0
+morel:userTran1.J 0
+morel:userTran1.K 0
+morel:userTran1.L 0
+morel:userTran1.M 0
+morel:userTran1.N 0
+morel:userTran1.O 0
+morel:userTran1.P 0
+morel:userTran1.CMTA a
+morel:userTran1.CMTB b
+morel:userTran1.CMTC c
+morel:userTran1.CMTD d
+morel:userTran1.CMTE e
+morel:userTran1.CMTF f
+morel:userTran1.CMTG g
+morel:userTran1.CMTH h
+morel:userTran1.CMTI i
+morel:userTran1.CMTJ j
+morel:userTran1.CMTK k
+morel:userTran1.CMTL l
+morel:userTran1.CMTM m
+morel:userTran1.CMTN n
+morel:userTran1.CMTO o
+morel:userTran1.CMTP p
+morel:userTran1.CLCA 
+morel:userTran1.CLCB 
+morel:userTran1.CLCC 
+morel:userTran1.CLCD 
+morel:userTran1.CLCE 
+morel:userTran1.CLCF 
+morel:userTran1.CLCG 
+morel:userTran1.CLCH 
+morel:userTran1.CLCI 
+morel:userTran1.CLCJ 
+morel:userTran1.CLCK 
+morel:userTran1.CLCL 
+morel:userTran1.CLCM 
+morel:userTran1.CLCN 
+morel:userTran1.CLCO 
+morel:userTran1.CLCP 
+morel:userTran1.INPA 
+morel:userTran1.INPB 
+morel:userTran1.INPC 
+morel:userTran1.INPD 
+morel:userTran1.INPE 
+morel:userTran1.INPF 
+morel:userTran1.INPG 
+morel:userTran1.INPH 
+morel:userTran1.INPI 
+morel:userTran1.INPJ 
+morel:userTran1.INPK 
+morel:userTran1.INPL 
+morel:userTran1.INPM 
+morel:userTran1.INPN 
+morel:userTran1.INPO 
+morel:userTran1.INPP 
+morel:userTran1.OUTA 
+morel:userTran1.OUTB 
+morel:userTran1.OUTC 
+morel:userTran1.OUTD 
+morel:userTran1.OUTE 
+morel:userTran1.OUTF 
+morel:userTran1.OUTG 
+morel:userTran1.OUTH 
+morel:userTran1.OUTI 
+morel:userTran1.OUTJ 
+morel:userTran1.OUTK 
+morel:userTran1.OUTL 
+morel:userTran1.OUTM 
+morel:userTran1.OUTN 
+morel:userTran1.OUTO 
+morel:userTran1.OUTP 
+morel:userTran2.DESC user Transform 2
+morel:userTran2.SCAN 0
+morel:userTran2.PREC 3
+morel:userTran2.COPT 0
+morel:userTran2.A 0
+morel:userTran2.B 0
+morel:userTran2.C 0
+morel:userTran2.D 0
+morel:userTran2.E 0
+morel:userTran2.F 0
+morel:userTran2.G 0
+morel:userTran2.H 0
+morel:userTran2.I 0
+morel:userTran2.J 0
+morel:userTran2.K 0
+morel:userTran2.L 0
+morel:userTran2.M 0
+morel:userTran2.N 0
+morel:userTran2.O 0
+morel:userTran2.P 0
+morel:userTran2.CMTA a
+morel:userTran2.CMTB b
+morel:userTran2.CMTC c
+morel:userTran2.CMTD d
+morel:userTran2.CMTE e
+morel:userTran2.CMTF f
+morel:userTran2.CMTG g
+morel:userTran2.CMTH h
+morel:userTran2.CMTI i
+morel:userTran2.CMTJ j
+morel:userTran2.CMTK k
+morel:userTran2.CMTL l
+morel:userTran2.CMTM m
+morel:userTran2.CMTN n
+morel:userTran2.CMTO o
+morel:userTran2.CMTP p
+morel:userTran2.CLCA 
+morel:userTran2.CLCB 
+morel:userTran2.CLCC 
+morel:userTran2.CLCD 
+morel:userTran2.CLCE 
+morel:userTran2.CLCF 
+morel:userTran2.CLCG 
+morel:userTran2.CLCH 
+morel:userTran2.CLCI 
+morel:userTran2.CLCJ 
+morel:userTran2.CLCK 
+morel:userTran2.CLCL 
+morel:userTran2.CLCM 
+morel:userTran2.CLCN 
+morel:userTran2.CLCO 
+morel:userTran2.CLCP 
+morel:userTran2.INPA 
+morel:userTran2.INPB 
+morel:userTran2.INPC 
+morel:userTran2.INPD 
+morel:userTran2.INPE 
+morel:userTran2.INPF 
+morel:userTran2.INPG 
+morel:userTran2.INPH 
+morel:userTran2.INPI 
+morel:userTran2.INPJ 
+morel:userTran2.INPK 
+morel:userTran2.INPL 
+morel:userTran2.INPM 
+morel:userTran2.INPN 
+morel:userTran2.INPO 
+morel:userTran2.INPP 
+morel:userTran2.OUTA 
+morel:userTran2.OUTB 
+morel:userTran2.OUTC 
+morel:userTran2.OUTD 
+morel:userTran2.OUTE 
+morel:userTran2.OUTF 
+morel:userTran2.OUTG 
+morel:userTran2.OUTH 
+morel:userTran2.OUTI 
+morel:userTran2.OUTJ 
+morel:userTran2.OUTK 
+morel:userTran2.OUTL 
+morel:userTran2.OUTM 
+morel:userTran2.OUTN 
+morel:userTran2.OUTO 
+morel:userTran2.OUTP 
+morel:userTran3.DESC user Transform 3
+morel:userTran3.SCAN 0
+morel:userTran3.PREC 3
+morel:userTran3.COPT 0
+morel:userTran3.A 0
+morel:userTran3.B 0
+morel:userTran3.C 0
+morel:userTran3.D 0
+morel:userTran3.E 0
+morel:userTran3.F 0
+morel:userTran3.G 0
+morel:userTran3.H 0
+morel:userTran3.I 0
+morel:userTran3.J 0
+morel:userTran3.K 0
+morel:userTran3.L 0
+morel:userTran3.M 0
+morel:userTran3.N 0
+morel:userTran3.O 0
+morel:userTran3.P 0
+morel:userTran3.CMTA a
+morel:userTran3.CMTB b
+morel:userTran3.CMTC c
+morel:userTran3.CMTD d
+morel:userTran3.CMTE e
+morel:userTran3.CMTF f
+morel:userTran3.CMTG g
+morel:userTran3.CMTH h
+morel:userTran3.CMTI i
+morel:userTran3.CMTJ j
+morel:userTran3.CMTK k
+morel:userTran3.CMTL l
+morel:userTran3.CMTM m
+morel:userTran3.CMTN n
+morel:userTran3.CMTO o
+morel:userTran3.CMTP p
+morel:userTran3.CLCA 
+morel:userTran3.CLCB 
+morel:userTran3.CLCC 
+morel:userTran3.CLCD 
+morel:userTran3.CLCE 
+morel:userTran3.CLCF 
+morel:userTran3.CLCG 
+morel:userTran3.CLCH 
+morel:userTran3.CLCI 
+morel:userTran3.CLCJ 
+morel:userTran3.CLCK 
+morel:userTran3.CLCL 
+morel:userTran3.CLCM 
+morel:userTran3.CLCN 
+morel:userTran3.CLCO 
+morel:userTran3.CLCP 
+morel:userTran3.INPA 
+morel:userTran3.INPB 
+morel:userTran3.INPC 
+morel:userTran3.INPD 
+morel:userTran3.INPE 
+morel:userTran3.INPF 
+morel:userTran3.INPG 
+morel:userTran3.INPH 
+morel:userTran3.INPI 
+morel:userTran3.INPJ 
+morel:userTran3.INPK 
+morel:userTran3.INPL 
+morel:userTran3.INPM 
+morel:userTran3.INPN 
+morel:userTran3.INPO 
+morel:userTran3.INPP 
+morel:userTran3.OUTA 
+morel:userTran3.OUTB 
+morel:userTran3.OUTC 
+morel:userTran3.OUTD 
+morel:userTran3.OUTE 
+morel:userTran3.OUTF 
+morel:userTran3.OUTG 
+morel:userTran3.OUTH 
+morel:userTran3.OUTI 
+morel:userTran3.OUTJ 
+morel:userTran3.OUTK 
+morel:userTran3.OUTL 
+morel:userTran3.OUTM 
+morel:userTran3.OUTN 
+morel:userTran3.OUTO 
+morel:userTran3.OUTP 
+morel:userTran4.DESC user Transform 4
+morel:userTran4.SCAN 0
+morel:userTran4.PREC 3
+morel:userTran4.COPT 0
+morel:userTran4.A 0
+morel:userTran4.B 0
+morel:userTran4.C 0
+morel:userTran4.D 0
+morel:userTran4.E 0
+morel:userTran4.F 0
+morel:userTran4.G 0
+morel:userTran4.H 0
+morel:userTran4.I 0
+morel:userTran4.J 0
+morel:userTran4.K 0
+morel:userTran4.L 0
+morel:userTran4.M 0
+morel:userTran4.N 0
+morel:userTran4.O 0
+morel:userTran4.P 0
+morel:userTran4.CMTA a
+morel:userTran4.CMTB b
+morel:userTran4.CMTC c
+morel:userTran4.CMTD d
+morel:userTran4.CMTE e
+morel:userTran4.CMTF f
+morel:userTran4.CMTG g
+morel:userTran4.CMTH h
+morel:userTran4.CMTI i
+morel:userTran4.CMTJ j
+morel:userTran4.CMTK k
+morel:userTran4.CMTL l
+morel:userTran4.CMTM m
+morel:userTran4.CMTN n
+morel:userTran4.CMTO o
+morel:userTran4.CMTP p
+morel:userTran4.CLCA 
+morel:userTran4.CLCB 
+morel:userTran4.CLCC 
+morel:userTran4.CLCD 
+morel:userTran4.CLCE 
+morel:userTran4.CLCF 
+morel:userTran4.CLCG 
+morel:userTran4.CLCH 
+morel:userTran4.CLCI 
+morel:userTran4.CLCJ 
+morel:userTran4.CLCK 
+morel:userTran4.CLCL 
+morel:userTran4.CLCM 
+morel:userTran4.CLCN 
+morel:userTran4.CLCO 
+morel:userTran4.CLCP 
+morel:userTran4.INPA 
+morel:userTran4.INPB 
+morel:userTran4.INPC 
+morel:userTran4.INPD 
+morel:userTran4.INPE 
+morel:userTran4.INPF 
+morel:userTran4.INPG 
+morel:userTran4.INPH 
+morel:userTran4.INPI 
+morel:userTran4.INPJ 
+morel:userTran4.INPK 
+morel:userTran4.INPL 
+morel:userTran4.INPM 
+morel:userTran4.INPN 
+morel:userTran4.INPO 
+morel:userTran4.INPP 
+morel:userTran4.OUTA 
+morel:userTran4.OUTB 
+morel:userTran4.OUTC 
+morel:userTran4.OUTD 
+morel:userTran4.OUTE 
+morel:userTran4.OUTF 
+morel:userTran4.OUTG 
+morel:userTran4.OUTH 
+morel:userTran4.OUTI 
+morel:userTran4.OUTJ 
+morel:userTran4.OUTK 
+morel:userTran4.OUTL 
+morel:userTran4.OUTM 
+morel:userTran4.OUTN 
+morel:userTran4.OUTO 
+morel:userTran4.OUTP 
+morel:userTran5.DESC user Transform 5
+morel:userTran5.SCAN 0
+morel:userTran5.PREC 3
+morel:userTran5.COPT 0
+morel:userTran5.A 0
+morel:userTran5.B 0
+morel:userTran5.C 0
+morel:userTran5.D 0
+morel:userTran5.E 0
+morel:userTran5.F 0
+morel:userTran5.G 0
+morel:userTran5.H 0
+morel:userTran5.I 0
+morel:userTran5.J 0
+morel:userTran5.K 0
+morel:userTran5.L 0
+morel:userTran5.M 0
+morel:userTran5.N 0
+morel:userTran5.O 0
+morel:userTran5.P 0
+morel:userTran5.CMTA a
+morel:userTran5.CMTB b
+morel:userTran5.CMTC c
+morel:userTran5.CMTD d
+morel:userTran5.CMTE e
+morel:userTran5.CMTF f
+morel:userTran5.CMTG g
+morel:userTran5.CMTH h
+morel:userTran5.CMTI i
+morel:userTran5.CMTJ j
+morel:userTran5.CMTK k
+morel:userTran5.CMTL l
+morel:userTran5.CMTM m
+morel:userTran5.CMTN n
+morel:userTran5.CMTO o
+morel:userTran5.CMTP p
+morel:userTran5.CLCA 
+morel:userTran5.CLCB 
+morel:userTran5.CLCC 
+morel:userTran5.CLCD 
+morel:userTran5.CLCE 
+morel:userTran5.CLCF 
+morel:userTran5.CLCG 
+morel:userTran5.CLCH 
+morel:userTran5.CLCI 
+morel:userTran5.CLCJ 
+morel:userTran5.CLCK 
+morel:userTran5.CLCL 
+morel:userTran5.CLCM 
+morel:userTran5.CLCN 
+morel:userTran5.CLCO 
+morel:userTran5.CLCP 
+morel:userTran5.INPA 
+morel:userTran5.INPB 
+morel:userTran5.INPC 
+morel:userTran5.INPD 
+morel:userTran5.INPE 
+morel:userTran5.INPF 
+morel:userTran5.INPG 
+morel:userTran5.INPH 
+morel:userTran5.INPI 
+morel:userTran5.INPJ 
+morel:userTran5.INPK 
+morel:userTran5.INPL 
+morel:userTran5.INPM 
+morel:userTran5.INPN 
+morel:userTran5.INPO 
+morel:userTran5.INPP 
+morel:userTran5.OUTA 
+morel:userTran5.OUTB 
+morel:userTran5.OUTC 
+morel:userTran5.OUTD 
+morel:userTran5.OUTE 
+morel:userTran5.OUTF 
+morel:userTran5.OUTG 
+morel:userTran5.OUTH 
+morel:userTran5.OUTI 
+morel:userTran5.OUTJ 
+morel:userTran5.OUTK 
+morel:userTran5.OUTL 
+morel:userTran5.OUTM 
+morel:userTran5.OUTN 
+morel:userTran5.OUTO 
+morel:userTran5.OUTP 
+morel:userTran6.DESC user Transform 6
+morel:userTran6.SCAN 0
+morel:userTran6.PREC 3
+morel:userTran6.COPT 0
+morel:userTran6.A 0
+morel:userTran6.B 0
+morel:userTran6.C 0
+morel:userTran6.D 0
+morel:userTran6.E 0
+morel:userTran6.F 0
+morel:userTran6.G 0
+morel:userTran6.H 0
+morel:userTran6.I 0
+morel:userTran6.J 0
+morel:userTran6.K 0
+morel:userTran6.L 0
+morel:userTran6.M 0
+morel:userTran6.N 0
+morel:userTran6.O 0
+morel:userTran6.P 0
+morel:userTran6.CMTA a
+morel:userTran6.CMTB b
+morel:userTran6.CMTC c
+morel:userTran6.CMTD d
+morel:userTran6.CMTE e
+morel:userTran6.CMTF f
+morel:userTran6.CMTG g
+morel:userTran6.CMTH h
+morel:userTran6.CMTI i
+morel:userTran6.CMTJ j
+morel:userTran6.CMTK k
+morel:userTran6.CMTL l
+morel:userTran6.CMTM m
+morel:userTran6.CMTN n
+morel:userTran6.CMTO o
+morel:userTran6.CMTP p
+morel:userTran6.CLCA 
+morel:userTran6.CLCB 
+morel:userTran6.CLCC 
+morel:userTran6.CLCD 
+morel:userTran6.CLCE 
+morel:userTran6.CLCF 
+morel:userTran6.CLCG 
+morel:userTran6.CLCH 
+morel:userTran6.CLCI 
+morel:userTran6.CLCJ 
+morel:userTran6.CLCK 
+morel:userTran6.CLCL 
+morel:userTran6.CLCM 
+morel:userTran6.CLCN 
+morel:userTran6.CLCO 
+morel:userTran6.CLCP 
+morel:userTran6.INPA 
+morel:userTran6.INPB 
+morel:userTran6.INPC 
+morel:userTran6.INPD 
+morel:userTran6.INPE 
+morel:userTran6.INPF 
+morel:userTran6.INPG 
+morel:userTran6.INPH 
+morel:userTran6.INPI 
+morel:userTran6.INPJ 
+morel:userTran6.INPK 
+morel:userTran6.INPL 
+morel:userTran6.INPM 
+morel:userTran6.INPN 
+morel:userTran6.INPO 
+morel:userTran6.INPP 
+morel:userTran6.OUTA 
+morel:userTran6.OUTB 
+morel:userTran6.OUTC 
+morel:userTran6.OUTD 
+morel:userTran6.OUTE 
+morel:userTran6.OUTF 
+morel:userTran6.OUTG 
+morel:userTran6.OUTH 
+morel:userTran6.OUTI 
+morel:userTran6.OUTJ 
+morel:userTran6.OUTK 
+morel:userTran6.OUTL 
+morel:userTran6.OUTM 
+morel:userTran6.OUTN 
+morel:userTran6.OUTO 
+morel:userTran6.OUTP 
+morel:userTran7.DESC user Transform 7
+morel:userTran7.SCAN 0
+morel:userTran7.PREC 3
+morel:userTran7.COPT 0
+morel:userTran7.A 0
+morel:userTran7.B 0
+morel:userTran7.C 0
+morel:userTran7.D 0
+morel:userTran7.E 0
+morel:userTran7.F 0
+morel:userTran7.G 0
+morel:userTran7.H 0
+morel:userTran7.I 0
+morel:userTran7.J 0
+morel:userTran7.K 0
+morel:userTran7.L 0
+morel:userTran7.M 0
+morel:userTran7.N 0
+morel:userTran7.O 0
+morel:userTran7.P 0
+morel:userTran7.CMTA a
+morel:userTran7.CMTB b
+morel:userTran7.CMTC c
+morel:userTran7.CMTD d
+morel:userTran7.CMTE e
+morel:userTran7.CMTF f
+morel:userTran7.CMTG g
+morel:userTran7.CMTH h
+morel:userTran7.CMTI i
+morel:userTran7.CMTJ j
+morel:userTran7.CMTK k
+morel:userTran7.CMTL l
+morel:userTran7.CMTM m
+morel:userTran7.CMTN n
+morel:userTran7.CMTO o
+morel:userTran7.CMTP p
+morel:userTran7.CLCA 
+morel:userTran7.CLCB 
+morel:userTran7.CLCC 
+morel:userTran7.CLCD 
+morel:userTran7.CLCE 
+morel:userTran7.CLCF 
+morel:userTran7.CLCG 
+morel:userTran7.CLCH 
+morel:userTran7.CLCI 
+morel:userTran7.CLCJ 
+morel:userTran7.CLCK 
+morel:userTran7.CLCL 
+morel:userTran7.CLCM 
+morel:userTran7.CLCN 
+morel:userTran7.CLCO 
+morel:userTran7.CLCP 
+morel:userTran7.INPA 
+morel:userTran7.INPB 
+morel:userTran7.INPC 
+morel:userTran7.INPD 
+morel:userTran7.INPE 
+morel:userTran7.INPF 
+morel:userTran7.INPG 
+morel:userTran7.INPH 
+morel:userTran7.INPI 
+morel:userTran7.INPJ 
+morel:userTran7.INPK 
+morel:userTran7.INPL 
+morel:userTran7.INPM 
+morel:userTran7.INPN 
+morel:userTran7.INPO 
+morel:userTran7.INPP 
+morel:userTran7.OUTA 
+morel:userTran7.OUTB 
+morel:userTran7.OUTC 
+morel:userTran7.OUTD 
+morel:userTran7.OUTE 
+morel:userTran7.OUTF 
+morel:userTran7.OUTG 
+morel:userTran7.OUTH 
+morel:userTran7.OUTI 
+morel:userTran7.OUTJ 
+morel:userTran7.OUTK 
+morel:userTran7.OUTL 
+morel:userTran7.OUTM 
+morel:userTran7.OUTN 
+morel:userTran7.OUTO 
+morel:userTran7.OUTP 
+morel:userTran8.DESC user Transform 8
+morel:userTran8.SCAN 0
+morel:userTran8.PREC 3
+morel:userTran8.COPT 0
+morel:userTran8.A 0
+morel:userTran8.B 0
+morel:userTran8.C 0
+morel:userTran8.D 0
+morel:userTran8.E 0
+morel:userTran8.F 0
+morel:userTran8.G 0
+morel:userTran8.H 0
+morel:userTran8.I 0
+morel:userTran8.J 0
+morel:userTran8.K 0
+morel:userTran8.L 0
+morel:userTran8.M 0
+morel:userTran8.N 0
+morel:userTran8.O 0
+morel:userTran8.P 0
+morel:userTran8.CMTA a
+morel:userTran8.CMTB b
+morel:userTran8.CMTC c
+morel:userTran8.CMTD d
+morel:userTran8.CMTE e
+morel:userTran8.CMTF f
+morel:userTran8.CMTG g
+morel:userTran8.CMTH h
+morel:userTran8.CMTI i
+morel:userTran8.CMTJ j
+morel:userTran8.CMTK k
+morel:userTran8.CMTL l
+morel:userTran8.CMTM m
+morel:userTran8.CMTN n
+morel:userTran8.CMTO o
+morel:userTran8.CMTP p
+morel:userTran8.CLCA 
+morel:userTran8.CLCB 
+morel:userTran8.CLCC 
+morel:userTran8.CLCD 
+morel:userTran8.CLCE 
+morel:userTran8.CLCF 
+morel:userTran8.CLCG 
+morel:userTran8.CLCH 
+morel:userTran8.CLCI 
+morel:userTran8.CLCJ 
+morel:userTran8.CLCK 
+morel:userTran8.CLCL 
+morel:userTran8.CLCM 
+morel:userTran8.CLCN 
+morel:userTran8.CLCO 
+morel:userTran8.CLCP 
+morel:userTran8.INPA 
+morel:userTran8.INPB 
+morel:userTran8.INPC 
+morel:userTran8.INPD 
+morel:userTran8.INPE 
+morel:userTran8.INPF 
+morel:userTran8.INPG 
+morel:userTran8.INPH 
+morel:userTran8.INPI 
+morel:userTran8.INPJ 
+morel:userTran8.INPK 
+morel:userTran8.INPL 
+morel:userTran8.INPM 
+morel:userTran8.INPN 
+morel:userTran8.INPO 
+morel:userTran8.INPP 
+morel:userTran8.OUTA 
+morel:userTran8.OUTB 
+morel:userTran8.OUTC 
+morel:userTran8.OUTD 
+morel:userTran8.OUTE 
+morel:userTran8.OUTF 
+morel:userTran8.OUTG 
+morel:userTran8.OUTH 
+morel:userTran8.OUTI 
+morel:userTran8.OUTJ 
+morel:userTran8.OUTK 
+morel:userTran8.OUTL 
+morel:userTran8.OUTM 
+morel:userTran8.OUTN 
+morel:userTran8.OUTO 
+morel:userTran8.OUTP 
+morel:userTran9.DESC user Transform 9
+morel:userTran9.SCAN 0
+morel:userTran9.PREC 3
+morel:userTran9.COPT 0
+morel:userTran9.A 0
+morel:userTran9.B 0
+morel:userTran9.C 0
+morel:userTran9.D 0
+morel:userTran9.E 0
+morel:userTran9.F 0
+morel:userTran9.G 0
+morel:userTran9.H 0
+morel:userTran9.I 0
+morel:userTran9.J 0
+morel:userTran9.K 0
+morel:userTran9.L 0
+morel:userTran9.M 0
+morel:userTran9.N 0
+morel:userTran9.O 0
+morel:userTran9.P 0
+morel:userTran9.CMTA a
+morel:userTran9.CMTB b
+morel:userTran9.CMTC c
+morel:userTran9.CMTD d
+morel:userTran9.CMTE e
+morel:userTran9.CMTF f
+morel:userTran9.CMTG g
+morel:userTran9.CMTH h
+morel:userTran9.CMTI i
+morel:userTran9.CMTJ j
+morel:userTran9.CMTK k
+morel:userTran9.CMTL l
+morel:userTran9.CMTM m
+morel:userTran9.CMTN n
+morel:userTran9.CMTO o
+morel:userTran9.CMTP p
+morel:userTran9.CLCA 
+morel:userTran9.CLCB 
+morel:userTran9.CLCC 
+morel:userTran9.CLCD 
+morel:userTran9.CLCE 
+morel:userTran9.CLCF 
+morel:userTran9.CLCG 
+morel:userTran9.CLCH 
+morel:userTran9.CLCI 
+morel:userTran9.CLCJ 
+morel:userTran9.CLCK 
+morel:userTran9.CLCL 
+morel:userTran9.CLCM 
+morel:userTran9.CLCN 
+morel:userTran9.CLCO 
+morel:userTran9.CLCP 
+morel:userTran9.INPA 
+morel:userTran9.INPB 
+morel:userTran9.INPC 
+morel:userTran9.INPD 
+morel:userTran9.INPE 
+morel:userTran9.INPF 
+morel:userTran9.INPG 
+morel:userTran9.INPH 
+morel:userTran9.INPI 
+morel:userTran9.INPJ 
+morel:userTran9.INPK 
+morel:userTran9.INPL 
+morel:userTran9.INPM 
+morel:userTran9.INPN 
+morel:userTran9.INPO 
+morel:userTran9.INPP 
+morel:userTran9.OUTA 
+morel:userTran9.OUTB 
+morel:userTran9.OUTC 
+morel:userTran9.OUTD 
+morel:userTran9.OUTE 
+morel:userTran9.OUTF 
+morel:userTran9.OUTG 
+morel:userTran9.OUTH 
+morel:userTran9.OUTI 
+morel:userTran9.OUTJ 
+morel:userTran9.OUTK 
+morel:userTran9.OUTL 
+morel:userTran9.OUTM 
+morel:userTran9.OUTN 
+morel:userTran9.OUTO 
+morel:userTran9.OUTP 
+morel:userTran10.DESC user Transform 10
+morel:userTran10.SCAN 0
+morel:userTran10.PREC 3
+morel:userTran10.COPT 0
+morel:userTran10.A 0
+morel:userTran10.B 0
+morel:userTran10.C 0
+morel:userTran10.D 0
+morel:userTran10.E 0
+morel:userTran10.F 0
+morel:userTran10.G 0
+morel:userTran10.H 0
+morel:userTran10.I 0
+morel:userTran10.J 0
+morel:userTran10.K 0
+morel:userTran10.L 0
+morel:userTran10.M 0
+morel:userTran10.N 0
+morel:userTran10.O 0
+morel:userTran10.P 0
+morel:userTran10.CMTA a
+morel:userTran10.CMTB b
+morel:userTran10.CMTC c
+morel:userTran10.CMTD d
+morel:userTran10.CMTE e
+morel:userTran10.CMTF f
+morel:userTran10.CMTG g
+morel:userTran10.CMTH h
+morel:userTran10.CMTI i
+morel:userTran10.CMTJ j
+morel:userTran10.CMTK k
+morel:userTran10.CMTL l
+morel:userTran10.CMTM m
+morel:userTran10.CMTN n
+morel:userTran10.CMTO o
+morel:userTran10.CMTP p
+morel:userTran10.CLCA 
+morel:userTran10.CLCB 
+morel:userTran10.CLCC 
+morel:userTran10.CLCD 
+morel:userTran10.CLCE 
+morel:userTran10.CLCF 
+morel:userTran10.CLCG 
+morel:userTran10.CLCH 
+morel:userTran10.CLCI 
+morel:userTran10.CLCJ 
+morel:userTran10.CLCK 
+morel:userTran10.CLCL 
+morel:userTran10.CLCM 
+morel:userTran10.CLCN 
+morel:userTran10.CLCO 
+morel:userTran10.CLCP 
+morel:userTran10.INPA 
+morel:userTran10.INPB 
+morel:userTran10.INPC 
+morel:userTran10.INPD 
+morel:userTran10.INPE 
+morel:userTran10.INPF 
+morel:userTran10.INPG 
+morel:userTran10.INPH 
+morel:userTran10.INPI 
+morel:userTran10.INPJ 
+morel:userTran10.INPK 
+morel:userTran10.INPL 
+morel:userTran10.INPM 
+morel:userTran10.INPN 
+morel:userTran10.INPO 
+morel:userTran10.INPP 
+morel:userTran10.OUTA 
+morel:userTran10.OUTB 
+morel:userTran10.OUTC 
+morel:userTran10.OUTD 
+morel:userTran10.OUTE 
+morel:userTran10.OUTF 
+morel:userTran10.OUTG 
+morel:userTran10.OUTH 
+morel:userTran10.OUTI 
+morel:userTran10.OUTJ 
+morel:userTran10.OUTK 
+morel:userTran10.OUTL 
+morel:userTran10.OUTM 
+morel:userTran10.OUTN 
+morel:userTran10.OUTO 
+morel:userTran10.OUTP 
+morel:userStringCalc1.A 0
+morel:userStringCalc1.B 0
+morel:userStringCalc1.C 0
+morel:userStringCalc1.D 0
+morel:userStringCalc1.E 0
+morel:userStringCalc1.F 0
+morel:userStringCalc1.G 0
+morel:userStringCalc1.H 0
+morel:userStringCalc1.I 0
+morel:userStringCalc1.J 0
+morel:userStringCalc1.K 0
+morel:userStringCalc1.L 0
+morel:userStringCalc1.INPA 
+morel:userStringCalc1.INPB 
+morel:userStringCalc1.INPC 
+morel:userStringCalc1.INPD 
+morel:userStringCalc1.INPE 
+morel:userStringCalc1.INPF 
+morel:userStringCalc1.INPG 
+morel:userStringCalc1.INPH 
+morel:userStringCalc1.INPI 
+morel:userStringCalc1.INPJ 
+morel:userStringCalc1.INPK 
+morel:userStringCalc1.INPL 
+morel:userStringCalc1.AA 
+morel:userStringCalc1.BB 
+morel:userStringCalc1.CC 
+morel:userStringCalc1.DD 
+morel:userStringCalc1.EE 
+morel:userStringCalc1.FF 
+morel:userStringCalc1.GG 
+morel:userStringCalc1.HH 
+morel:userStringCalc1.II 
+morel:userStringCalc1.JJ 
+morel:userStringCalc1.KK 
+morel:userStringCalc1.LL 
+morel:userStringCalc1.INAA 
+morel:userStringCalc1.INBB 
+morel:userStringCalc1.INCC 
+morel:userStringCalc1.INDD 
+morel:userStringCalc1.INEE 
+morel:userStringCalc1.INFF 
+morel:userStringCalc1.INGG 
+morel:userStringCalc1.INHH 
+morel:userStringCalc1.INII 
+morel:userStringCalc1.INJJ 
+morel:userStringCalc1.INKK 
+morel:userStringCalc1.INLL 
+morel:userStringCalc1.CALC 
+morel:userStringCalc1.OCAL 
+morel:userStringCalc1.SCAN 0
+morel:userStringCalc1.PREC 5
+morel:userStringCalc1.ODLY 0
+morel:userStringCalc1.OEVT 0
+morel:userStringCalc1.OOPT 0
+morel:userStringCalc1.DOPT 0
+morel:userStringCalc1.IVOA 0
+morel:userStringCalc1.IVOV 0
+morel:userStringCalc1.OUT 
+morel:userStringCalc1.FLNK 0
+morel:userStringCalc1.DESC userStringCalc 1
+morel:userStringCalc1.EVNT 0
+morel:userStringCalc1.EGU 
+morel:userStringCalc1.WAIT 0
+morel:userStringCalc2.A 0
+morel:userStringCalc2.B 0
+morel:userStringCalc2.C 0
+morel:userStringCalc2.D 0
+morel:userStringCalc2.E 0
+morel:userStringCalc2.F 0
+morel:userStringCalc2.G 0
+morel:userStringCalc2.H 0
+morel:userStringCalc2.I 0
+morel:userStringCalc2.J 0
+morel:userStringCalc2.K 0
+morel:userStringCalc2.L 0
+morel:userStringCalc2.INPA 
+morel:userStringCalc2.INPB 
+morel:userStringCalc2.INPC 
+morel:userStringCalc2.INPD 
+morel:userStringCalc2.INPE 
+morel:userStringCalc2.INPF 
+morel:userStringCalc2.INPG 
+morel:userStringCalc2.INPH 
+morel:userStringCalc2.INPI 
+morel:userStringCalc2.INPJ 
+morel:userStringCalc2.INPK 
+morel:userStringCalc2.INPL 
+morel:userStringCalc2.AA 
+morel:userStringCalc2.BB 
+morel:userStringCalc2.CC 
+morel:userStringCalc2.DD 
+morel:userStringCalc2.EE 
+morel:userStringCalc2.FF 
+morel:userStringCalc2.GG 
+morel:userStringCalc2.HH 
+morel:userStringCalc2.II 
+morel:userStringCalc2.JJ 
+morel:userStringCalc2.KK 
+morel:userStringCalc2.LL 
+morel:userStringCalc2.INAA 
+morel:userStringCalc2.INBB 
+morel:userStringCalc2.INCC 
+morel:userStringCalc2.INDD 
+morel:userStringCalc2.INEE 
+morel:userStringCalc2.INFF 
+morel:userStringCalc2.INGG 
+morel:userStringCalc2.INHH 
+morel:userStringCalc2.INII 
+morel:userStringCalc2.INJJ 
+morel:userStringCalc2.INKK 
+morel:userStringCalc2.INLL 
+morel:userStringCalc2.CALC 
+morel:userStringCalc2.OCAL 
+morel:userStringCalc2.SCAN 0
+morel:userStringCalc2.PREC 5
+morel:userStringCalc2.ODLY 0
+morel:userStringCalc2.OEVT 0
+morel:userStringCalc2.OOPT 0
+morel:userStringCalc2.DOPT 0
+morel:userStringCalc2.IVOA 0
+morel:userStringCalc2.IVOV 0
+morel:userStringCalc2.OUT 
+morel:userStringCalc2.FLNK 0
+morel:userStringCalc2.DESC userStringCalc2
+morel:userStringCalc2.EVNT 0
+morel:userStringCalc2.EGU 
+morel:userStringCalc2.WAIT 0
+morel:userStringCalc3.A 0
+morel:userStringCalc3.B 0
+morel:userStringCalc3.C 0
+morel:userStringCalc3.D 0
+morel:userStringCalc3.E 0
+morel:userStringCalc3.F 0
+morel:userStringCalc3.G 0
+morel:userStringCalc3.H 0
+morel:userStringCalc3.I 0
+morel:userStringCalc3.J 0
+morel:userStringCalc3.K 0
+morel:userStringCalc3.L 0
+morel:userStringCalc3.INPA 
+morel:userStringCalc3.INPB 
+morel:userStringCalc3.INPC 
+morel:userStringCalc3.INPD 
+morel:userStringCalc3.INPE 
+morel:userStringCalc3.INPF 
+morel:userStringCalc3.INPG 
+morel:userStringCalc3.INPH 
+morel:userStringCalc3.INPI 
+morel:userStringCalc3.INPJ 
+morel:userStringCalc3.INPK 
+morel:userStringCalc3.INPL 
+morel:userStringCalc3.AA 
+morel:userStringCalc3.BB 
+morel:userStringCalc3.CC 
+morel:userStringCalc3.DD 
+morel:userStringCalc3.EE 
+morel:userStringCalc3.FF 
+morel:userStringCalc3.GG 
+morel:userStringCalc3.HH 
+morel:userStringCalc3.II 
+morel:userStringCalc3.JJ 
+morel:userStringCalc3.KK 
+morel:userStringCalc3.LL 
+morel:userStringCalc3.INAA 
+morel:userStringCalc3.INBB 
+morel:userStringCalc3.INCC 
+morel:userStringCalc3.INDD 
+morel:userStringCalc3.INEE 
+morel:userStringCalc3.INFF 
+morel:userStringCalc3.INGG 
+morel:userStringCalc3.INHH 
+morel:userStringCalc3.INII 
+morel:userStringCalc3.INJJ 
+morel:userStringCalc3.INKK 
+morel:userStringCalc3.INLL 
+morel:userStringCalc3.CALC 
+morel:userStringCalc3.OCAL 
+morel:userStringCalc3.SCAN 0
+morel:userStringCalc3.PREC 5
+morel:userStringCalc3.ODLY 0
+morel:userStringCalc3.OEVT 0
+morel:userStringCalc3.OOPT 0
+morel:userStringCalc3.DOPT 0
+morel:userStringCalc3.IVOA 0
+morel:userStringCalc3.IVOV 0
+morel:userStringCalc3.OUT 
+morel:userStringCalc3.FLNK 0
+morel:userStringCalc3.DESC userStringCalc3
+morel:userStringCalc3.EVNT 0
+morel:userStringCalc3.EGU 
+morel:userStringCalc3.WAIT 0
+morel:userStringCalc4.A 0
+morel:userStringCalc4.B 0
+morel:userStringCalc4.C 0
+morel:userStringCalc4.D 0
+morel:userStringCalc4.E 0
+morel:userStringCalc4.F 0
+morel:userStringCalc4.G 0
+morel:userStringCalc4.H 0
+morel:userStringCalc4.I 0
+morel:userStringCalc4.J 0
+morel:userStringCalc4.K 0
+morel:userStringCalc4.L 0
+morel:userStringCalc4.INPA 
+morel:userStringCalc4.INPB 
+morel:userStringCalc4.INPC 
+morel:userStringCalc4.INPD 
+morel:userStringCalc4.INPE 
+morel:userStringCalc4.INPF 
+morel:userStringCalc4.INPG 
+morel:userStringCalc4.INPH 
+morel:userStringCalc4.INPI 
+morel:userStringCalc4.INPJ 
+morel:userStringCalc4.INPK 
+morel:userStringCalc4.INPL 
+morel:userStringCalc4.AA 
+morel:userStringCalc4.BB 
+morel:userStringCalc4.CC 
+morel:userStringCalc4.DD 
+morel:userStringCalc4.EE 
+morel:userStringCalc4.FF 
+morel:userStringCalc4.GG 
+morel:userStringCalc4.HH 
+morel:userStringCalc4.II 
+morel:userStringCalc4.JJ 
+morel:userStringCalc4.KK 
+morel:userStringCalc4.LL 
+morel:userStringCalc4.INAA 
+morel:userStringCalc4.INBB 
+morel:userStringCalc4.INCC 
+morel:userStringCalc4.INDD 
+morel:userStringCalc4.INEE 
+morel:userStringCalc4.INFF 
+morel:userStringCalc4.INGG 
+morel:userStringCalc4.INHH 
+morel:userStringCalc4.INII 
+morel:userStringCalc4.INJJ 
+morel:userStringCalc4.INKK 
+morel:userStringCalc4.INLL 
+morel:userStringCalc4.CALC 
+morel:userStringCalc4.OCAL 
+morel:userStringCalc4.SCAN 0
+morel:userStringCalc4.PREC 5
+morel:userStringCalc4.ODLY 0
+morel:userStringCalc4.OEVT 0
+morel:userStringCalc4.OOPT 0
+morel:userStringCalc4.DOPT 0
+morel:userStringCalc4.IVOA 0
+morel:userStringCalc4.IVOV 0
+morel:userStringCalc4.OUT 
+morel:userStringCalc4.FLNK 0
+morel:userStringCalc4.DESC userStringCalc4
+morel:userStringCalc4.EVNT 0
+morel:userStringCalc4.EGU 
+morel:userStringCalc4.WAIT 0
+morel:userStringCalc5.A 0
+morel:userStringCalc5.B 0
+morel:userStringCalc5.C 0
+morel:userStringCalc5.D 0
+morel:userStringCalc5.E 0
+morel:userStringCalc5.F 0
+morel:userStringCalc5.G 0
+morel:userStringCalc5.H 0
+morel:userStringCalc5.I 0
+morel:userStringCalc5.J 0
+morel:userStringCalc5.K 0
+morel:userStringCalc5.L 0
+morel:userStringCalc5.INPA 
+morel:userStringCalc5.INPB 
+morel:userStringCalc5.INPC 
+morel:userStringCalc5.INPD 
+morel:userStringCalc5.INPE 
+morel:userStringCalc5.INPF 
+morel:userStringCalc5.INPG 
+morel:userStringCalc5.INPH 
+morel:userStringCalc5.INPI 
+morel:userStringCalc5.INPJ 
+morel:userStringCalc5.INPK 
+morel:userStringCalc5.INPL 
+morel:userStringCalc5.AA 
+morel:userStringCalc5.BB 
+morel:userStringCalc5.CC 
+morel:userStringCalc5.DD 
+morel:userStringCalc5.EE 
+morel:userStringCalc5.FF 
+morel:userStringCalc5.GG 
+morel:userStringCalc5.HH 
+morel:userStringCalc5.II 
+morel:userStringCalc5.JJ 
+morel:userStringCalc5.KK 
+morel:userStringCalc5.LL 
+morel:userStringCalc5.INAA 
+morel:userStringCalc5.INBB 
+morel:userStringCalc5.INCC 
+morel:userStringCalc5.INDD 
+morel:userStringCalc5.INEE 
+morel:userStringCalc5.INFF 
+morel:userStringCalc5.INGG 
+morel:userStringCalc5.INHH 
+morel:userStringCalc5.INII 
+morel:userStringCalc5.INJJ 
+morel:userStringCalc5.INKK 
+morel:userStringCalc5.INLL 
+morel:userStringCalc5.CALC 
+morel:userStringCalc5.OCAL 
+morel:userStringCalc5.SCAN 0
+morel:userStringCalc5.PREC 5
+morel:userStringCalc5.ODLY 0
+morel:userStringCalc5.OEVT 0
+morel:userStringCalc5.OOPT 0
+morel:userStringCalc5.DOPT 0
+morel:userStringCalc5.IVOA 0
+morel:userStringCalc5.IVOV 0
+morel:userStringCalc5.OUT 
+morel:userStringCalc5.FLNK 0
+morel:userStringCalc5.DESC userStringCalc5
+morel:userStringCalc5.EVNT 0
+morel:userStringCalc5.EGU 
+morel:userStringCalc5.WAIT 0
+morel:userStringCalc6.A 0
+morel:userStringCalc6.B 0
+morel:userStringCalc6.C 0
+morel:userStringCalc6.D 0
+morel:userStringCalc6.E 0
+morel:userStringCalc6.F 0
+morel:userStringCalc6.G 0
+morel:userStringCalc6.H 0
+morel:userStringCalc6.I 0
+morel:userStringCalc6.J 0
+morel:userStringCalc6.K 0
+morel:userStringCalc6.L 0
+morel:userStringCalc6.INPA 
+morel:userStringCalc6.INPB 
+morel:userStringCalc6.INPC 
+morel:userStringCalc6.INPD 
+morel:userStringCalc6.INPE 
+morel:userStringCalc6.INPF 
+morel:userStringCalc6.INPG 
+morel:userStringCalc6.INPH 
+morel:userStringCalc6.INPI 
+morel:userStringCalc6.INPJ 
+morel:userStringCalc6.INPK 
+morel:userStringCalc6.INPL 
+morel:userStringCalc6.AA 
+morel:userStringCalc6.BB 
+morel:userStringCalc6.CC 
+morel:userStringCalc6.DD 
+morel:userStringCalc6.EE 
+morel:userStringCalc6.FF 
+morel:userStringCalc6.GG 
+morel:userStringCalc6.HH 
+morel:userStringCalc6.II 
+morel:userStringCalc6.JJ 
+morel:userStringCalc6.KK 
+morel:userStringCalc6.LL 
+morel:userStringCalc6.INAA 
+morel:userStringCalc6.INBB 
+morel:userStringCalc6.INCC 
+morel:userStringCalc6.INDD 
+morel:userStringCalc6.INEE 
+morel:userStringCalc6.INFF 
+morel:userStringCalc6.INGG 
+morel:userStringCalc6.INHH 
+morel:userStringCalc6.INII 
+morel:userStringCalc6.INJJ 
+morel:userStringCalc6.INKK 
+morel:userStringCalc6.INLL 
+morel:userStringCalc6.CALC 
+morel:userStringCalc6.OCAL 
+morel:userStringCalc6.SCAN 0
+morel:userStringCalc6.PREC 5
+morel:userStringCalc6.ODLY 0
+morel:userStringCalc6.OEVT 0
+morel:userStringCalc6.OOPT 0
+morel:userStringCalc6.DOPT 0
+morel:userStringCalc6.IVOA 0
+morel:userStringCalc6.IVOV 0
+morel:userStringCalc6.OUT 
+morel:userStringCalc6.FLNK 0
+morel:userStringCalc6.DESC userStringCalc6
+morel:userStringCalc6.EVNT 0
+morel:userStringCalc6.EGU 
+morel:userStringCalc6.WAIT 0
+morel:userStringCalc7.A 0
+morel:userStringCalc7.B 0
+morel:userStringCalc7.C 0
+morel:userStringCalc7.D 0
+morel:userStringCalc7.E 0
+morel:userStringCalc7.F 0
+morel:userStringCalc7.G 0
+morel:userStringCalc7.H 0
+morel:userStringCalc7.I 0
+morel:userStringCalc7.J 0
+morel:userStringCalc7.K 0
+morel:userStringCalc7.L 0
+morel:userStringCalc7.INPA 
+morel:userStringCalc7.INPB 
+morel:userStringCalc7.INPC 
+morel:userStringCalc7.INPD 
+morel:userStringCalc7.INPE 
+morel:userStringCalc7.INPF 
+morel:userStringCalc7.INPG 
+morel:userStringCalc7.INPH 
+morel:userStringCalc7.INPI 
+morel:userStringCalc7.INPJ 
+morel:userStringCalc7.INPK 
+morel:userStringCalc7.INPL 
+morel:userStringCalc7.AA 
+morel:userStringCalc7.BB 
+morel:userStringCalc7.CC 
+morel:userStringCalc7.DD 
+morel:userStringCalc7.EE 
+morel:userStringCalc7.FF 
+morel:userStringCalc7.GG 
+morel:userStringCalc7.HH 
+morel:userStringCalc7.II 
+morel:userStringCalc7.JJ 
+morel:userStringCalc7.KK 
+morel:userStringCalc7.LL 
+morel:userStringCalc7.INAA 
+morel:userStringCalc7.INBB 
+morel:userStringCalc7.INCC 
+morel:userStringCalc7.INDD 
+morel:userStringCalc7.INEE 
+morel:userStringCalc7.INFF 
+morel:userStringCalc7.INGG 
+morel:userStringCalc7.INHH 
+morel:userStringCalc7.INII 
+morel:userStringCalc7.INJJ 
+morel:userStringCalc7.INKK 
+morel:userStringCalc7.INLL 
+morel:userStringCalc7.CALC 
+morel:userStringCalc7.OCAL 
+morel:userStringCalc7.SCAN 0
+morel:userStringCalc7.PREC 5
+morel:userStringCalc7.ODLY 0
+morel:userStringCalc7.OEVT 0
+morel:userStringCalc7.OOPT 0
+morel:userStringCalc7.DOPT 0
+morel:userStringCalc7.IVOA 0
+morel:userStringCalc7.IVOV 0
+morel:userStringCalc7.OUT 
+morel:userStringCalc7.FLNK 0
+morel:userStringCalc7.DESC userStringCalc7
+morel:userStringCalc7.EVNT 0
+morel:userStringCalc7.EGU 
+morel:userStringCalc7.WAIT 0
+morel:userStringCalc8.A 0
+morel:userStringCalc8.B 0
+morel:userStringCalc8.C 0
+morel:userStringCalc8.D 0
+morel:userStringCalc8.E 0
+morel:userStringCalc8.F 0
+morel:userStringCalc8.G 0
+morel:userStringCalc8.H 0
+morel:userStringCalc8.I 0
+morel:userStringCalc8.J 0
+morel:userStringCalc8.K 0
+morel:userStringCalc8.L 0
+morel:userStringCalc8.INPA 
+morel:userStringCalc8.INPB 
+morel:userStringCalc8.INPC 
+morel:userStringCalc8.INPD 
+morel:userStringCalc8.INPE 
+morel:userStringCalc8.INPF 
+morel:userStringCalc8.INPG 
+morel:userStringCalc8.INPH 
+morel:userStringCalc8.INPI 
+morel:userStringCalc8.INPJ 
+morel:userStringCalc8.INPK 
+morel:userStringCalc8.INPL 
+morel:userStringCalc8.AA 
+morel:userStringCalc8.BB 
+morel:userStringCalc8.CC 
+morel:userStringCalc8.DD 
+morel:userStringCalc8.EE 
+morel:userStringCalc8.FF 
+morel:userStringCalc8.GG 
+morel:userStringCalc8.HH 
+morel:userStringCalc8.II 
+morel:userStringCalc8.JJ 
+morel:userStringCalc8.KK 
+morel:userStringCalc8.LL 
+morel:userStringCalc8.INAA 
+morel:userStringCalc8.INBB 
+morel:userStringCalc8.INCC 
+morel:userStringCalc8.INDD 
+morel:userStringCalc8.INEE 
+morel:userStringCalc8.INFF 
+morel:userStringCalc8.INGG 
+morel:userStringCalc8.INHH 
+morel:userStringCalc8.INII 
+morel:userStringCalc8.INJJ 
+morel:userStringCalc8.INKK 
+morel:userStringCalc8.INLL 
+morel:userStringCalc8.CALC 
+morel:userStringCalc8.OCAL 
+morel:userStringCalc8.SCAN 0
+morel:userStringCalc8.PREC 5
+morel:userStringCalc8.ODLY 0
+morel:userStringCalc8.OEVT 0
+morel:userStringCalc8.OOPT 0
+morel:userStringCalc8.DOPT 0
+morel:userStringCalc8.IVOA 0
+morel:userStringCalc8.IVOV 0
+morel:userStringCalc8.OUT 
+morel:userStringCalc8.FLNK 0
+morel:userStringCalc8.DESC userStringCalc8
+morel:userStringCalc8.EVNT 0
+morel:userStringCalc8.EGU 
+morel:userStringCalc8.WAIT 0
+morel:userStringCalc9.A 0
+morel:userStringCalc9.B 0
+morel:userStringCalc9.C 0
+morel:userStringCalc9.D 0
+morel:userStringCalc9.E 0
+morel:userStringCalc9.F 0
+morel:userStringCalc9.G 0
+morel:userStringCalc9.H 0
+morel:userStringCalc9.I 0
+morel:userStringCalc9.J 0
+morel:userStringCalc9.K 0
+morel:userStringCalc9.L 0
+morel:userStringCalc9.INPA 
+morel:userStringCalc9.INPB 
+morel:userStringCalc9.INPC 
+morel:userStringCalc9.INPD 
+morel:userStringCalc9.INPE 
+morel:userStringCalc9.INPF 
+morel:userStringCalc9.INPG 
+morel:userStringCalc9.INPH 
+morel:userStringCalc9.INPI 
+morel:userStringCalc9.INPJ 
+morel:userStringCalc9.INPK 
+morel:userStringCalc9.INPL 
+morel:userStringCalc9.AA 
+morel:userStringCalc9.BB 
+morel:userStringCalc9.CC 
+morel:userStringCalc9.DD 
+morel:userStringCalc9.EE 
+morel:userStringCalc9.FF 
+morel:userStringCalc9.GG 
+morel:userStringCalc9.HH 
+morel:userStringCalc9.II 
+morel:userStringCalc9.JJ 
+morel:userStringCalc9.KK 
+morel:userStringCalc9.LL 
+morel:userStringCalc9.INAA 
+morel:userStringCalc9.INBB 
+morel:userStringCalc9.INCC 
+morel:userStringCalc9.INDD 
+morel:userStringCalc9.INEE 
+morel:userStringCalc9.INFF 
+morel:userStringCalc9.INGG 
+morel:userStringCalc9.INHH 
+morel:userStringCalc9.INII 
+morel:userStringCalc9.INJJ 
+morel:userStringCalc9.INKK 
+morel:userStringCalc9.INLL 
+morel:userStringCalc9.CALC 
+morel:userStringCalc9.OCAL 
+morel:userStringCalc9.SCAN 0
+morel:userStringCalc9.PREC 5
+morel:userStringCalc9.ODLY 0
+morel:userStringCalc9.OEVT 0
+morel:userStringCalc9.OOPT 0
+morel:userStringCalc9.DOPT 0
+morel:userStringCalc9.IVOA 0
+morel:userStringCalc9.IVOV 0
+morel:userStringCalc9.OUT 
+morel:userStringCalc9.FLNK 0
+morel:userStringCalc9.DESC userStringCalc9
+morel:userStringCalc9.EVNT 0
+morel:userStringCalc9.EGU 
+morel:userStringCalc9.WAIT 0
+morel:userStringCalc10.A 0
+morel:userStringCalc10.B 0
+morel:userStringCalc10.C 0
+morel:userStringCalc10.D 0
+morel:userStringCalc10.E 0
+morel:userStringCalc10.F 0
+morel:userStringCalc10.G 0
+morel:userStringCalc10.H 0
+morel:userStringCalc10.I 0
+morel:userStringCalc10.J 0
+morel:userStringCalc10.K 0
+morel:userStringCalc10.L 0
+morel:userStringCalc10.INPA 
+morel:userStringCalc10.INPB 
+morel:userStringCalc10.INPC 
+morel:userStringCalc10.INPD 
+morel:userStringCalc10.INPE 
+morel:userStringCalc10.INPF 
+morel:userStringCalc10.INPG 
+morel:userStringCalc10.INPH 
+morel:userStringCalc10.INPI 
+morel:userStringCalc10.INPJ 
+morel:userStringCalc10.INPK 
+morel:userStringCalc10.INPL 
+morel:userStringCalc10.AA 
+morel:userStringCalc10.BB 
+morel:userStringCalc10.CC 
+morel:userStringCalc10.DD 
+morel:userStringCalc10.EE 
+morel:userStringCalc10.FF 
+morel:userStringCalc10.GG 
+morel:userStringCalc10.HH 
+morel:userStringCalc10.II 
+morel:userStringCalc10.JJ 
+morel:userStringCalc10.KK 
+morel:userStringCalc10.LL 
+morel:userStringCalc10.INAA 
+morel:userStringCalc10.INBB 
+morel:userStringCalc10.INCC 
+morel:userStringCalc10.INDD 
+morel:userStringCalc10.INEE 
+morel:userStringCalc10.INFF 
+morel:userStringCalc10.INGG 
+morel:userStringCalc10.INHH 
+morel:userStringCalc10.INII 
+morel:userStringCalc10.INJJ 
+morel:userStringCalc10.INKK 
+morel:userStringCalc10.INLL 
+morel:userStringCalc10.CALC 
+morel:userStringCalc10.OCAL 
+morel:userStringCalc10.SCAN 0
+morel:userStringCalc10.PREC 5
+morel:userStringCalc10.ODLY 0
+morel:userStringCalc10.OEVT 0
+morel:userStringCalc10.OOPT 0
+morel:userStringCalc10.DOPT 0
+morel:userStringCalc10.IVOA 0
+morel:userStringCalc10.IVOV 0
+morel:userStringCalc10.OUT 
+morel:userStringCalc10.FLNK 0
+morel:userStringCalc10.DESC userStringCalc10
+morel:userStringCalc10.EVNT 0
+morel:userStringCalc10.EGU 
+morel:userStringCalc10.WAIT 0
+morel:userArrayCalc1.A 0
+morel:userArrayCalc1.B 0
+morel:userArrayCalc1.C 0
+morel:userArrayCalc1.D 0
+morel:userArrayCalc1.E 0
+morel:userArrayCalc1.F 0
+morel:userArrayCalc1.G 0
+morel:userArrayCalc1.H 0
+morel:userArrayCalc1.I 0
+morel:userArrayCalc1.J 0
+morel:userArrayCalc1.K 0
+morel:userArrayCalc1.L 0
+morel:userArrayCalc1.INPA 
+morel:userArrayCalc1.INPB 
+morel:userArrayCalc1.INPC 
+morel:userArrayCalc1.INPD 
+morel:userArrayCalc1.INPE 
+morel:userArrayCalc1.INPF 
+morel:userArrayCalc1.INPG 
+morel:userArrayCalc1.INPH 
+morel:userArrayCalc1.INPI 
+morel:userArrayCalc1.INPJ 
+morel:userArrayCalc1.INPK 
+morel:userArrayCalc1.INPL 
+morel:userArrayCalc1.INAA 
+morel:userArrayCalc1.INBB 
+morel:userArrayCalc1.INCC 
+morel:userArrayCalc1.INDD 
+morel:userArrayCalc1.INEE 
+morel:userArrayCalc1.INFF 
+morel:userArrayCalc1.INGG 
+morel:userArrayCalc1.INHH 
+morel:userArrayCalc1.INII 
+morel:userArrayCalc1.INJJ 
+morel:userArrayCalc1.INKK 
+morel:userArrayCalc1.INLL 
+morel:userArrayCalc1.CALC 
+morel:userArrayCalc1.OCAL 
+morel:userArrayCalc1.SCAN 0
+morel:userArrayCalc1.PREC 5
+morel:userArrayCalc1.ODLY 0
+morel:userArrayCalc1.OEVT 0
+morel:userArrayCalc1.OOPT 0
+morel:userArrayCalc1.DOPT 0
+morel:userArrayCalc1.IVOA 0
+morel:userArrayCalc1.IVOV 0
+morel:userArrayCalc1.OUT 
+morel:userArrayCalc1.FLNK 0
+morel:userArrayCalc1.DESC userArrayCalc 1
+morel:userArrayCalc1.EVNT 0
+morel:userArrayCalc1.EGU 
+morel:userArrayCalc1.WAIT 0
+morel:userArrayCalc1.NUSE 2000
+morel:userArrayCalc2.A 0
+morel:userArrayCalc2.B 0
+morel:userArrayCalc2.C 0
+morel:userArrayCalc2.D 0
+morel:userArrayCalc2.E 0
+morel:userArrayCalc2.F 0
+morel:userArrayCalc2.G 0
+morel:userArrayCalc2.H 0
+morel:userArrayCalc2.I 0
+morel:userArrayCalc2.J 0
+morel:userArrayCalc2.K 0
+morel:userArrayCalc2.L 0
+morel:userArrayCalc2.INPA 
+morel:userArrayCalc2.INPB 
+morel:userArrayCalc2.INPC 
+morel:userArrayCalc2.INPD 
+morel:userArrayCalc2.INPE 
+morel:userArrayCalc2.INPF 
+morel:userArrayCalc2.INPG 
+morel:userArrayCalc2.INPH 
+morel:userArrayCalc2.INPI 
+morel:userArrayCalc2.INPJ 
+morel:userArrayCalc2.INPK 
+morel:userArrayCalc2.INPL 
+morel:userArrayCalc2.INAA 
+morel:userArrayCalc2.INBB 
+morel:userArrayCalc2.INCC 
+morel:userArrayCalc2.INDD 
+morel:userArrayCalc2.INEE 
+morel:userArrayCalc2.INFF 
+morel:userArrayCalc2.INGG 
+morel:userArrayCalc2.INHH 
+morel:userArrayCalc2.INII 
+morel:userArrayCalc2.INJJ 
+morel:userArrayCalc2.INKK 
+morel:userArrayCalc2.INLL 
+morel:userArrayCalc2.CALC 
+morel:userArrayCalc2.OCAL 
+morel:userArrayCalc2.SCAN 0
+morel:userArrayCalc2.PREC 5
+morel:userArrayCalc2.ODLY 0
+morel:userArrayCalc2.OEVT 0
+morel:userArrayCalc2.OOPT 0
+morel:userArrayCalc2.DOPT 0
+morel:userArrayCalc2.IVOA 0
+morel:userArrayCalc2.IVOV 0
+morel:userArrayCalc2.OUT 
+morel:userArrayCalc2.FLNK 0
+morel:userArrayCalc2.DESC userArrayCalc2
+morel:userArrayCalc2.EVNT 0
+morel:userArrayCalc2.EGU 
+morel:userArrayCalc2.WAIT 0
+morel:userArrayCalc2.NUSE 2000
+morel:userArrayCalc3.A 0
+morel:userArrayCalc3.B 0
+morel:userArrayCalc3.C 0
+morel:userArrayCalc3.D 0
+morel:userArrayCalc3.E 0
+morel:userArrayCalc3.F 0
+morel:userArrayCalc3.G 0
+morel:userArrayCalc3.H 0
+morel:userArrayCalc3.I 0
+morel:userArrayCalc3.J 0
+morel:userArrayCalc3.K 0
+morel:userArrayCalc3.L 0
+morel:userArrayCalc3.INPA 
+morel:userArrayCalc3.INPB 
+morel:userArrayCalc3.INPC 
+morel:userArrayCalc3.INPD 
+morel:userArrayCalc3.INPE 
+morel:userArrayCalc3.INPF 
+morel:userArrayCalc3.INPG 
+morel:userArrayCalc3.INPH 
+morel:userArrayCalc3.INPI 
+morel:userArrayCalc3.INPJ 
+morel:userArrayCalc3.INPK 
+morel:userArrayCalc3.INPL 
+morel:userArrayCalc3.INAA 
+morel:userArrayCalc3.INBB 
+morel:userArrayCalc3.INCC 
+morel:userArrayCalc3.INDD 
+morel:userArrayCalc3.INEE 
+morel:userArrayCalc3.INFF 
+morel:userArrayCalc3.INGG 
+morel:userArrayCalc3.INHH 
+morel:userArrayCalc3.INII 
+morel:userArrayCalc3.INJJ 
+morel:userArrayCalc3.INKK 
+morel:userArrayCalc3.INLL 
+morel:userArrayCalc3.CALC 
+morel:userArrayCalc3.OCAL 
+morel:userArrayCalc3.SCAN 0
+morel:userArrayCalc3.PREC 5
+morel:userArrayCalc3.ODLY 0
+morel:userArrayCalc3.OEVT 0
+morel:userArrayCalc3.OOPT 0
+morel:userArrayCalc3.DOPT 0
+morel:userArrayCalc3.IVOA 0
+morel:userArrayCalc3.IVOV 0
+morel:userArrayCalc3.OUT 
+morel:userArrayCalc3.FLNK 0
+morel:userArrayCalc3.DESC userArrayCalc3
+morel:userArrayCalc3.EVNT 0
+morel:userArrayCalc3.EGU 
+morel:userArrayCalc3.WAIT 0
+morel:userArrayCalc3.NUSE 2000
+morel:userArrayCalc4.A 0
+morel:userArrayCalc4.B 0
+morel:userArrayCalc4.C 0
+morel:userArrayCalc4.D 0
+morel:userArrayCalc4.E 0
+morel:userArrayCalc4.F 0
+morel:userArrayCalc4.G 0
+morel:userArrayCalc4.H 0
+morel:userArrayCalc4.I 0
+morel:userArrayCalc4.J 0
+morel:userArrayCalc4.K 0
+morel:userArrayCalc4.L 0
+morel:userArrayCalc4.INPA 
+morel:userArrayCalc4.INPB 
+morel:userArrayCalc4.INPC 
+morel:userArrayCalc4.INPD 
+morel:userArrayCalc4.INPE 
+morel:userArrayCalc4.INPF 
+morel:userArrayCalc4.INPG 
+morel:userArrayCalc4.INPH 
+morel:userArrayCalc4.INPI 
+morel:userArrayCalc4.INPJ 
+morel:userArrayCalc4.INPK 
+morel:userArrayCalc4.INPL 
+morel:userArrayCalc4.INAA 
+morel:userArrayCalc4.INBB 
+morel:userArrayCalc4.INCC 
+morel:userArrayCalc4.INDD 
+morel:userArrayCalc4.INEE 
+morel:userArrayCalc4.INFF 
+morel:userArrayCalc4.INGG 
+morel:userArrayCalc4.INHH 
+morel:userArrayCalc4.INII 
+morel:userArrayCalc4.INJJ 
+morel:userArrayCalc4.INKK 
+morel:userArrayCalc4.INLL 
+morel:userArrayCalc4.CALC 
+morel:userArrayCalc4.OCAL 
+morel:userArrayCalc4.SCAN 0
+morel:userArrayCalc4.PREC 5
+morel:userArrayCalc4.ODLY 0
+morel:userArrayCalc4.OEVT 0
+morel:userArrayCalc4.OOPT 0
+morel:userArrayCalc4.DOPT 0
+morel:userArrayCalc4.IVOA 0
+morel:userArrayCalc4.IVOV 0
+morel:userArrayCalc4.OUT 
+morel:userArrayCalc4.FLNK 0
+morel:userArrayCalc4.DESC userArrayCalc4
+morel:userArrayCalc4.EVNT 0
+morel:userArrayCalc4.EGU 
+morel:userArrayCalc4.WAIT 0
+morel:userArrayCalc4.NUSE 2000
+morel:userArrayCalc5.A 0
+morel:userArrayCalc5.B 0
+morel:userArrayCalc5.C 0
+morel:userArrayCalc5.D 0
+morel:userArrayCalc5.E 0
+morel:userArrayCalc5.F 0
+morel:userArrayCalc5.G 0
+morel:userArrayCalc5.H 0
+morel:userArrayCalc5.I 0
+morel:userArrayCalc5.J 0
+morel:userArrayCalc5.K 0
+morel:userArrayCalc5.L 0
+morel:userArrayCalc5.INPA 
+morel:userArrayCalc5.INPB 
+morel:userArrayCalc5.INPC 
+morel:userArrayCalc5.INPD 
+morel:userArrayCalc5.INPE 
+morel:userArrayCalc5.INPF 
+morel:userArrayCalc5.INPG 
+morel:userArrayCalc5.INPH 
+morel:userArrayCalc5.INPI 
+morel:userArrayCalc5.INPJ 
+morel:userArrayCalc5.INPK 
+morel:userArrayCalc5.INPL 
+morel:userArrayCalc5.INAA 
+morel:userArrayCalc5.INBB 
+morel:userArrayCalc5.INCC 
+morel:userArrayCalc5.INDD 
+morel:userArrayCalc5.INEE 
+morel:userArrayCalc5.INFF 
+morel:userArrayCalc5.INGG 
+morel:userArrayCalc5.INHH 
+morel:userArrayCalc5.INII 
+morel:userArrayCalc5.INJJ 
+morel:userArrayCalc5.INKK 
+morel:userArrayCalc5.INLL 
+morel:userArrayCalc5.CALC 
+morel:userArrayCalc5.OCAL 
+morel:userArrayCalc5.SCAN 0
+morel:userArrayCalc5.PREC 5
+morel:userArrayCalc5.ODLY 0
+morel:userArrayCalc5.OEVT 0
+morel:userArrayCalc5.OOPT 0
+morel:userArrayCalc5.DOPT 0
+morel:userArrayCalc5.IVOA 0
+morel:userArrayCalc5.IVOV 0
+morel:userArrayCalc5.OUT 
+morel:userArrayCalc5.FLNK 0
+morel:userArrayCalc5.DESC userArrayCalc5
+morel:userArrayCalc5.EVNT 0
+morel:userArrayCalc5.EGU 
+morel:userArrayCalc5.WAIT 0
+morel:userArrayCalc5.NUSE 2000
+morel:userArrayCalc6.A 0
+morel:userArrayCalc6.B 0
+morel:userArrayCalc6.C 0
+morel:userArrayCalc6.D 0
+morel:userArrayCalc6.E 0
+morel:userArrayCalc6.F 0
+morel:userArrayCalc6.G 0
+morel:userArrayCalc6.H 0
+morel:userArrayCalc6.I 0
+morel:userArrayCalc6.J 0
+morel:userArrayCalc6.K 0
+morel:userArrayCalc6.L 0
+morel:userArrayCalc6.INPA 
+morel:userArrayCalc6.INPB 
+morel:userArrayCalc6.INPC 
+morel:userArrayCalc6.INPD 
+morel:userArrayCalc6.INPE 
+morel:userArrayCalc6.INPF 
+morel:userArrayCalc6.INPG 
+morel:userArrayCalc6.INPH 
+morel:userArrayCalc6.INPI 
+morel:userArrayCalc6.INPJ 
+morel:userArrayCalc6.INPK 
+morel:userArrayCalc6.INPL 
+morel:userArrayCalc6.INAA 
+morel:userArrayCalc6.INBB 
+morel:userArrayCalc6.INCC 
+morel:userArrayCalc6.INDD 
+morel:userArrayCalc6.INEE 
+morel:userArrayCalc6.INFF 
+morel:userArrayCalc6.INGG 
+morel:userArrayCalc6.INHH 
+morel:userArrayCalc6.INII 
+morel:userArrayCalc6.INJJ 
+morel:userArrayCalc6.INKK 
+morel:userArrayCalc6.INLL 
+morel:userArrayCalc6.CALC 
+morel:userArrayCalc6.OCAL 
+morel:userArrayCalc6.SCAN 0
+morel:userArrayCalc6.PREC 5
+morel:userArrayCalc6.ODLY 0
+morel:userArrayCalc6.OEVT 0
+morel:userArrayCalc6.OOPT 0
+morel:userArrayCalc6.DOPT 0
+morel:userArrayCalc6.IVOA 0
+morel:userArrayCalc6.IVOV 0
+morel:userArrayCalc6.OUT 
+morel:userArrayCalc6.FLNK 0
+morel:userArrayCalc6.DESC userArrayCalc6
+morel:userArrayCalc6.EVNT 0
+morel:userArrayCalc6.EGU 
+morel:userArrayCalc6.WAIT 0
+morel:userArrayCalc6.NUSE 2000
+morel:userArrayCalc7.A 0
+morel:userArrayCalc7.B 0
+morel:userArrayCalc7.C 0
+morel:userArrayCalc7.D 0
+morel:userArrayCalc7.E 0
+morel:userArrayCalc7.F 0
+morel:userArrayCalc7.G 0
+morel:userArrayCalc7.H 0
+morel:userArrayCalc7.I 0
+morel:userArrayCalc7.J 0
+morel:userArrayCalc7.K 0
+morel:userArrayCalc7.L 0
+morel:userArrayCalc7.INPA 
+morel:userArrayCalc7.INPB 
+morel:userArrayCalc7.INPC 
+morel:userArrayCalc7.INPD 
+morel:userArrayCalc7.INPE 
+morel:userArrayCalc7.INPF 
+morel:userArrayCalc7.INPG 
+morel:userArrayCalc7.INPH 
+morel:userArrayCalc7.INPI 
+morel:userArrayCalc7.INPJ 
+morel:userArrayCalc7.INPK 
+morel:userArrayCalc7.INPL 
+morel:userArrayCalc7.INAA 
+morel:userArrayCalc7.INBB 
+morel:userArrayCalc7.INCC 
+morel:userArrayCalc7.INDD 
+morel:userArrayCalc7.INEE 
+morel:userArrayCalc7.INFF 
+morel:userArrayCalc7.INGG 
+morel:userArrayCalc7.INHH 
+morel:userArrayCalc7.INII 
+morel:userArrayCalc7.INJJ 
+morel:userArrayCalc7.INKK 
+morel:userArrayCalc7.INLL 
+morel:userArrayCalc7.CALC 
+morel:userArrayCalc7.OCAL 
+morel:userArrayCalc7.SCAN 0
+morel:userArrayCalc7.PREC 5
+morel:userArrayCalc7.ODLY 0
+morel:userArrayCalc7.OEVT 0
+morel:userArrayCalc7.OOPT 0
+morel:userArrayCalc7.DOPT 0
+morel:userArrayCalc7.IVOA 0
+morel:userArrayCalc7.IVOV 0
+morel:userArrayCalc7.OUT 
+morel:userArrayCalc7.FLNK 0
+morel:userArrayCalc7.DESC userArrayCalc7
+morel:userArrayCalc7.EVNT 0
+morel:userArrayCalc7.EGU 
+morel:userArrayCalc7.WAIT 0
+morel:userArrayCalc7.NUSE 2000
+morel:userArrayCalc8.A 0
+morel:userArrayCalc8.B 0
+morel:userArrayCalc8.C 0
+morel:userArrayCalc8.D 0
+morel:userArrayCalc8.E 0
+morel:userArrayCalc8.F 0
+morel:userArrayCalc8.G 0
+morel:userArrayCalc8.H 0
+morel:userArrayCalc8.I 0
+morel:userArrayCalc8.J 0
+morel:userArrayCalc8.K 0
+morel:userArrayCalc8.L 0
+morel:userArrayCalc8.INPA 
+morel:userArrayCalc8.INPB 
+morel:userArrayCalc8.INPC 
+morel:userArrayCalc8.INPD 
+morel:userArrayCalc8.INPE 
+morel:userArrayCalc8.INPF 
+morel:userArrayCalc8.INPG 
+morel:userArrayCalc8.INPH 
+morel:userArrayCalc8.INPI 
+morel:userArrayCalc8.INPJ 
+morel:userArrayCalc8.INPK 
+morel:userArrayCalc8.INPL 
+morel:userArrayCalc8.INAA 
+morel:userArrayCalc8.INBB 
+morel:userArrayCalc8.INCC 
+morel:userArrayCalc8.INDD 
+morel:userArrayCalc8.INEE 
+morel:userArrayCalc8.INFF 
+morel:userArrayCalc8.INGG 
+morel:userArrayCalc8.INHH 
+morel:userArrayCalc8.INII 
+morel:userArrayCalc8.INJJ 
+morel:userArrayCalc8.INKK 
+morel:userArrayCalc8.INLL 
+morel:userArrayCalc8.CALC 
+morel:userArrayCalc8.OCAL 
+morel:userArrayCalc8.SCAN 0
+morel:userArrayCalc8.PREC 5
+morel:userArrayCalc8.ODLY 0
+morel:userArrayCalc8.OEVT 0
+morel:userArrayCalc8.OOPT 0
+morel:userArrayCalc8.DOPT 0
+morel:userArrayCalc8.IVOA 0
+morel:userArrayCalc8.IVOV 0
+morel:userArrayCalc8.OUT 
+morel:userArrayCalc8.FLNK 0
+morel:userArrayCalc8.DESC userArrayCalc8
+morel:userArrayCalc8.EVNT 0
+morel:userArrayCalc8.EGU 
+morel:userArrayCalc8.WAIT 0
+morel:userArrayCalc8.NUSE 2000
+morel:userArrayCalc9.A 0
+morel:userArrayCalc9.B 0
+morel:userArrayCalc9.C 0
+morel:userArrayCalc9.D 0
+morel:userArrayCalc9.E 0
+morel:userArrayCalc9.F 0
+morel:userArrayCalc9.G 0
+morel:userArrayCalc9.H 0
+morel:userArrayCalc9.I 0
+morel:userArrayCalc9.J 0
+morel:userArrayCalc9.K 0
+morel:userArrayCalc9.L 0
+morel:userArrayCalc9.INPA 
+morel:userArrayCalc9.INPB 
+morel:userArrayCalc9.INPC 
+morel:userArrayCalc9.INPD 
+morel:userArrayCalc9.INPE 
+morel:userArrayCalc9.INPF 
+morel:userArrayCalc9.INPG 
+morel:userArrayCalc9.INPH 
+morel:userArrayCalc9.INPI 
+morel:userArrayCalc9.INPJ 
+morel:userArrayCalc9.INPK 
+morel:userArrayCalc9.INPL 
+morel:userArrayCalc9.INAA 
+morel:userArrayCalc9.INBB 
+morel:userArrayCalc9.INCC 
+morel:userArrayCalc9.INDD 
+morel:userArrayCalc9.INEE 
+morel:userArrayCalc9.INFF 
+morel:userArrayCalc9.INGG 
+morel:userArrayCalc9.INHH 
+morel:userArrayCalc9.INII 
+morel:userArrayCalc9.INJJ 
+morel:userArrayCalc9.INKK 
+morel:userArrayCalc9.INLL 
+morel:userArrayCalc9.CALC 
+morel:userArrayCalc9.OCAL 
+morel:userArrayCalc9.SCAN 0
+morel:userArrayCalc9.PREC 5
+morel:userArrayCalc9.ODLY 0
+morel:userArrayCalc9.OEVT 0
+morel:userArrayCalc9.OOPT 0
+morel:userArrayCalc9.DOPT 0
+morel:userArrayCalc9.IVOA 0
+morel:userArrayCalc9.IVOV 0
+morel:userArrayCalc9.OUT 
+morel:userArrayCalc9.FLNK 0
+morel:userArrayCalc9.DESC userArrayCalc9
+morel:userArrayCalc9.EVNT 0
+morel:userArrayCalc9.EGU 
+morel:userArrayCalc9.WAIT 0
+morel:userArrayCalc9.NUSE 2000
+morel:userArrayCalc10.A 0
+morel:userArrayCalc10.B 0
+morel:userArrayCalc10.C 0
+morel:userArrayCalc10.D 0
+morel:userArrayCalc10.E 0
+morel:userArrayCalc10.F 0
+morel:userArrayCalc10.G 0
+morel:userArrayCalc10.H 0
+morel:userArrayCalc10.I 0
+morel:userArrayCalc10.J 0
+morel:userArrayCalc10.K 0
+morel:userArrayCalc10.L 0
+morel:userArrayCalc10.INPA 
+morel:userArrayCalc10.INPB 
+morel:userArrayCalc10.INPC 
+morel:userArrayCalc10.INPD 
+morel:userArrayCalc10.INPE 
+morel:userArrayCalc10.INPF 
+morel:userArrayCalc10.INPG 
+morel:userArrayCalc10.INPH 
+morel:userArrayCalc10.INPI 
+morel:userArrayCalc10.INPJ 
+morel:userArrayCalc10.INPK 
+morel:userArrayCalc10.INPL 
+morel:userArrayCalc10.INAA 
+morel:userArrayCalc10.INBB 
+morel:userArrayCalc10.INCC 
+morel:userArrayCalc10.INDD 
+morel:userArrayCalc10.INEE 
+morel:userArrayCalc10.INFF 
+morel:userArrayCalc10.INGG 
+morel:userArrayCalc10.INHH 
+morel:userArrayCalc10.INII 
+morel:userArrayCalc10.INJJ 
+morel:userArrayCalc10.INKK 
+morel:userArrayCalc10.INLL 
+morel:userArrayCalc10.CALC 
+morel:userArrayCalc10.OCAL 
+morel:userArrayCalc10.SCAN 0
+morel:userArrayCalc10.PREC 5
+morel:userArrayCalc10.ODLY 0
+morel:userArrayCalc10.OEVT 0
+morel:userArrayCalc10.OOPT 0
+morel:userArrayCalc10.DOPT 0
+morel:userArrayCalc10.IVOA 0
+morel:userArrayCalc10.IVOV 0
+morel:userArrayCalc10.OUT 
+morel:userArrayCalc10.FLNK 0
+morel:userArrayCalc10.DESC userArrayCalc10
+morel:userArrayCalc10.EVNT 0
+morel:userArrayCalc10.EGU 
+morel:userArrayCalc10.WAIT 0
+morel:userArrayCalc10.NUSE 2000
+morel:4step:numSteps.VAL 4
+morel:4step:det1TrigName.VAL 
+morel:4step:det1TrigVal.VAL 1
+morel:4step:det2TrigName.VAL 
+morel:4step:det2TrigVal.VAL 1
+morel:4step:sig1.INPI 
+morel:4step:sig1:Desc signal 1
+morel:4step:sig2.INPI 
+morel:4step:sig2:Desc signal 2
+morel:4step:sig3.INPI 
+morel:4step:sig3:Desc signal 3
+morel:4step:sig4.INPI 
+morel:4step:sig4:Desc signal 4
+morel:4step:sig1.CLCE (a+c)/2
+morel:4step:sig1.CLCF (b+d)/2
+morel:4step:sig1.CLCG e-f
+morel:4step:sig1.CLCH 
+morel:4step:Aseq.PREC 3
+morel:4step:Aseq.DOL1 
+morel:4step:Aseq.DOL2 
+morel:4step:Aseq.DOL3 
+morel:4step:Aseq.DOL4 
+morel:4step:Aseq.DLY1 0
+morel:4step:Aseq.DLY2 0
+morel:4step:Aseq.DLY3 0
+morel:4step:Aseq.DLY4 0
+morel:4step:Aseq.STR1 0.000
+morel:4step:Aseq.STR2 0.000
+morel:4step:Aseq.STR3 0.000
+morel:4step:Aseq.STR4 0.000
+morel:4step:Aseq.DO1 0
+morel:4step:Aseq.DO2 0
+morel:4step:Aseq.DO3 0
+morel:4step:Aseq.DO4 0
+morel:4step:Aseq.LNK1 
+morel:4step:Aseq.LNK2 
+morel:4step:Aseq.LNK3 
+morel:4step:Aseq.LNK4 
+morel:4step:Bseq.PREC 3
+morel:4step:Bseq.DOL1 
+morel:4step:Bseq.DOL2 
+morel:4step:Bseq.DOL3 
+morel:4step:Bseq.DOL4 
+morel:4step:Bseq.DLY1 0
+morel:4step:Bseq.DLY2 0
+morel:4step:Bseq.DLY3 0
+morel:4step:Bseq.DLY4 0
+morel:4step:Bseq.STR1 0.000
+morel:4step:Bseq.STR2 0.000
+morel:4step:Bseq.STR3 0.000
+morel:4step:Bseq.STR4 0.000
+morel:4step:Bseq.DO1 0
+morel:4step:Bseq.DO2 0
+morel:4step:Bseq.DO3 0
+morel:4step:Bseq.DO4 0
+morel:4step:Bseq.LNK1 
+morel:4step:Bseq.LNK2 
+morel:4step:Bseq.LNK3 
+morel:4step:Bseq.LNK4 
+morel:4step:Cseq.PREC 3
+morel:4step:Cseq.DOL1 
+morel:4step:Cseq.DOL2 
+morel:4step:Cseq.DOL3 
+morel:4step:Cseq.DOL4 
+morel:4step:Cseq.DLY1 0
+morel:4step:Cseq.DLY2 0
+morel:4step:Cseq.DLY3 0
+morel:4step:Cseq.DLY4 0
+morel:4step:Cseq.STR1 0.000
+morel:4step:Cseq.STR2 0.000
+morel:4step:Cseq.STR3 0.000
+morel:4step:Cseq.STR4 0.000
+morel:4step:Cseq.DO1 0
+morel:4step:Cseq.DO2 0
+morel:4step:Cseq.DO3 0
+morel:4step:Cseq.DO4 0
+morel:4step:Cseq.LNK1 
+morel:4step:Cseq.LNK2 
+morel:4step:Cseq.LNK3 
+morel:4step:Cseq.LNK4 
+morel:4step:Dseq.PREC 3
+morel:4step:Dseq.DOL1 
+morel:4step:Dseq.DOL2 
+morel:4step:Dseq.DOL3 
+morel:4step:Dseq.DOL4 
+morel:4step:Dseq.DLY1 0
+morel:4step:Dseq.DLY2 0
+morel:4step:Dseq.DLY3 0
+morel:4step:Dseq.DLY4 0
+morel:4step:Dseq.STR1 0.000
+morel:4step:Dseq.STR2 0.000
+morel:4step:Dseq.STR3 0.000
+morel:4step:Dseq.STR4 0.000
+morel:4step:Dseq.DO1 0
+morel:4step:Dseq.DO2 0
+morel:4step:Dseq.DO3 0
+morel:4step:Dseq.DO4 0
+morel:4step:Dseq.LNK1 
+morel:4step:Dseq.LNK2 
+morel:4step:Dseq.LNK3 
+morel:4step:Dseq.LNK4 
+morel:4step:doEndCalcs.OUT 
+morel:userAve1.DESC User Average 1
+morel:userAve1.SCAN 0
+morel:userAve1.INPB 
+morel:userAve1.A 0
+morel:userAve1.PREC 0
+morel:userAve1_mode 0
+morel:userAve1_algorithm 0
+morel:userAve1.FLNK 0
+morel:userAve2.DESC User Average 2
+morel:userAve2.SCAN 0
+morel:userAve2.INPB 
+morel:userAve2.A 0
+morel:userAve2.PREC 0
+morel:userAve2_mode 0
+morel:userAve2_algorithm 0
+morel:userAve2.FLNK 0
+morel:userAve3.DESC User Average 3
+morel:userAve3.SCAN 0
+morel:userAve3.INPB 
+morel:userAve3.A 0
+morel:userAve3.PREC 0
+morel:userAve3_mode 0
+morel:userAve3_algorithm 0
+morel:userAve2.FLNK 0
+morel:userAve4.DESC User Average 4
+morel:userAve4.SCAN 0
+morel:userAve4.INPB 
+morel:userAve4.A 0
+morel:userAve4.PREC 0
+morel:userAve4_mode 0
+morel:userAve4_algorithm 0
+morel:userAve4.FLNK 0
+morel:userAve5.DESC User Average 5
+morel:userAve5.SCAN 0
+morel:userAve5.INPB 
+morel:userAve5.A 0
+morel:userAve5.PREC 0
+morel:userAve5_mode 0
+morel:userAve5_algorithm 0
+morel:userAve5.FLNK 0
+morel:userAve6.DESC User Average 6
+morel:userAve6.SCAN 0
+morel:userAve6.INPB 
+morel:userAve6.A 0
+morel:userAve6.PREC 0
+morel:userAve6_mode 0
+morel:userAve6_algorithm 0
+morel:userAve6.FLNK 0
+morel:userAve7.DESC User Average 7
+morel:userAve7.SCAN 0
+morel:userAve7.INPB 
+morel:userAve7.A 0
+morel:userAve7.PREC 0
+morel:userAve7_mode 0
+morel:userAve7_algorithm 0
+morel:userAve7.FLNK 0
+morel:userAve8.DESC User Average 8
+morel:userAve8.SCAN 0
+morel:userAve8.INPB 
+morel:userAve8.A 0
+morel:userAve8.PREC 0
+morel:userAve8_mode 0
+morel:userAve8_algorithm 0
+morel:userAve8.FLNK 0
+morel:userAve9.DESC User Average 9
+morel:userAve9.SCAN 0
+morel:userAve9.INPB 
+morel:userAve9.A 0
+morel:userAve9.PREC 0
+morel:userAve9_mode 0
+morel:userAve9_algorithm 0
+morel:userAve9.FLNK 0
+morel:userAve1.FLNK 0
+morel:userAve10.DESC User Average 10
+morel:userAve10.SCAN 0
+morel:userAve10.INPB 
+morel:userAve10.A 0
+morel:userAve10.PREC 0
+morel:userAve10_mode 0
+morel:userAve10_algorithm 0
+morel:userAve10.FLNK 0
+<END>
