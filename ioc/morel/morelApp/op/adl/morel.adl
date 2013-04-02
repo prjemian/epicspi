@@ -1,7 +1,7 @@
 
 file {
-	name="/home/oxygen4/MOONEY/epics/synApps/support/xxx/morelApp/op/adl/morel.adl"
-	version=030103
+	name="/home/prjemian/epics/ioc/morel/morelApp/op/adl/morel.adl"
+	version=030104
 }
 display {
 	object {
@@ -597,7 +597,7 @@ display {
 	display[1] {
 		label="IOC_Status.adl"
 		name="IOC_Status.adl"
-		args="P=xxx"
+		args="P=morel"
 	}
 	display[2] {
 		label="save_restore Status"
@@ -1628,4 +1628,20 @@ composite {
 	clr=0
 	bclr=17
 	label="-ML Mono"
+}
+"related display" {
+	object {
+		x=350
+		y=0
+		width=70
+		height=20
+	}
+	display[0] {
+		label="Koyo 67"
+		name="Koyo.adl"
+		args="P=morel:Koyo_67:"
+	}
+	clr=0
+	bclr=17
+	label="-Koyo PLC"
 }
