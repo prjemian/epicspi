@@ -1,3 +1,0 @@
-#!/bin/sh
-
-../../bin/${EPICS_HOST_ARCH}/morel st.cmd
