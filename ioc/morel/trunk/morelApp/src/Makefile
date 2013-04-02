@@ -163,6 +163,10 @@ ifneq (,$(findstring linux, $(T_A)))
 	ifdef DEVIOCSTATS
 		iocmorelLinux_DBD += devIocStats.dbd iocAdmin.dbd
 	endif
+
+	iocmorelLinux_DBD += modbus.dbd modbusSupport.dbd
+	morel_LIBS_Linux += modbus
+
 endif
 
 ifeq ($(OS_CLASS), solaris)

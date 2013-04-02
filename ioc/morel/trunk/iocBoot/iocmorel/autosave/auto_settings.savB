@@ -1,4 +1,4 @@
-# autosave R5.0	Automatically generated - DO NOT MODIFY - 130402-004729
+# autosave R5.0	Automatically generated - DO NOT MODIFY - 130402-012426
 morel:saveData_config 
 morel:m1.DIR 0
 morel:m1.DHLM 100
@@ -1471,7 +1471,7 @@ morel:userCalc10.ODLY 0
 morel:userCalc10.PREC 5
 morel:userCalc10.OEVT 0
 morel:userCalc10.FLNK 0
-morel:userCalcEnable 0
+morel:userCalcEnable 1
 morel:userCalcOut1.A 0
 morel:userCalcOut1.B 0
 morel:userCalcOut1.C 0

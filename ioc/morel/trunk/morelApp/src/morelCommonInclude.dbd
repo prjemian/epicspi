@@ -68,3 +68,7 @@ include "devSequencer.dbd"
 # stream
 include "stream.dbd"
 include "streamSynApps.dbd"
+
+# modbus
+include "modbus.dbd"
+include "modbusSupport.dbd"
