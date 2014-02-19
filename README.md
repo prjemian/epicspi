@@ -1,5 +1,5 @@
 Installing EPICS on the Raspberry Pi
-========================================
+====================================
 
 For those who haven't heard, EPICS (http://www.aps.anl.gov/epics) is an 
 open-source control system used worldwide for the routine operation and 
