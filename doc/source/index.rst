@@ -129,25 +129,32 @@ The latest stable version of EPICS Base is 3.14.12.3
 Building
 ----------------------------------------
 
+.. sidebar:: note the backticks
+
+   Note the use of backticks in the *export* command.
+   They evaluate the enclosed text as a command and return
+   the result.
+
 EPICS base can be built for many different operating systems
 and computers.  Each build is directed by the ``EPICS_HOST_ARCH`` 
 environment variable.  A command is provided to determine
 the best choice amongst all the systems for which EPICS currently
 has definitions.  Here is the way to set the environment variable
-on any UNIX or Linux OS.:
+on any UNIX or Linux OS using the bash shell:
 
 .. code-block:: guess
    :linenos:
    
    export EPICS_HOST_ARCH=`/usr/local/epics/base/startup/EpicsHostArch`
 
-We can check this value by printing it to the command-line:
+We can check this value by printing it to the command-line (remember, 
+we are logged in as root):
 
 .. code-block:: guess
    :linenos:
    :emphasize-lines: 2
 
-   root@raspberrypi:/usr/local/epics# echo $EPICS_HOST_ARCH
+   echo $EPICS_HOST_ARCH
    linux-arm
 
 Good!  EPICS base will build for a Linux OS on an ARM architecture.
@@ -237,7 +244,7 @@ After EPICS base has been built, we see that it has taken
 .. code-block:: guess
    :linenos:
    
-   pi@raspberrypi:~/Apps/epics$ du -sc base-3.14.12.3
+   pi@raspberrypi:~$ du -sc base-3.14.12.3
    35636  base-3.14.12.3
 
 
@@ -514,7 +521,7 @@ Also, remember to make the file executable::
 
 Now, run this and hope for the best::
 
-    pi@raspberrypi:~$ ./verify.py
+    ./verify.py
     3.2.1
     /usr/local/lib/python2.7/dist-packages/epics/__init__.pyc
 
