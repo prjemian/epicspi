@@ -267,7 +267,7 @@ http://www.aps.anl.gov/bcda/synApps/synApps_5_6.html
 Download
 ------------------------
 
-The current release of synApps is v5.6.  
+The current release of synApps (at the time this was written [#]_) is v5.6.  
 The compressed source archive file is available from the BCDA group at APS.
 The file should be 149 MB:
 
@@ -290,6 +290,8 @@ The file should be 149 MB:
 ..      the latest work from the version control repository trunk.
 
 Uncompressed and unconfigured, the synApps_5_6 source folder is ~541 MB.
+
+.. [#] synApps 5.7 was released in the fall of 2013.
 
 Configuring
 ------------------------
