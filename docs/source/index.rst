@@ -133,15 +133,16 @@ Building
 
    Note the use of backticks in the *export* command.
    They evaluate the enclosed text as a command and return
-   the result.
+   the result.  For more discussion, see the section below
+   titled :ref:`delimiters`.
 
 EPICS base can be built for many different operating systems
 and computers.  Each build is directed by the ``EPICS_HOST_ARCH`` 
 environment variable.  A command is provided to determine
 the best choice amongst all the systems for which EPICS currently
 has definitions.  Here is the way to set the environment variable
-on any UNIX or Linux OS using the bash shell (use either of these 
-two commands, they are equivalent in the bash shell:
+on any UNIX or Linux OS using the *bash* shell (use either of these 
+two commands, they are equivalent in the *bash* shell:
 
 .. code-block:: guess
    :linenos:
@@ -236,9 +237,21 @@ consider making these declarations in your environment
    export EPICS_HOST_ARCH=`${EPICS_BASE}/startup/EpicsHostArch`
    export EPICS_BASE_BIN=${EPICS_BASE}/bin/${EPICS_HOST_ARCH}
    export EPICS_BASE_LIB=${EPICS_BASE}/lib/${EPICS_HOST_ARCH}
-   export LD_LIBRARY_PATH=${EPICS_BASE_LIB}:
+   if [ "" = "${LD_LIBRARY_PATH}" ]; then
+       export LD_LIBRARY_PATH=${EPICS_BASE_LIB}
+   else
+       export LD_LIBRARY_PATH=${EPICS_BASE_LIB}:${LD_LIBRARY_PATH}
+   fi
    export PATH=${PATH}:${EPICS_BASE_BIN}
 
+.. note:: We are being a bit cautious here, not to remove any existing
+   definition of **LD_LIBRARY_PATH**.  Also the comparison is a *Yoda*
+   condition [#]_, placing the constant term on the left of the comparison.
+   Yoda conditions can reveal accidental assignments at run time.
+   Perhaps not so much in the *bash* shell, but it's useful in programming
+   languages.
+   
+   .. [#] Yoda condition: https://en.wikipedia.org/wiki/Yoda_Conditions
 
 After EPICS base has been built, we see that it has taken 
 ~35 MB of storage:
@@ -269,7 +282,7 @@ http://www.aps.anl.gov/bcda/synApps/synApps_5_6.html
 Download
 ------------------------
 
-The current release of synApps (at the time this was written [#]_) is v5.6.  
+The current release of synApps (as this was written in 2013-02) is v5.6.  
 The compressed source archive file is available from the BCDA group at APS.
 The file should be 149 MB:
 
@@ -292,8 +305,6 @@ The file should be 149 MB:
 ..      the latest work from the version control repository trunk.
 
 Uncompressed and unconfigured, the synApps_5_6 source folder is ~541 MB.
-
-.. [#] synApps 5.7 was released in the fall of 2013.
 
 Configuring
 ------------------------
@@ -384,7 +395,8 @@ Here are the lines I found::
 Install necessary EPICS Extensions
 ------------------------------------------
 
-synApps requires the *msi* EPICS extension.  First, setup the extensions subdirectory
+synApps 5.6 requires the *msi* EPICS extension.  
+First, setup the extensions subdirectory
 
 .. code-block:: guess
    :linenos:
@@ -413,7 +425,11 @@ Make these additional declarations in your environment
    export EPICS_EXT=${EPICS_ROOT}/extensions
    export EPICS_EXT_BIN=${EPICS_EXT}/bin/${EPICS_HOST_ARCH}
    export EPICS_EXT_LIB=${EPICS_EXT}/lib/${EPICS_HOST_ARCH}
-   export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${EPICS_EXT_LIB}
+   if [ "" = "${LD_LIBRARY_PATH}" ]; then
+       export LD_LIBRARY_PATH=${EPICS_EXT_LIB}
+   else
+       export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${EPICS_BASE_LIB}
+   fi
    export PATH=${PATH}:${EPICS_EXT_BIN}
 
 Install other support
@@ -668,3 +684,50 @@ file                    description
 :download:`simple.db`   simple EPICS database to test PyEpics communications with EPICS
 :download:`test.py`     Python code to test PyEpics communications with EPICS
 ======================  ========================================================================
+
+.. _delimiters:
+
+Delimiters: Parentheses, Braces, and Back-Quotes
+================================================
+
+In the code examples above, a combination of parentheses, 
+braces, and back-quotes (a.k.a. accent grave or backtick) are used.
+
+In the */bin/bash* shell, braces, **{** and **}**, are used to 
+delimit the scope of symbol names during shell expansion.  
+In the code examples above, the delimiters are probably unnecessary.  
+Using these delimiters is a cautious practice to adopt.  Parentheses 
+are not recognized in this context::
+
+    ~$ echo $EPICS_ROOT
+    /usr/local/epics
+    ~$ echo ${EPICS_ROOT}
+    /usr/local/epics
+    ~$ echo $(EPICS_ROOT)
+    EPICS_ROOT: command not found
+
+However, in the various files and commands that configure and 
+command the EPICS components, parentheses, **(** and **)**, are
+the required delimiters.  See these xamples from above::
+
+    #AREA_DETECTOR=$(SUPPORT)/areaDetector-1-8beta1
+    #IP=$(SUPPORT)/ip-2-13
+
+
+Sometimes, in a shell script, it is necessary to assign a variable
+with the value obtained from a command line tool.  One common way to
+do that, shared by **bash** and some other shells such as **tcsh**,
+is to enclose the command line tool with the **`** back-quote character.
+See these examples::
+
+    ~$ echo $SHELL
+    /bin/bash
+    ~$ echo `/usr/local/epics/base-3.14.12.3/startup/EpicsHostArch`
+    linux-x86_64
+
+An alternative way to do this assignment in *bash* was pointed out,
+to use shell expansion with parentheses as the delimiters,
+such as::
+
+    ~$ echo $(/usr/local/epics/base-3.14.12.3/startup/EpicsHostArch)
+    linux-x86_64
