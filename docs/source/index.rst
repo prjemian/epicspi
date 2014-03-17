@@ -140,12 +140,14 @@ and computers.  Each build is directed by the ``EPICS_HOST_ARCH``
 environment variable.  A command is provided to determine
 the best choice amongst all the systems for which EPICS currently
 has definitions.  Here is the way to set the environment variable
-on any UNIX or Linux OS using the bash shell:
+on any UNIX or Linux OS using the bash shell (use either of these 
+two commands, they are equivalent in the bash shell:
 
 .. code-block:: guess
    :linenos:
    
    export EPICS_HOST_ARCH=`/usr/local/epics/base/startup/EpicsHostArch`
+   export EPICS_HOST_ARCH=$(/usr/local/epics/base/startup/EpicsHostArch)
 
 We can check this value by printing it to the command-line (remember, 
 we are logged in as root):
@@ -230,12 +232,12 @@ consider making these declarations in your environment
    :linenos:
 
    export EPICS_ROOT=/usr/local/epics
-   export EPICS_BASE=$(EPICS_ROOT)/base
-   export EPICS_HOST_ARCH=`$(EPICS_BASE)/startup/EpicsHostArch`
-   export EPICS_BASE_BIN=$(EPICS_BASE)/bin/$(EPICS_HOST_ARCH)
-   export EPICS_BASE_LIB=$(EPICS_BASE)/lib/$(EPICS_HOST_ARCH)
-   export LD_LIBRARY_PATH=$(EPICS_BASE_LIB):
-   export PATH=$(PATH):$(EPICS_BASE_BIN)
+   export EPICS_BASE=${EPICS_ROOT}/base
+   export EPICS_HOST_ARCH=`${EPICS_BASE}/startup/EpicsHostArch`
+   export EPICS_BASE_BIN=${EPICS_BASE}/bin/${EPICS_HOST_ARCH}
+   export EPICS_BASE_LIB=${EPICS_BASE}/lib/${EPICS_HOST_ARCH}
+   export LD_LIBRARY_PATH=${EPICS_BASE_LIB}:
+   export PATH=${PATH}:${EPICS_BASE_BIN}
 
 
 After EPICS base has been built, we see that it has taken 
@@ -408,11 +410,11 @@ Make these additional declarations in your environment
 .. code-block:: guess
    :linenos:
 
-   export EPICS_EXT=$(EPICS_ROOT)/extensions
-   export EPICS_EXT_BIN=$(EPICS_EXT)/bin/$(EPICS_HOST_ARCH)
-   export EPICS_EXT_LIB=$(EPICS_EXT)/lib/$(EPICS_HOST_ARCH)
-   export LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):$(EPICS_EXT_LIB)
-   export PATH=$(PATH):$(EPICS_EXT_BIN)
+   export EPICS_EXT=${EPICS_ROOT}/extensions
+   export EPICS_EXT_BIN=${EPICS_EXT}/bin/${EPICS_HOST_ARCH}
+   export EPICS_EXT_LIB=${EPICS_EXT}/lib/${EPICS_HOST_ARCH}
+   export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${EPICS_EXT_LIB}
+   export PATH=${PATH}:${EPICS_EXT_BIN}
 
 Install other support
 ------------------------
@@ -666,20 +668,3 @@ file                    description
 :download:`simple.db`   simple EPICS database to test PyEpics communications with EPICS
 :download:`test.py`     Python code to test PyEpics communications with EPICS
 ======================  ========================================================================
-
-
-..
-	-----------------------
-	
-	Contents:
-	
-	.. toctree::
-	   :maxdepth: 2
-
-	Indices and tables
-	==================
-	
-	* :ref:`genindex`
-	* :ref:`modindex`
-	* :ref:`search`
-
