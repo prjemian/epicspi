@@ -708,7 +708,7 @@ are not recognized in this context::
 
 However, in the various files and commands that configure and 
 command the EPICS components, parentheses, **(** and **)**, are
-the required delimiters.  See these xamples from above::
+the required delimiters.  See these examples from above::
 
     #AREA_DETECTOR=$(SUPPORT)/areaDetector-1-8beta1
     #IP=$(SUPPORT)/ip-2-13
@@ -718,7 +718,7 @@ Sometimes, in a shell script, it is necessary to assign a variable
 with the value obtained from a command line tool.  One common way to
 do that, shared by **bash** and some other shells such as **tcsh**,
 is to enclose the command line tool with the **`** back-quote character.
-See these examples::
+See this example::
 
     ~$ echo $SHELL
     /bin/bash
