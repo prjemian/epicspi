@@ -1,0 +1,11 @@
+record(bo, "rpi:trigger")
+{
+        field(DESC, "trigger PV")
+        field(ZNAM, "off")
+        field(ONAM, "on")
+}
+record(stringout, "rpi:message")
+{
+        field(DESC, "message on the RPi")
+        field(VAL,  "RPi default message")
+}
