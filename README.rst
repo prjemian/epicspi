@@ -10,3 +10,6 @@ Diamond Light Source, neutron diffraction facilities such as the
 Spallation Neutron Source, and lots of other neat stuff.  The system is 
 scalable and runs on lots of different hardware.  Here, we show you
 how to run EPICS on the **Raspberry Pi!**
+
+:docs: http://prjemian.github.io/epicspi/
+:git:  https://github.com/prjemian/epicspi

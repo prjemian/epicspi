@@ -48,7 +48,7 @@ copyright = u'2013-2014, Pete Jemian'
 # built documents.
 #
 # The short X.Y version.
-version = '2014.0317.1'
+version = open('../../VERSION').read().strip()
 # The full version, including alpha/beta/rc tags.
 release = version
 
