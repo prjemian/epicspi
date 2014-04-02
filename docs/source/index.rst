@@ -237,7 +237,7 @@ consider making these declarations in your environment
    export EPICS_HOST_ARCH=`${EPICS_BASE}/startup/EpicsHostArch`
    export EPICS_BASE_BIN=${EPICS_BASE}/bin/${EPICS_HOST_ARCH}
    export EPICS_BASE_LIB=${EPICS_BASE}/lib/${EPICS_HOST_ARCH}
-   if [ "" = "${LD_LIBRARY_PATH}" ]; then
+   if [ "${LD_LIBRARY_PATH}" ]; then
        export LD_LIBRARY_PATH=${EPICS_BASE_LIB}
    else
        export LD_LIBRARY_PATH=${EPICS_BASE_LIB}:${LD_LIBRARY_PATH}
@@ -245,13 +245,7 @@ consider making these declarations in your environment
    export PATH=${PATH}:${EPICS_BASE_BIN}
 
 .. note:: We are being a bit cautious here, not to remove any existing
-   definition of **LD_LIBRARY_PATH**.  Also the comparison is a *Yoda*
-   condition [#]_, placing the constant term on the left of the comparison.
-   Yoda conditions can reveal accidental assignments at run time.
-   Perhaps not so much in the *bash* shell, but it's useful in programming
-   languages.
-   
-   .. [#] Yoda condition: https://en.wikipedia.org/wiki/Yoda_Conditions
+   definition of **LD_LIBRARY_PATH**.
 
 After EPICS base has been built, we see that it has taken 
 ~35 MB of storage:
@@ -390,6 +384,12 @@ Here are the lines I found::
 
         #xxx_Common_LIBS += ip
 
+.. 2014-04-01, thanks to Torsten Bögershausen
+
+In ``xxx-5-6/xxxApp/src/Makefile``, 
+place a comment to remove support for the *ip* common library::
+
+    #xxx_Common_LIBS += ip 
 
 
 Install necessary EPICS Extensions
@@ -731,3 +731,13 @@ such as::
 
     ~$ echo $(/usr/local/epics/base-3.14.12.3/startup/EpicsHostArch)
     linux-x86_64
+
+
+Contributions
+=============
+
+.. Torsten Bögershausen <torsten.bogershausen@esss.se>
+
+Torsten Boegershausen has wrapped up the EPICS installation
+into a single bash shell script.  That work is available on GitHub:
+https://github.com/tboegi/install-epics 
