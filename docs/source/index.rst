@@ -1,6 +1,6 @@
-========================================
+====================================
 Installing EPICS on the Raspberry Pi
-========================================
+====================================
 
 .. sidebar:: What is EPICS?
 
@@ -52,7 +52,7 @@ Since the RPi already has Python, we'll work with that:
 .. _Raspberry Pi Distribution:
 
 Raspberry Pi Distribution
-========================================
+=========================
 
 :hardware: Raspberry Pi, model B, RASPBRRY-MODB-512M [#]_
 :software: 2012-12-16 wheezy-raspbian distribution [#]_
@@ -80,7 +80,7 @@ tmpfs            88M   68K   88M   1% /run/shm
 .. _Preparing for EPICS:
 
 Preparing for EPICS
-========================================
+===================
 
 EPICS is flexible about where (which directory path) it is placed.
 Still, it helps to use standard locations.  We'll build it from 
@@ -106,7 +106,7 @@ without needing to gain higher privileges.
 .. _EPICS Base:
 
 EPICS Base
-========================================
+==========
 
 EPICS Base is very easy to build.  The wheezy-raspbian distribution
 already has all the tools necessary to build EPICS Base.
@@ -114,7 +114,7 @@ All that is necessary is to define the host architecture
 and then build it.
 
 Downloading
-----------------------------------------
+-----------
 
 The latest stable version of EPICS Base is 3.14.12.3 
 (3.15 is released but is still not recommended for production use):
@@ -127,7 +127,7 @@ The latest stable version of EPICS Base is 3.14.12.3
    ln -s ./base-3.14.12.3 ./base
 
 Building
-----------------------------------------
+--------
 
 .. sidebar:: note the backticks
 
@@ -183,7 +183,7 @@ This process took about 50 minutes.
    finished at Sat Jan 19 18:06:20 CST 2013
 
 Starting
-----------------------------------------
+--------
 
 It is possible to start an EPICS IOC at this point, although there
 is not much added functionality configured.  We can prove to
@@ -223,7 +223,7 @@ and lines like these (different time stamp) will be printed:
 Congratulations!  EPICS Base has now been built on the Raspberry Pi.
 
 Environment Declarations
---------------------------------------
+------------------------
 
 To simplify using the tools from EPICS base,
 consider making these declarations in your environment 
@@ -261,7 +261,7 @@ After EPICS base has been built, we see that it has taken
 .. _synApps:
 
 synApps
-========================================
+=======
 
 *synApps* is a collection of software tools that help to create a 
 control system for beamlines. 
@@ -274,7 +274,7 @@ There are instructions for installing synApps posted online:
 http://www.aps.anl.gov/bcda/synApps/synApps_5_6.html
 
 Download
-------------------------
+--------
 
 The current release of synApps (as this was written in 2013-02) is v5.6.  
 The compressed source archive file is available from the BCDA group at APS.
@@ -301,7 +301,7 @@ The file should be 149 MB:
 Uncompressed and unconfigured, the synApps_5_6 source folder is ~541 MB.
 
 Configuring
-------------------------
+-----------
 
 All work will be relative to this folder:
 
@@ -345,7 +345,7 @@ Edit ``Makefile`` and remove support for these modules:
     * DXP
 
 *xxx* module: reconfigure
-------------------------------------------------
+-------------------------
 
 The **xxx** module is an example and template EPICS IOC, 
 demonstrating configuration of many synApps modules.
@@ -384,7 +384,7 @@ Here are the lines I found::
 
         #xxx_Common_LIBS += ip
 
-.. 2014-04-01, thanks to Torsten Bögershausen
+.. 2014-04-01, thanks to Torsten Bï¿½gershausen
 
 In ``xxx-5-6/xxxApp/src/Makefile``, 
 place a comment to remove support for the *ip* common library::
@@ -393,7 +393,7 @@ place a comment to remove support for the *ip* common library::
 
 
 Install necessary EPICS Extensions
-------------------------------------------
+----------------------------------
 
 synApps 5.6 requires the *msi* EPICS extension.  
 First, setup the extensions subdirectory
@@ -433,7 +433,7 @@ Make these additional declarations in your environment
    export PATH=${PATH}:${EPICS_EXT_BIN}
 
 Install other support
-------------------------
+---------------------
 
 The EPICS sequencer needs the *re2c* package (http://re2c.org/).
 This is available through the standard package installation repositories:
@@ -444,7 +444,7 @@ This is available through the standard package installation repositories:
    sudo apt-get install re2c
 
 Building
-----------------------------------------
+--------
 
 Now, build the components of synApps selected in the *Makefile*:
 
@@ -465,7 +465,7 @@ The ``make rebuild`` step took about 70 minutes.
 .. _PyEpics:
 
 PyEpics
-==================
+=======
 
 It is possible to run the *PyEpics* support from Matt Newville
 (http://cars.uchicago.edu/software/python/pyepics3/)
@@ -499,7 +499,7 @@ Next, we want to know which version of Python will be run::
 Python 2.7 will be run.
 
 Install PyEpics
-----------------
+---------------
 
 With the *setuptools* installed, it becomes simple to install PyEpics (still as root)::
 
@@ -519,7 +519,7 @@ Now, exit from *root* back to the *pi* account session::
     exit
 
 Testing PyEpics
------------------
+---------------
 
 First, you might be eager to see that PyEpics will load.  
 Save this code in the file *verify.py* (in whatever folder 
@@ -548,7 +548,7 @@ Now, run this and hope for the best::
 This shows that PyEpics was installed but it does not test that EPICS is working.
 
 Testing PyEpics with an IOC
-----------------------------------
+---------------------------
 
 .. note::  We'll need to use several tools at the same time.
    It is easiest to create several terminal windows.
@@ -556,7 +556,7 @@ Testing PyEpics with an IOC
 To test that EPICS communications are working, we need to do some preparations.
 
 softIoc
-++++++++++
++++++++
 
 The simplest way to do this is to use the *softIoc* support from EPICS base
 with a simple EPICS database.  Save this into a file called *simple.db*:
@@ -600,7 +600,7 @@ Now, run the EPICS soft IOC support with this database:
    epics>
 
 camonitor
-++++++++++++++++
++++++++++
 
 In a separate terminal window, watch the soft IOC for any changes
 to EPICS PVs we created above::
@@ -612,7 +612,7 @@ to EPICS PVs we created above::
     rpi:message.DESC		   <undefined> message on the RPi UDF INVALID
 
 Python code
-++++++++++++++++
++++++++++++
 
 Now, let's communicate with the PVs of the softIoc.
 Put this code in file *test.py*:
@@ -673,7 +673,7 @@ Note that new messages have also printed on the terminal running *camonitor*::
 .. _Files:
 
 Files
-======
+=====
 
 These files, described above, are available for direct download:
 
@@ -736,7 +736,7 @@ such as::
 Contributions
 =============
 
-.. Torsten Bögershausen <torsten.bogershausen@esss.se>
+.. Torsten Bï¿½gershausen <torsten.bogershausen@esss.se>
 
 Torsten Boegershausen has wrapped up the EPICS installation
 into a single bash shell script.  That work is available on GitHub:
