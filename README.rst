@@ -11,5 +11,6 @@ Spallation Neutron Source, and lots of other neat stuff.  The system is
 scalable and runs on lots of different hardware.  Here, we show you
 how to run EPICS on the **Raspberry Pi!**
 
-:docs: http://prjemian.github.io/epicspi/
+:2020 docs: https://cmd-response.readthedocs.io/en/latest/epics/rpi_epics.html
+:older docs: http://prjemian.github.io/epicspi/
 :git:  https://github.com/prjemian/epicspi
